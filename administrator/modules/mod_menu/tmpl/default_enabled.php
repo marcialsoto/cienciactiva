@@ -322,12 +322,7 @@ if ($showhelp == 1)
 	$menu->addChild(new JMenuNode(JText::_('MOD_MENU_HELP'), '#'), true);
 	$menu->addChild(new JMenuNode(JText::_('MOD_MENU_HELP_JOOMLA'), 'index.php?option=com_admin&view=help', 'class:help'));
 	$menu->addSeparator();
-	$menu->addChild(
-	new JMenuNode(JText::_('MOD_MENU_HELP_COMMUNITY_SPANISH'), 'http://www.joomlaspanish.org', 'class:help-community', false, '_blank')
-	);
-	$menu->addChild(
-	new JMenuNode(JText::_('MOD_MENU_HELP_SUPPORT_FORUM_SPANISH'), 'http://www.joomlaspanish.org/foros', 'class:help-forum', false, '_blank')
-	);
+
 	$menu->addChild(new JMenuNode(JText::_('MOD_MENU_HELP_SUPPORT_OFFICIAL_FORUM'), 'http://forum.joomla.org', 'class:help-forum', false, '_blank'));
 
 	if ($forum_url = $params->get('forum_url'))
