@@ -2203,6 +2203,15 @@ a.list-group-item.active:focus .list-group-item-text {
   }
 }
 
+body {
+  background-image: url(../../../../images/main-bg.jpg);
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+.t3-wrapper {
+  width: 1170px;
+  margin: 30px auto;
+}
 .t3-header {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -2325,11 +2334,20 @@ a.list-group-item.active:focus .list-group-item-text {
   display: block;
   font-size: 100%;
 }
+#t3-mainnav .t3-navbar .t3-megamenu ul {
+  width: 100%;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li {
+  width: 12.5%;
+}
 #t3-mainnav .t3-navbar .t3-megamenu ul.nav li a {
   text-align: center;
+  color: #333333;
+  font-size: 16px;
 }
 #t3-mainnav .t3-navbar .t3-megamenu ul.nav li a img {
   display: block;
+  margin: 0 auto;
 }
 .t3-footnav {
   padding: 20px 0;
@@ -2411,6 +2429,26 @@ a.list-group-item.active:focus .list-group-item-text {
 .poweredby .t3-logo-small {
   opacity: .8;
   display: inline-block;
+}
+@media (min-width: 768px) {
+  .navbar-header {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-header {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  .navbar-header {
+    display: none;
+  }
 }
 
 .home .t3-sl-1 .jumbotron .btn,

@@ -16,6 +16,33 @@
 // ---------------------------------------------------------
 
 //
+// ALL
+// ---------------------------------------------------------
+body{
+  background-image: url(../images/main-bg.jpg);
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.t3-wrapper{
+  margin: 30px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: @gray-lighter !important;
+  border: 1px solid @gray-light;
+  .inner{
+    background-color: @white;
+    margin: 0 auto;
+
+    .t3-header{
+      border: 1px solid @gray-light;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+//
 // HEADER
 // ---------------------------------------------------------
 
@@ -226,13 +253,17 @@
   .t3-navbar{
     .t3-megamenu{
       ul{
+        width: 100%;
         &.nav{
           li{
+            width: 12.5%;
             a{
               text-align: center;
+              color:@gray-dark;
+              font-size: 16px;
               img{
                 display: block;
-                margin: 0 auto 20px;
+                margin: 0 auto;
               }
               span{
 
@@ -323,3 +354,29 @@
     display: inline-block;
   }
 }
+// Media Queries
+@media(max-width: @screen-xs-max){}
+@media(min-width: @screen-tablet){
+  .navbar-header{
+    display: none;
+  }
+}     /* or @screen-sm */
+@media(min-width: @screen-desktop){
+  .navbar-header{
+    display: none;
+  }
+}    /* or @screen-md */
+@media(min-width: @screen-lg-desktop){
+  .t3-wrapper{
+    width: 1060px;
+    .inner{
+      width: 1000px;
+    }
+  }
+  .container {
+    width: 970px;
+  }
+  .navbar-header{
+    display: none;
+  }
+} /* or @screen-lg */

@@ -26,7 +26,8 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 ?>
 
 <!-- HEADER -->
-<header id="t3-header" class="container t3-header">
+<header id="t3-header" class="t3-header">
+	<div class="container">
 	<div class="row">
 
 		<!-- LOGO -->
@@ -66,6 +67,7 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 			</div>
 		<?php endif ?>
 
+	</div>
 	</div>
 </header>
 <!-- //HEADER -->
