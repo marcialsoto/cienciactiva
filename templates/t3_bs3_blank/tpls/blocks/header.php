@@ -53,7 +53,7 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 				<!-- HEAD SEARCH -->
 				<div class="head-search <?php $this->_c('head-search') ?>">
 					<ul>
-						<li>¿Qué es?</li>
+						<li>¿Qué es?</li> 
 						<li>¿Quiénes se benefician?</li>
 						<li>Contacto</li>
 					</ul>
