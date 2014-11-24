@@ -355,7 +355,17 @@ body{
   }
 }
 // Media Queries
-@media(max-width: @screen-xs-max){}
+
+@media(min-width: @screen-xs-max){
+  .head-search {
+    .search {
+      float: none;
+    }
+  }
+}
+@media(max-width: @screen-xs-max){
+
+}
 @media(min-width: @screen-tablet){
   .navbar-header{
     display: none;
@@ -365,6 +375,7 @@ body{
   .navbar-header{
     display: none;
   }
+
 }    /* or @screen-md */
 @media(min-width: @screen-lg-desktop){
   .t3-wrapper{

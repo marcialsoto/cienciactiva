@@ -237,6 +237,11 @@ body {
   opacity: .8;
   display: inline-block;
 }
+@media (min-width: 767px) {
+  .head-search .search {
+    float: none;
+  }
+}
 @media (min-width: 768px) {
   .navbar-header {
     display: none;
