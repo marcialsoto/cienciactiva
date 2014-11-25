@@ -49,24 +49,12 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 
 	<?php if ($headright): ?>
 		<div class="col-xs-12 col-sm-3">
-			<?php if ($this->countModules('head-search')) : ?>
+			<?php if ($this->countModules('headnav')) : ?>
 				<!-- HEAD SEARCH -->
-				<div class="head-search <?php $this->_c('head-search') ?>">
-					<ul>
-						<li>¿Qué es?</li> 
-						<li>¿Quiénes se benefician?</li>
-						<li>Contacto</li>
-					</ul>
+				<div class="headnav <?php $this->_c('headnav') ?>">
+					<jdoc:include type="modules" name="<?php $this->_p('headnav') ?>" style="raw" />
 				</div>
 				<!-- //HEAD SEARCH -->
-			<?php endif ?>
-
-			<?php if ($this->countModules('languageswitcherload')) : ?>
-				<!-- LANGUAGE SWITCHER -->
-				<div class="languageswitcherload">
-					<jdoc:include type="modules" name="<?php $this->_p('languageswitcherload') ?>" style="raw" />
-				</div>
-				<!-- //LANGUAGE SWITCHER -->
 			<?php endif ?>
 		</div>
 	<?php endif ?>

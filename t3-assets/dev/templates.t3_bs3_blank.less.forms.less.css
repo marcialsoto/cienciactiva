@@ -201,15 +201,15 @@ select.input {
 }
 .input-append .active,
 .input-prepend .active {
-  background-color: #bbff33;
-  border-color: #669900;
+  background-color: #9ee4ba;
+  border-color: #33b668;
 }
 .invalid {
-  border-color: #cc0000;
+  border-color: #fb2d08;
 }
 label.invalid {
-  color: #cc0000;
+  color: #fb2d08;
 }
 input.invalid {
-  border: 1px solid #cc0000;
+  border: 1px solid #fb2d08;
 }

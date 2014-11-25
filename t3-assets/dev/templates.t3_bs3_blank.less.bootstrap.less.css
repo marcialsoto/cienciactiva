@@ -1865,8 +1865,8 @@ legend + .control-group {
 }
 .input-append .active,
 .input-prepend .active {
-  background-color: #bbff33;
-  border-color: #669900;
+  background-color: #9ee4ba;
+  border-color: #33b668;
 }
 .input-prepend .add-on,
 .input-prepend .btn {

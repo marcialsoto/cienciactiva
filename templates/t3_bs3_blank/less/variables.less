@@ -41,19 +41,26 @@
 @brand-info:            #5bc0de;
 
 
+
 // Accent colors
 // -------------------------
 
 @black:                 #000;
 @white:                 #fff;
 @blue:                  #07b;
-@green:                 #690;
-@cyan:                  #09c;
-@red:                   #c00;
-@yellow:                #fc0;
 @orange:                #f80;
 @pink:                  #d60a6c;
 @purple:                #8b08ae;
+@gray-line:             #e0e0e0;
+
+
+// Custom colors
+// -------------------------
+
+@cyan:         #75cccb;
+@red:          #fb2d08;
+@green:        #33b668;
+@yellow:       #e7f928;
 
 
 // Scaffolding
@@ -767,3 +774,37 @@
 @t3-off-canvas-link-hover-color:      @link-hover-color;
 
 @t3-off-canvas-headings-color:        inherit;
+
+//
+// MIXINS
+// --------------------------------------------------
+
+// Radio
+// -------------------------
+
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+ 	background-color: @startColor;
+	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+	background-image: -moz-linear-gradient(left, @startColor, @endColor);
+	background-image: -ms-linear-gradient(left, @startColor, @endColor);
+	background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
