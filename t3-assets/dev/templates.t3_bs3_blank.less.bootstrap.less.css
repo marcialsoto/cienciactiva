@@ -266,7 +266,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -1865,8 +1865,8 @@ legend + .control-group {
 }
 .input-append .active,
 .input-prepend .active {
-  background-color: #9ee4ba;
-  border-color: #33b668;
+  background-color: #bbff33;
+  border-color: #669900;
 }
 .input-prepend .add-on,
 .input-prepend .btn {

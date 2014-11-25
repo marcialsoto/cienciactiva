@@ -3,7 +3,7 @@
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>t3_bs3_blank</name>
 	<version>2.1.6</version>
-	<creationDate>31 July 2014</creationDate>
+	<creationDate>July 31 2014</creationDate>
 	<author>JoomlArt.com</author>
 	<authorEmail>webmaster@joomlart.com</authorEmail>
 	<authorUrl>http://www.t3-framework.org</authorUrl>
@@ -47,7 +47,7 @@
 		<folder>images</folder>
 		<folder>tpls</folder>
 	</files>
-
+	
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.tpl_t3_bs3_blank.ini</language>
 		<language tag="en-GB">en-GB/en-GB.tpl_t3_bs3_blank.sys.ini</language>
@@ -56,7 +56,6 @@
 	<positions>
 		<position>languageswitcherload</position>
 		<position>head-search</position>
-		<position>headnav</position>
 		<position>mainnav</position>
 		<position>navhelper</position>
 		<position>breadcrumbs</position>
@@ -110,7 +109,7 @@
 					<option for="menu_as_bg" value="no">menu_as_bg</option>
 				</field>
 			</fieldset-->
-
+			
 		</fields>
 	</config>
 

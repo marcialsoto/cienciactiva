@@ -680,7 +680,7 @@ div.finder {
   margin: 10px 0;
 }
 .filters {
-  margin: 10px 0;
+  margin: 10px 0 5px;
 }
 .display-limit {
   margin: 10px 0 5px;
@@ -779,7 +779,7 @@ div.calendar {
 .edit.item-page fieldset .btn-toolbar {
   margin-top: 10px;
 }
-.chzn-container-multi .chzn-choices li.search-field input[type="text"] {
+.edit.item-page .chzn-container-multi .chzn-choices li.search-field input[type="text"] {
   height: auto;
 }
 .iframe-bordered {
