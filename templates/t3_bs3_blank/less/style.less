@@ -14,6 +14,14 @@
 // ---------------------------------------------------------
 // MAIN TEMPLATE STYLES
 // ---------------------------------------------------------
+::selection {
+  background: lighten(@yellow, 15%); /* WebKit/Blink Browsers */
+  color: @gray-dark;
+}
+::-moz-selection {
+  background: lighten(@yellow, 15%); /* Gecko Browsers */
+  color: @gray-dark;
+}
 
 //
 // ALL
@@ -50,9 +58,9 @@ body{
   &.footer{
     padding-top: 0;
     margin-top: 0;
-    border-bottom: 1px solid @white;
-    border-left: 1px solid @white;
-    border-right: 1px solid @white;
+    border-bottom: 1px solid @gray-light;
+    border-left: 1px solid @gray-light;
+    border-right: 1px solid @gray-light;
     background-color: @orange !important;
     background-image: url(../images/footer-bg.jpg) !important;
     background-repeat: repeat;
@@ -67,6 +75,15 @@ body{
         background: none;
         color: @white;
 
+        a{
+          color: @white;
+          text-decoration: none;
+          border-bottom: 1px solid @white;
+
+          &:hover{
+            border-bottom: 1px solid transparent;
+          }
+        }
         .row{
           .t3-module{
             background: none;
@@ -77,6 +94,20 @@ body{
                 li{
                   a{
                     color: @white
+                  }
+                }
+              }
+              .module-ct{
+                color: @white;
+                ul{
+                  &.social{
+                    li{
+                      a{
+                        text-decoration: none;
+                        border-bottom: 0 none;
+                        font-size: 32px;
+                      }
+                    }
                   }
                 }
               }

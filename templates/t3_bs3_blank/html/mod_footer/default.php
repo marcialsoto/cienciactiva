@@ -16,7 +16,9 @@ defined('_JEXEC') or die;
 		<img class="img-responsive" src="/cienciactiva/images/logos/logo-footer.png" alt="Cienciactiva">
 	</div>
 	<div class="col-sm-3 col-sm-offset-6">
-		<img class="img-responsive" src="/cienciactiva/images/logos/logo-peru.png" alt="Cienciactiva">
+		<a href="http://www.peru.gob.pe" target="_blank">
+			<img class="img-responsive pull-right" src="/cienciactiva/images/logos/logo-peru.png" alt="Cienciactiva">
+		</a>
 	</div>
 </div>
 </div>

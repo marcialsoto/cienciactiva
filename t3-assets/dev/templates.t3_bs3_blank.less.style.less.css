@@ -1,3 +1,13 @@
+::selection {
+  background: #effb72;
+  
+  color: #333333;
+}
+::-moz-selection {
+  background: #effb72;
+  
+  color: #333333;
+}
 body {
   background-image: url(../../templates/t3_bs3_blank/images/main-bg.jpg);
   background-repeat: repeat;
@@ -28,9 +38,9 @@ body {
 .t3-wrapper.footer {
   padding-top: 0;
   margin-top: 0;
-  border-bottom: 1px solid #ffffff;
-  border-left: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #999999;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
   background-color: #fd3d24 !important;
   background-image: url(../../templates/t3_bs3_blank/images/footer-bg.jpg) !important;
   background-repeat: repeat;
@@ -47,6 +57,14 @@ body {
   background: none;
   color: #ffffff;
 }
+.t3-wrapper.footer .inner .t3-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+}
+.t3-wrapper.footer .inner .t3-footer a:hover {
+  border-bottom: 1px solid transparent;
+}
 .t3-wrapper.footer .inner .t3-footer .row .t3-module {
   background: none;
 }
@@ -55,6 +73,14 @@ body {
 }
 .t3-wrapper.footer .inner .t3-footer .row .t3-module ul li a {
   color: #ffffff;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct {
+  color: #ffffff;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct ul.social li a {
+  text-decoration: none;
+  border-bottom: 0 none;
+  font-size: 32px;
 }
 .t3-wrapper.footer .inner .t3-footer .t3-copyright {
   border-top: 0 none;
