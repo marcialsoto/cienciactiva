@@ -8,7 +8,6 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   background: #eeeeee !important;
-  border: 1px solid #999999;
 }
 .t3-wrapper .inner {
   background-color: #ffffff;
@@ -18,6 +17,48 @@ body {
   border: 1px solid #999999;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.t3-wrapper.content {
+  margin-bottom: 0;
+  border-top: 1px solid #999999;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  padding-bottom: 0;
+}
+.t3-wrapper.footer {
+  padding-top: 0;
+  margin-top: 0;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  background-color: #fd3d24 !important;
+  background-image: url(../../templates/t3_bs3_blank/images/footer-bg.jpg) !important;
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+.t3-wrapper.footer .inner {
+  background-color: transparent !important;
+}
+.t3-wrapper.footer .inner .t3-footer {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-top: 0 none;
+  background: none;
+  color: #ffffff;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module {
+  background: none;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module h3 {
+  color: #ffffff;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module ul li a {
+  color: #ffffff;
+}
+.t3-wrapper.footer .inner .t3-footer .t3-copyright {
+  border-top: 0 none;
+  padding: 20px 0;
 }
 .t3-header {
   padding-top: 20px;
