@@ -61,6 +61,11 @@
 @green:        #33b668;
 @yellow:       #e7f928;
 @orange:       #fd3d24;
+@fb-color:     #3b5998;
+@tw-color:     #00ACEE;
+@li-color:     #0177B5;
+@yt-color:     #C41A1F;
+@ig-color:     #D0BDAA;
 
 
 // Scaffolding
@@ -79,7 +84,9 @@
 
 // Typography
 // -------------------------
-@font-family-sans-serif:  "robotoregular", Helvetica, Arial, sans-serif;
+@roboto-regular:  "robotoregular", Helvetica, Arial, sans-serif;
+@roboto-bold:  "robotobold", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  @roboto-regular;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -807,4 +814,32 @@
 	background-image: -moz-linear-gradient(left, @startColor, @endColor);
 	background-image: -ms-linear-gradient(left, @startColor, @endColor);
 	background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+	text-shadow: @string;
+}
+
+.transition (@transition) {
+	-webkit-transition: @transition;
+	-moz-transition:    @transition;
+	-ms-transition:     @transition;
+	-o-transition:      @transition;
+}
+
+.font-awesome{
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.opacity(@opacity: 1) {
+	@ieOpacity: @opacity * 100;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieOpacity})";
+	filter: ~"alpha(opacity=@{ieOpacity})";
+	opacity: @opacity;
 }

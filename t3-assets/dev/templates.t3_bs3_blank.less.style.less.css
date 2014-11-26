@@ -13,6 +13,13 @@ body {
   background-repeat: repeat;
   background-position: 0 0;
 }
+a {
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 .t3-wrapper {
   margin: 30px auto;
   padding-top: 30px;
@@ -65,11 +72,40 @@ body {
 .t3-wrapper.footer .inner .t3-footer a:hover {
   border-bottom: 1px solid transparent;
 }
+.t3-wrapper.footer .inner .t3-footer .row {
+  position: relative;
+}
 .t3-wrapper.footer .inner .t3-footer .row .t3-module {
   background: none;
 }
+.t3-wrapper.footer .inner .t3-footer .row .t3-module.modulecontacto:after,
+.t3-wrapper.footer .inner .t3-footer .row .t3-module.modulemailing:after {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  border-right: 1px solid #ffffff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  height: 100%;
+  content: '';
+}
 .t3-wrapper.footer .inner .t3-footer .row .t3-module h3 {
   color: #ffffff;
+  text-transform: uppercase;
+  font-family: "robotobold", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module h3:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\00a0\00a0\00a0\f105";
 }
 .t3-wrapper.footer .inner .t3-footer .row .t3-module ul li a {
   color: #ffffff;
@@ -81,6 +117,65 @@ body {
   text-decoration: none;
   border-bottom: 0 none;
   font-size: 32px;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct ul.social li a:hover {
+  text-shadow: 1px 1px 0px #fd3d24, 3px 2px 0px rgba(0, 0, 0, 0.15);
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct ul.social li a:hover.fb {
+  color: #3b5998;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct ul.social li a:hover.tw {
+  color: #00acee;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct ul.social li a:hover.li {
+  color: #0177b5;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct ul.social li a:hover.yt {
+  color: #c41a1f;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct ul.social li a:hover.ig {
+  color: #d0bdaa;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct table {
+  margin: inherit;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct table .inputbox {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: transparent;
+  background: none;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.t3-wrapper.footer .inner .t3-footer .row .t3-module .module-ct table .btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: transparent;
+  border-color: transparent;
+  border-left-color: transparent;
+  border-left-width: 0px;
+  border-right-color: #ffffff;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.t3-wrapper.footer .inner .t3-footer .row.t3-footnav {
+  padding-bottom: 10px;
+}
+.t3-wrapper.footer .inner .t3-footer .row.t3-footnav:after {
+  border-bottom: 1px solid #ffffff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  width: 97%;
+  margin: 0 auto;
 }
 .t3-wrapper.footer .inner .t3-footer .t3-copyright {
   border-top: 0 none;
@@ -265,7 +360,7 @@ body {
   margin: 0 auto;
 }
 .t3-footnav {
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 .t3-footnav:before,
 .t3-footnav:after {
@@ -325,7 +420,7 @@ body {
   margin-bottom: 5px;
 }
 .copyright {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .poweredby:before,
 .poweredby:after {
