@@ -18,11 +18,11 @@ defined('_JEXEC') or die;
 
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>"
-	  class='<jdoc:include type="pageclass" />'>
+    class='<jdoc:include type="pageclass" />'>
 
 <head>
-	<jdoc:include type="head" />
-	<?php $this->loadBlock('head') ?>
+  <jdoc:include type="head" />
+  <?php $this->loadBlock('head') ?>
 </head>
 
 <body>
@@ -43,9 +43,9 @@ defined('_JEXEC') or die;
 </div>
 </div>
 <div class="t3-wrapper footer">
-	<div class="inner">
-	<?php $this->loadBlock('footer') ?>
-	</div>
+  <div class="inner">
+  <?php $this->loadBlock('footer') ?>
+  </div>
 </div>
 
 

@@ -47,7 +47,7 @@
 		<folder>images</folder>
 		<folder>tpls</folder>
 	</files>
-	
+
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.tpl_t3_bs3_blank.ini</language>
 		<language tag="en-GB">en-GB/en-GB.tpl_t3_bs3_blank.sys.ini</language>
@@ -62,6 +62,7 @@
 		<position>off-canvas</position>
 		<position>sidebar-1</position>
 		<position>sidebar-2</position>
+		<position>sidebar-gc</position>
 		<position>mast-col</position>
 		<position>footer</position>
 		<position>home-0</position>
@@ -109,7 +110,7 @@
 					<option for="menu_as_bg" value="no">menu_as_bg</option>
 				</field>
 			</fieldset-->
-			
+
 		</fields>
 	</config>
 

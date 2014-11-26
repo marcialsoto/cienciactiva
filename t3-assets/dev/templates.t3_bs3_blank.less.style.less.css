@@ -359,6 +359,10 @@ a {
   display: block;
   margin: 0 auto;
 }
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li a:hover,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li a:active {
+  background-color: #ffffff;
+}
 .t3-footnav {
   padding: 20px 0 0;
 }
