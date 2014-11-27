@@ -38,19 +38,21 @@ a{
 
 .t3-wrapper{
   margin: 30px auto;
-  padding-top: 30px;
+  //padding-top: 30px;
   padding-bottom: 30px;
   background: @gray-lighter !important;
-  //border: 1px solid transparent;
+    .t3-header{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .container{
+        width: 1000px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   .inner{
     background-color: @white;
     margin: 0 auto;
-
-    .t3-header{
-      border: 1px solid @gray-light;
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
   }
   &.content{
     margin-bottom: 0;
@@ -468,6 +470,89 @@ a{
                 background-color: @white;
               }
             }
+            &.active{
+              a{
+                &.gc, &.et, &.p{
+                  background-color: @cyan;
+                }
+                &.ci, &.e, &.m{
+                  background-color: @red;
+                }
+                &.ia{
+                  background-color: @green;
+                }
+                &.fc{
+                  background-color: @yellow;
+                }
+              }
+            }
+            .nav-child{
+              ul{
+                &.level1{
+                  li{
+                    width: 100%;
+                    a{
+                      text-align: left;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Main
+// --------
+.main{
+  padding-top: 30px;
+}
+// Sidebar
+// --------
+.t3-sidebar{
+  &.noticias{
+    padding-top: 30px;
+  }
+  .t3-module{
+    .module-inner{
+    border: 1px solid @gray-light;
+    .module-title{
+      margin-bottom: 0px;
+      padding: 15px;
+      background: transparent url(../images/stripes-bg.png) repeat center top;
+      color: @gray;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      border-bottom: 1px solid @gray-light;
+    }
+      .ja-sidenews-list{
+        padding: 3px 15px 0;
+      }
+    }
+    &.modulemenu-gc{
+      ul{
+        &.nav{
+          li{
+            &+li{
+              margin-top: 0;
+            }
+            a{
+              .border-radius(0);
+              color: @gray-light;
+              &:hover{
+                background-color: lighten(@cyan, 15%);
+                color: @gray;
+              }
+            }
+            &.active{
+              a{
+                background-color: @cyan;
+                color: @gray;
+              }
+            }
           }
         }
       }
@@ -584,7 +669,11 @@ a{
     }
   }
   .container {
-    width: 970px;
+    width: 1000px;
+    &.t3-mainbody{
+      width: 970px;
+      padding-top: 10px;
+    }
   }
   .navbar-header{
     display: none;

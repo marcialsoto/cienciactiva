@@ -22,18 +22,21 @@ a {
 }
 .t3-wrapper {
   margin: 30px auto;
-  padding-top: 30px;
   padding-bottom: 30px;
   background: #eeeeee !important;
+}
+.t3-wrapper .t3-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.t3-wrapper .t3-header .container {
+  width: 1000px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .t3-wrapper .inner {
   background-color: #ffffff;
   margin: 0 auto;
-}
-.t3-wrapper .inner .t3-header {
-  border: 1px solid #999999;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 .t3-wrapper.content {
   margin-bottom: 0;
@@ -363,6 +366,69 @@ a {
 #t3-mainnav .t3-navbar .t3-megamenu ul.nav li a:active {
   background-color: #ffffff;
 }
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.active a.gc,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.active a.et,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.active a.p {
+  background-color: #75cccb;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.active a.ci,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.active a.e,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.active a.m {
+  background-color: #fb2d08;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.active a.ia {
+  background-color: #33b668;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.active a.fc {
+  background-color: #e7f928;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li .nav-child ul.level1 li {
+  width: 100%;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li .nav-child ul.level1 li a {
+  text-align: left;
+}
+.main {
+  padding-top: 30px;
+}
+.t3-sidebar.noticias {
+  padding-top: 30px;
+}
+.t3-sidebar .t3-module .module-inner {
+  border: 1px solid #999999;
+}
+.t3-sidebar .t3-module .module-inner .module-title {
+  margin-bottom: 0px;
+  padding: 15px;
+  background: transparent url(../../templates/t3_bs3_blank/images/stripes-bg.png) repeat center top;
+  color: #555555;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-bottom: 1px solid #999999;
+}
+.t3-sidebar .t3-module .module-inner .ja-sidenews-list {
+  padding: 3px 15px 0;
+}
+.t3-sidebar .t3-module.modulemenu-gc ul.nav li + li {
+  margin-top: 0;
+}
+.t3-sidebar .t3-module.modulemenu-gc ul.nav li a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #999999;
+}
+.t3-sidebar .t3-module.modulemenu-gc ul.nav li a:hover {
+  background-color: #ade1e0;
+  color: #555555;
+}
+.t3-sidebar .t3-module.modulemenu-gc ul.nav li.active a {
+  background-color: #75cccb;
+  color: #555555;
+}
 .t3-footnav {
   padding: 20px 0 0;
 }
@@ -469,7 +535,11 @@ a {
     width: 1000px;
   }
   .container {
+    width: 1000px;
+  }
+  .container.t3-mainbody {
     width: 970px;
+    padding-top: 10px;
   }
   .navbar-header {
     display: none;
