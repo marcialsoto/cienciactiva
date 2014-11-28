@@ -17,14 +17,14 @@ defined('_JEXEC') or die('Restricted access');
 		<div class="ja-ss-item">
 			<img src="<?php echo $images[$i];?>" alt="<?php echo str_replace('"', '"/', strip_tags($captionsArray[$i]) );?>"/>
 
-			<?php 
+			<?php
 				$icaption = trim($captionsArray[$i]);
 				$ititle = trim($titles[$i])
 			?>
 			<?php if(strlen($icaption) || strlen($ititle)): ?>
 			<div class="ja-ss-desc">
 				<?php if($ititle) : ?>
-				<h3><?php echo $ititle ?></h3> 
+				<h3><?php echo $ititle ?></h3>
 				<?php endif; ?>
 
 				<?php echo $icaption ?>
@@ -34,7 +34,7 @@ defined('_JEXEC') or die('Restricted access');
 		</div>
 	<?php endfor; ?>
 	</div>
-	
+
 	<?php if ($showThumbnail == 1): ?>
 	<div class="ja-ss-thumbs-wrap">
 		<div class="ja-ss-thumbs"><!--
@@ -48,11 +48,8 @@ defined('_JEXEC') or die('Restricted access');
 	<?php endif; ?>
 	<?php if ($showNavigation): ?>
 	<div class="ja-ss-btns clearfix">
-		<span class="ja-ss-prev">&laquo; <?php echo JText::_('PREVIOUS');?></span>
-		<span class="ja-ss-playback">&lsaquo; <?php echo JText::_('PLAYBACK');?></span>
-		<span class="ja-ss-stop"><?php echo JText::_('STOP');?></span>
-		<span class="ja-ss-play"><?php echo JText::_('PLAY');?> &rsaquo;</span>
-		<span class="ja-ss-next"><?php echo JText::_('NEXT');?>  &raquo;</span>
+		<i class="ja-ss-prev fa fa-angle-left"></i>
+		<i class="ja-ss-next fa fa-angle-right"></i>
 	</div>
 	<?php endif; ?>
 </div>

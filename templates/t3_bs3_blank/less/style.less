@@ -508,6 +508,83 @@ a{
 // --------
 .main{
   padding-top: 30px;
+  .ja-ss-wrap{
+    position: relative;
+    overflow: visible;
+    border: 1px solid @gray-light;
+  .ja-ss-items{
+    position: relative;
+    z-index: 0;
+    .ja-ss-item{
+      img{
+        position: relative;
+        z-index: 0;
+      }
+      .ja-ss-desc{
+        left: 30px;
+        top: 60%;
+        padding: 15px;
+        bottom: 0;
+        border-top: 1px solid @gray-light;
+        border-left: 1px solid @gray-light;
+        border-right: 1px solid @gray-light;
+        background: rgba(255,255,255,.85);
+        filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)";
+        h3{
+          //color: @green;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 26px;
+          color: @gray-dark;
+        }
+        hr{
+          margin-top: 15px;
+          margin-bottom: 15px;
+          border-top: 1px solid #ddd;
+        }
+        .btn{
+          background-color: transparent;
+          color: @green;
+          font-family: @roboto-bold;
+          font-size: 11px;
+          text-transform: uppercase;
+          .border-radius(0);
+          border-color: @green;
+          &:hover{
+            color: @white;
+            background-color: @green;
+          }
+        }
+      }
+    }
+  }
+    .ja-ss-btns{
+      position: static;
+      z-index: 1000;
+      .ja-ss-playback, .ja-ss-stop, .ja-ss-play{
+        display: none;
+      }
+      .ja-ss-prev, .ja-ss-next{
+        position: absolute;
+        top: 45%;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 5px;
+        background: transparent url(../images/stripes-bg.png) repeat center top;
+        color: @gray;
+        border:1px solid @gray-light;
+        &:hover{
+          color: @green;
+        }
+      }
+      .ja-ss-prev{
+        left: -10px;
+      }
+      .ja-ss-next{
+        right: -10px;
+      }
+    }
+  }
 }
 // Sidebar
 // --------
@@ -646,7 +723,26 @@ a{
     }
   }
 }
-@media(max-width: @screen-xs-max){
+
+
+@media (min-width:@screen-phone) and (max-width: @screen-tablet) {
+  .main{
+    .ja-ss-wrap{
+      .ja-ss-items{
+        .ja-ss-item{
+          .ja-ss-desc{
+            position: relative;
+            width: auto;
+            border: 0 none;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-xs-max){
 
 }
 @media(min-width: @screen-tablet){
