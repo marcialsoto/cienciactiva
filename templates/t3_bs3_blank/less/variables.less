@@ -843,3 +843,9 @@
 	filter: ~"alpha(opacity=@{ieOpacity})";
 	opacity: @opacity;
 }
+
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}

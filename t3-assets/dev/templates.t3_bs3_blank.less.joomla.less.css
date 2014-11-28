@@ -745,6 +745,7 @@ div.finder {
   background: #fff6df;
   border: 1px solid #fb3;
   border-radius: 5px;
+  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   max-width: 300px;
@@ -803,6 +804,7 @@ div.calendar {
   border-color: #cccccc;
   height: 26px;
   border-radius: 0 3px 3px 0;
+  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
