@@ -522,7 +522,7 @@ a{
       }
       .ja-ss-desc{
         left: 30px;
-        top: 60%;
+        top: 55%;
         padding: 15px;
         bottom: 0;
         border-top: 1px solid @gray-light;
@@ -591,6 +591,25 @@ a{
 .t3-sidebar{
   &.noticias{
     padding-top: 30px;
+
+    .ja-sidenews-list{
+      .ja-slidenews-item{
+        a{
+          font-family: @roboto-bold;
+          font-size: 14px;
+          color: @gray-dark;
+          text-decoration: none;
+          font-weight: normal;
+          &:hover{
+            color: @gray-darker;
+          }
+        }
+        .ja-createdate{
+          color: @gray-light;
+          font-weight: normal;
+        }
+      }
+    }
   }
   .t3-module{
     .module-inner{

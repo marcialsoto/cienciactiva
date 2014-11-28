@@ -404,7 +404,7 @@ a {
 }
 .main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc {
   left: 30px;
-  top: 60%;
+  top: 55%;
   padding: 15px;
   bottom: 0;
   border-top: 1px solid #999999;
@@ -474,6 +474,20 @@ a {
 }
 .t3-sidebar.noticias {
   padding-top: 30px;
+}
+.t3-sidebar.noticias .ja-sidenews-list .ja-slidenews-item a {
+  font-family: "robotobold", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  text-decoration: none;
+  font-weight: normal;
+}
+.t3-sidebar.noticias .ja-sidenews-list .ja-slidenews-item a:hover {
+  color: #222222;
+}
+.t3-sidebar.noticias .ja-sidenews-list .ja-slidenews-item .ja-createdate {
+  color: #999999;
+  font-weight: normal;
 }
 .t3-sidebar .t3-module .module-inner {
   border: 1px solid #999999;

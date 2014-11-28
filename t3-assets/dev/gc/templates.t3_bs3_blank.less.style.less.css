@@ -391,9 +391,18 @@ a {
 }
 .main .ja-ss-wrap {
   position: relative;
+  overflow: visible;
   border: 1px solid #999999;
 }
-.main .ja-ss-wrap .ja-ss-item .ja-ss-desc {
+.main .ja-ss-wrap .ja-ss-items {
+  position: relative;
+  z-index: 0;
+}
+.main .ja-ss-wrap .ja-ss-items .ja-ss-item img {
+  position: relative;
+  z-index: 0;
+}
+.main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc {
   left: 30px;
   top: 60%;
   padding: 15px;
@@ -404,18 +413,18 @@ a {
   background: rgba(255, 255, 255, 0.85);
   filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)";
 }
-.main .ja-ss-wrap .ja-ss-item .ja-ss-desc h3 {
+.main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc h3 {
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
-.main .ja-ss-wrap .ja-ss-item .ja-ss-desc hr {
+.main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc hr {
   margin-top: 15px;
   margin-bottom: 15px;
   border-top: 1px solid #ddd;
 }
-.main .ja-ss-wrap .ja-ss-item .ja-ss-desc .btn {
+.main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc .btn {
   background-color: transparent;
   color: #33b668;
   font-family: "robotobold", Helvetica, Arial, sans-serif;
@@ -429,12 +438,13 @@ a {
   background-clip: padding-box;
   border-color: #33b668;
 }
-.main .ja-ss-wrap .ja-ss-item .ja-ss-desc .btn:hover {
+.main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc .btn:hover {
   color: #ffffff;
   background-color: #33b668;
 }
 .main .ja-ss-wrap .ja-ss-btns {
-  position: relative;
+  position: static;
+  z-index: 1000;
 }
 .main .ja-ss-wrap .ja-ss-btns .ja-ss-playback,
 .main .ja-ss-wrap .ja-ss-btns .ja-ss-stop,
@@ -445,15 +455,34 @@ a {
 .main .ja-ss-wrap .ja-ss-btns .ja-ss-next {
   position: absolute;
   top: 45%;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  background: transparent url(../../../templates/t3_bs3_blank/images/stripes-bg.png) repeat center top;
+  color: #555555;
+  border: 1px solid #999999;
+}
+.main .ja-ss-wrap .ja-ss-btns .ja-ss-prev:hover,
+.main .ja-ss-wrap .ja-ss-btns .ja-ss-next:hover {
+  color: #33b668;
 }
 .main .ja-ss-wrap .ja-ss-btns .ja-ss-prev {
-  left: 5px;
+  left: -10px;
 }
 .main .ja-ss-wrap .ja-ss-btns .ja-ss-next {
-  right: 5px;
+  right: -10px;
 }
 .t3-sidebar.noticias {
   padding-top: 30px;
+}
+.t3-sidebar.noticias .ja-sidenews-list .ja-slidenews-item a {
+  font-family: "robotobold", Helvetica, Arial, sans-serif;
+  color: #333333;
+  text-decoration: none;
+  font-weight: normal;
+}
+.t3-sidebar.noticias .ja-sidenews-list .ja-slidenews-item a:hover {
+  color: #222222;
 }
 .t3-sidebar .t3-module .module-inner {
   border: 1px solid #999999;
@@ -574,6 +603,14 @@ a {
 @media (min-width: 767px) {
   .head-search .search {
     float: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc {
+    position: relative;
+    width: auto;
+    border: 0 none;
+    left: 0;
   }
 }
 @media (min-width: 768px) {
