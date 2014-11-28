@@ -44,11 +44,6 @@ a{
     .t3-header{
       padding-top: 30px;
       padding-bottom: 30px;
-      .container{
-        width: 1000px;
-        padding-left: 0;
-        padding-right: 0;
-      }
     }
   .inner{
     background-color: @white;
@@ -100,7 +95,7 @@ a{
                 right: 15px;
                 bottom: 0;
                 border-right: 1px solid @white;
-                .opacity(.5);
+                .opacity(.25);
                 height: 100%;
                 content: '';
               }
@@ -180,10 +175,11 @@ a{
               }
           }
             &.t3-footnav{
-              padding-bottom: 10px;
+              padding: 20px 15px 15px;
+
               &:after{
                 border-bottom: 1px solid @white;
-                .opacity(.5);
+                .opacity(.25);
                 width: 97%;
                 margin: 0 auto;
               }
@@ -191,7 +187,10 @@ a{
         }
         .t3-copyright {
           border-top: 0 none;
-          padding: 20px 0;
+          padding: 0;
+          .copyright {
+            padding: 0 30px;
+          }
         }
       }
     }
@@ -664,6 +663,12 @@ a{
 @media(min-width: @screen-lg-desktop){
   .t3-wrapper{
     width: 1060px;
+    .t3-header{
+      .container{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
     .inner{
       width: 1000px;
     }
