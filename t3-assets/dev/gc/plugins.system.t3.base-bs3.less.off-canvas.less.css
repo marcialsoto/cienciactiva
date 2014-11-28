@@ -120,6 +120,7 @@ html[dir="ltr"] .off-canvas-right.t3-off-canvas {
   width: 100%;
   padding: 0;
   border: 0;
+  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }

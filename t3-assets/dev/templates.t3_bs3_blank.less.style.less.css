@@ -511,6 +511,9 @@ a {
   color: #999999;
   font-weight: normal;
 }
+.t3-sidebar.convocatorias .thumb {
+  text-align: right;
+}
 .t3-sidebar .t3-module .module-inner {
   border: 1px solid #999999;
 }

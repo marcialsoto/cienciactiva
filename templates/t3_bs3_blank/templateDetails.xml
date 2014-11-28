@@ -64,6 +64,8 @@
 		<position>sidebar-2</position>
 		<position>sidebar-gc</position>
 		<position>sidebar-main</position>
+		<position>content-convocatorias</position>
+		<position>banner-main</position>
 		<position>mast-col</position>
 		<position>footer</position>
 		<position>slider-main</position>
