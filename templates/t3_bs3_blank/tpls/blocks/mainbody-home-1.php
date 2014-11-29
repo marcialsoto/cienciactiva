@@ -18,6 +18,7 @@ defined('_JEXEC') or die;
 					<jdoc:include type="modules" name="<?php $this->_p('slider-main') ?>" style="raw" />
 					<?php if ($this->countModules('content-convocatorias') || $this->countModules('banner-main')) : ?>
 						<div class="row">
+							<?php if ($this->checkSpotlight('feed', 'content-convocatorias')) : ?>
 							<div class="col-sm-8 convocatorias t3-sidebar">
 								<div class="t3-module">
 									<div class="module-inner">
@@ -34,21 +35,22 @@ defined('_JEXEC') or die;
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-4 banner t3-sidebar">
-
-								<?php $this->spotlight('banner', 'banner-main') ?>
-							</div>
+						<?php endif ?>
+							<?php if ($this->checkSpotlight('banner', 'banner-main')) : ?>
+								<div class="col-sm-4 banner t3-sidebar">
+									<?php $this->spotlight('banner', 'banner-main') ?>
+								</div>
+							<?php endif ?>
 						</div>
 					<?php endif ?>
 				</div>
 				<div class="col-sm-4 noticias t3-sidebar">
-					<div class="t3-module">
-						<div class="module-inner">
-							<h3 class="module-title">Noticias</h3>
-							<jdoc:include type="modules" name="<?php $this->_p('sidebar-main') ?>" style="raw" />
-						</div>
-
-				</div>
+					<?php if ($this->checkSpotlight('feed', 'sidebar-main')) : ?>
+						<?php $this->spotlight('feed', 'sidebar-main') ?>
+					<?php endif ?>
+					<?php if ($this->checkSpotlight('feed', 'sidebar-video')) : ?>
+						<?php $this->spotlight('feed', 'sidebar-video') ?>
+					<?php endif ?>
 				</div>
 			</div>
 		</div>

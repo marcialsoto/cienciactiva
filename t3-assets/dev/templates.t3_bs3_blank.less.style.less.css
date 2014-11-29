@@ -634,6 +634,9 @@ a {
   .head-search .search {
     float: none;
   }
+  .t3-module {
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc {
