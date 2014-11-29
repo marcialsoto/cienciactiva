@@ -13,6 +13,7 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 <div class="ja-sidenews-list clearfix">
+	<ul class="media-list">
 	<?php foreach( $list as $item ) :
 		$item->date = null;
 		if( $showdate) {
@@ -24,26 +25,34 @@ defined('_JEXEC') or die('Restricted access');
 		}else{
 			$item->text = $item->introtext;
 		}
-		
+
 
 	?>
 		<div class="ja-slidenews-item">
+			<li class="media">
+			<a class="media-left" href="<?php echo  $item->link; ?>">
+				<?php if( $showimage ):  ?>
+						<?php echo $helper->renderImage ($item, $params, $descMaxChars, $iwidth, $iheight ); ?>
+				<?php endif; ?>
+			</a>
+			<div class="media-body">
+				<h4 class="media-heading"><a href="<?php echo  $item->link; ?>"><?php echo  $helper->trimString( $item->title, $titleMaxChars );?></a></h4>
+				<?php if (isset($item->date)) : ?>
+					<p><span class="ja-createdate"><?php echo JHTML::_('date', $item->date, JText::_('DATE_FORMAT_LC4')); ?> - </span></p>
+				<?php endif; ?>
+				<?php if ($descMaxChars!=0) : ?>
+				<?php echo $helper->trimString( strip_tags($item->introtext), $descMaxChars); ?>
+				<?php endif;?>
+			</div>
 
-			<a class="ja-title" href="<?php echo  $item->link; ?>"><?php echo  $helper->trimString( $item->title, $titleMaxChars );?></a>
 
-		  <?php if( $showimage ):  ?>
-  		  	<?php echo $helper->renderImage ($item, $params, $descMaxChars, $iwidth, $iheight ); ?>
-		  <?php endif; ?>
-		  <?php if (isset($item->date)) : ?>
-				<span class="ja-createdate"><?php echo JHTML::_('date', $item->date, JText::_('DATE_FORMAT_LC4')); ?> - </span>
-			<?php endif; ?>
-		  <?php if ($descMaxChars!=0) : ?>	
-			<?php echo $helper->trimString( strip_tags($item->introtext), $descMaxChars); ?>
-		  <?php endif;?>
+
+
 		  <?php if( $showMoredetail ) : ?>
 		  <a class="readon" href="<?php echo  $item->link; ?>"> <?php echo JTEXT::_("MORE_DETAIL"); ?></a>
 		  <?php endif;?>
-
+		</li>
 		</div>
   <?php endforeach; ?>
+	</ul>
 </div>

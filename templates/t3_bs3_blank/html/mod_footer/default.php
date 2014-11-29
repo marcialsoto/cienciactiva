@@ -13,11 +13,11 @@ defined('_JEXEC') or die;
 <div class="module">
 <div class="row-fluid">
 	<div class="col-sm-3">
-		<img class="img-responsive" src="/cienciactiva/images/logos/logo-footer.png" alt="Cienciactiva">
+		<img width="190" height="32" class="" src="/cienciactiva/images/logos/logo-footer.png" alt="Cienciactiva">
 	</div>
 	<div class="col-sm-3 col-sm-offset-6">
 		<a href="http://www.peru.gob.pe" target="_blank">
-			<img class="img-responsive pull-right" src="/cienciactiva/images/logos/logo-peru.png" alt="Cienciactiva">
+			<img width="85" height="32" class="pull-right" src="/cienciactiva/images/logos/logo-peru.png" alt="Cienciactiva">
 		</a>
 	</div>
 </div>
