@@ -105,7 +105,7 @@ a{
                 color: @white;
                 text-transform: uppercase;
                 //letter-spacing: -1px;
-                font-family: @roboto-bold;
+                .roboto(bold);
                 font-size: 12px;
                 margin-bottom: 30px;
                 &:after{
@@ -403,6 +403,8 @@ a{
 .t3-content {
   padding-top: @line-height-computed ;
   padding-bottom: @line-height-computed;
+
+
 }
 
 // Sidebars
@@ -562,7 +564,7 @@ a{
         .btn{
           background-color: transparent;
           color: @green;
-          font-family: @roboto-bold;
+          .roboto(bold);
           font-size: 11px;
           text-transform: uppercase;
           .border-radius(0);
@@ -606,28 +608,6 @@ a{
 // Sidebar
 // --------
 .t3-sidebar{
-  &.noticias{
-    padding-top: 30px;
-
-    .ja-sidenews-list{
-      .ja-slidenews-item{
-        a{
-          font-family: @roboto-bold;
-          font-size: 14px;
-          color: @gray-dark;
-          text-decoration: none;
-          font-weight: normal;
-          &:hover{
-            color: @gray-darker;
-          }
-        }
-        .ja-createdate{
-          color: @gray-light;
-          font-weight: normal;
-        }
-      }
-    }
-  }
 
   &.convocatorias{
     .convocatoria{
@@ -637,6 +617,11 @@ a{
       text-align: right;
     }
   }
+
+  &.noticias{
+    margin-top: 10px;
+  }
+
   .t3-module{
     .module-inner{
     border: 1px solid @gray-light;
@@ -651,37 +636,107 @@ a{
     }
       .ja-sidenews-list{
         padding: 3px 15px 0;
+
+        .ja-slidenews-item{
+          a{
+            .roboto(bold);
+            font-size: 14px;
+            color: @gray-dark;
+          }
+        }
       }
-    }
-    &.modulemenu-gc{
-      ul{
-        &.nav{
-          li{
-            &+li{
-              margin-top: 0;
+
+    ul{
+      &.nav{
+        li{
+          &+li{
+            margin-top: 0;
+          }
+
+          a{
+            white-space: inherit;
+            .border-radius(0);
+            color: @gray-light;
+            &:hover{
+              color: @gray;
             }
+          }
+
+          &.active{
+
             a{
-              .border-radius(0);
-              color: @gray-light;
+              cursor: default;
+              color: @gray;
               &:hover{
-                background-color: lighten(@cyan, 15%);
-                color: @gray;
+                background-color: transparent !important;
               }
             }
-            &.active{
-              a{
-                background-color: @cyan;
-                color: @gray;
+
+            ul.dropdown-menu{
+              display: block;
+              position: relative;
+              padding: 0;
+              margin: 0;
+              border: 0 none;
+              .border-radius(0);
+              .box-shadow();
+              left: 0;
+              width: 100%;
+              li{
+                a{
+                  .border-radius(0);
+                  white-space: inherit;
+                  cursor: pointer;
+                }
+                &.active{
+                  a{
+                    background-color: @gray-lighter;
+                  }
+                }
               }
             }
           }
+
+        ul.dropdown-menu{
+          li{
+            &.dropdown-submenu{
+              ul.dropdown-menu{display: none;}
+            }
+            &.open, &.active{
+              ul.dropdown-menu{display: block;}
+            }
+          }
         }
+
+        }
+      }
+    }
+
+    }
+    &.modulemenu-gc{
+      img{
+        min-width: 100%;
+      }
+      &:before{
+        content:url('../images/banners/menu-gc-head.jpg');
+
       }
     }
   }
 }
 
-
+// Utilitarios
+// --------
+/*a.nuevo{
+  &:after{
+    content: '\00a0\00a0\00a0Nueva';
+    text-transform: uppercase;
+    color: @green;
+    font-size: 10px;
+    .roboto(bold);
+  }
+}
+*/
 // Foot Nav
 // --------
 .t3-footnav {
@@ -822,6 +877,23 @@ a{
     &.t3-mainbody{
       width: 970px;
       padding-top: 10px;
+      .t3-content{
+        .category-listcontent-gc{
+          h2{
+            .roboto(light);
+            margin: -10px 0 0 0;
+            font-size: 26px;
+            padding: 15px;
+            border: 1px solid @gray-dark;
+            &:before{
+              position: absolute;
+              left: -16px;
+              top: 10px;
+              content: url(../images/bg/gc-section-bg.png);
+            }
+          }
+        }
+      }
     }
   }
   .navbar-header{

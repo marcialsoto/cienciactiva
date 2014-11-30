@@ -5,3 +5,37 @@
 .t3-mainnav {
   border-bottom: none;
 }
+.category-listcontent-gc h2 {
+  background-color: #75cccb;
+}
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li a:hover {
+  background-color: #d2eeee;
+}
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li.active {
+  background-color: #75cccb;
+}
+.t3-content .item-page article header {
+  position: relative;
+  margin: -10px 0 20px 0;
+  background-color: #75cccb;
+  border: 1px solid #333333;
+}
+.t3-content .item-page article header h1 {
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 26px;
+  margin: 0;
+  padding: 15px;
+}
+.t3-content .item-page article header h1 a {
+  color: #333333;
+}
+.t3-content .item-page article header:before {
+  position: absolute;
+  left: -32px;
+  top: -1px;
+  content: url(../../../templates/t3_bs3_blank/images/bg/gc-section-bg.png);
+}

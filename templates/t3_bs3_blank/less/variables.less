@@ -85,7 +85,6 @@
 // Typography
 // -------------------------
 @roboto-regular:  "robotoregular", Helvetica, Arial, sans-serif;
-@roboto-bold:  "robotobold", Helvetica, Arial, sans-serif;
 @font-family-sans-serif:  @roboto-regular;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -837,6 +836,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.roboto(@family: regular){
+
+
+  font-family: "roboto@{family}", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .opacity(@opacity: 1) {
 	@ieOpacity: @opacity * 100;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieOpacity})";
@@ -844,7 +853,7 @@
 	opacity: @opacity;
 }
 
-.box-shadow (@string) {
+.box-shadow (@string:none) {
 	-webkit-box-shadow: @string;
 	-moz-box-shadow:    @string;
 	box-shadow:         @string;
