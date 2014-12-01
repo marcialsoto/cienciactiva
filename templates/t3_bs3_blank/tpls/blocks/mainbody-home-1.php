@@ -45,11 +45,11 @@ defined('_JEXEC') or die;
 					<?php endif ?>
 				</div>
 				<div class="col-sm-4 noticias t3-sidebar">
-					<?php if ($this->checkSpotlight('feed', 'sidebar-main')) : ?>
-						<?php $this->spotlight('feed', 'sidebar-main') ?>
+					<?php if ($this->checkSpotlight('feed1', 'sidebar-main')) : ?>
+						<?php $this->spotlight('feed1', 'sidebar-main') ?>
 					<?php endif ?>
-					<?php if ($this->checkSpotlight('feed', 'sidebar-video')) : ?>
-						<?php $this->spotlight('feed', 'sidebar-video') ?>
+					<?php if ($this->checkSpotlight('feed2', 'sidebar-video')) : ?>
+						<?php $this->spotlight('feed2', 'sidebar-video') ?>
 					<?php endif ?>
 				</div>
 			</div>
