@@ -859,6 +859,11 @@
 	box-shadow:         @string;
 }
 
+.bc(@color: transparent){
+  background-color: @color;
+}
+//.border(@width: 1px, @type: solid, @color: @gray-light)
+
 .table{}
 
 .table-hover{}
@@ -872,4 +877,15 @@
   .table-hover;
   .table-stripped;
   .table-condensed;
+}
+
+.btn{}
+.btn-default{}
+.btn-main-o{
+  .btn;
+  .btn-default;
+  .border-radius(0);
+  .bc;
+//  .border(1px, solid, @white);
+  color: @white;
 }

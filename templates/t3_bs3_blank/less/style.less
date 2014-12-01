@@ -218,6 +218,7 @@ a{
             }
           }
           a{
+            text-transform: uppercase;
             color: @gray-light;
             padding: 0px 25px;
             .border-radius(0);
@@ -748,14 +749,25 @@ a{
 
 // Utilitarios
 // --------
-a.nuevo{
+a.nueva, &.cerrada{
   &:before{
     display: block;
-    content: '(Nueva)\00a0';
     text-transform: uppercase;
-    color: @green;
     font-size: 9px;
     .roboto(bold);
+  }
+}
+
+a.nueva{
+  &:before{
+    content: '(Nueva)\00a0';
+    color: @green;
+  }
+}
+a.cerrada{
+  &:before{
+    content: '(Cerrada)\00a0';
+    color: @red;
   }
 }
 
@@ -901,7 +913,7 @@ a.nuevo{
       width: 970px;
       padding-top: 10px;
       .t3-content{
-        .category-listcontent-gc{
+        .category-list{
           h2{
             .roboto(light);
             margin: -10px 0 0 0;
@@ -912,7 +924,6 @@ a.nuevo{
               position: absolute;
               left: -16px;
               top: 10px;
-              content: url(../images/bg/gc-section-bg.png);
             }
           }
         }

@@ -28,7 +28,7 @@ defined('_JEXEC') or die;
 												<jdoc:include type="modules" name="<?php $this->_p('content-convocatorias') ?>" style="raw" />
 											</div>
 											<div class="col-sm-6 col-xs-6 thumb">
-												<img src="images/banners/convocatorias.jpg" />
+												<jdoc:include type="modules" name="<?php $this->_p('content-convocatorias-img') ?>" style="raw" />
 											</div>
 										</div>
 

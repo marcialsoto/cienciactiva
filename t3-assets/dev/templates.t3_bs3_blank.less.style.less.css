@@ -199,6 +199,7 @@ a {
   background-color: transparent;
 }
 .t3-header .headnav ul.nav li a {
+  text-transform: uppercase;
   color: #999999;
   padding: 0px 25px;
   -webkit-border-radius: 0;
@@ -617,17 +618,24 @@ a {
 .t3-sidebar .t3-module.modulemenu-gc:before {
   content: url('../../templates/t3_bs3_blank/images/banners/menu-gc-head.jpg');
 }
-a.nuevo:before {
+a.nueva:before,
+.cerrada:before {
   display: block;
-  content: '(Nueva)\00a0';
   text-transform: uppercase;
-  color: #33b668;
   font-size: 9px;
   font-family: "robotobold", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+a.nueva:before {
+  content: '(Nueva)\00a0';
+  color: #33b668;
+}
+a.cerrada:before {
+  content: '(Cerrada)\00a0';
+  color: #fb2d08;
 }
 .t3-footnav {
   padding: 20px 0 0;
@@ -756,7 +764,7 @@ a.nuevo:before {
     width: 970px;
     padding-top: 10px;
   }
-  .container.t3-mainbody .t3-content .category-listcontent-gc h2 {
+  .container.t3-mainbody .t3-content .category-list h2 {
     font-family: "robotolight", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -767,11 +775,10 @@ a.nuevo:before {
     padding: 15px;
     border: 1px solid #333333;
   }
-  .container.t3-mainbody .t3-content .category-listcontent-gc h2:before {
+  .container.t3-mainbody .t3-content .category-list h2:before {
     position: absolute;
     left: -16px;
     top: 10px;
-    content: url(../../templates/t3_bs3_blank/images/bg/gc-section-bg.png);
   }
   .navbar-header {
     display: none;

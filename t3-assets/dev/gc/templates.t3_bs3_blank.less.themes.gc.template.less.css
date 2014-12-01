@@ -5,8 +5,14 @@
 .t3-mainnav {
   border-bottom: none;
 }
-.category-listcontent-gc h2 {
+.category-list h2 {
   background-color: #75cccb;
+}
+.category-list h2:before {
+  position: absolute;
+  left: -16px;
+  top: 10px;
+  content: url(../../../templates/t3_bs3_blank/images/bg/gc-section-bg.png);
 }
 .t3-sidebar .t3-module .module-inner .module-ct ul.nav li a:hover {
   background-color: #d2eeee;

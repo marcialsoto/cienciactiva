@@ -66,6 +66,7 @@
 		<position>sidebar-main</position>
 		<position>sidebar-video</position>
 		<position>content-convocatorias</position>
+		<position>content-convocatorias-img</position>
 		<position>banner-main</position>
 		<position>mast-col</position>
 		<position>footer</position>

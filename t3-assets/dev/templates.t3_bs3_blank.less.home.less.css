@@ -89,3 +89,21 @@
   border-radius: 0;
   margin-bottom: 0;
 }
+.home .btn-img-wrap {
+  position: relative;
+}
+.home .btn-img-wrap .btn-img {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+}
+.home .btn-img-wrap .btn-img a {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.home .btn-img-wrap:hover .btn-img a {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
