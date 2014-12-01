@@ -668,7 +668,7 @@ a{
               cursor: default;
               color: @gray;
               &:hover{
-                background-color: transparent !important;
+                //background-color: transparent !important;
               }
             }
 
@@ -698,12 +698,33 @@ a{
           }
 
         ul.dropdown-menu{
+          position: relative;
+          padding: 0;
+          margin: 0;
+          border: 0 none;
+          .border-radius(0);
+          .box-shadow();
+          left: 0;
+          width: 100%;
           li{
             &.dropdown-submenu{
-              ul.dropdown-menu{display: none;}
+              ul.dropdown-menu{display: none;
+              li{
+                  a{
+
+                  }
+                }
+              }
             }
+
             &.open, &.active{
-              ul.dropdown-menu{display: block;}
+              ul.dropdown-menu{display: block;
+              li{
+                a{
+                  background-color: @gray-lighter;
+                }
+              }
+              }
             }
           }
         }
@@ -727,16 +748,18 @@ a{
 
 // Utilitarios
 // --------
-/*a.nuevo{
-  &:after{
-    content: '\00a0\00a0\00a0Nueva';
+a.nuevo{
+  &:before{
+    display: block;
+    content: '(Nueva)\00a0';
     text-transform: uppercase;
     color: @green;
-    font-size: 10px;
+    font-size: 9px;
     .roboto(bold);
   }
 }
-*/
+
+
 // Foot Nav
 // --------
 .t3-footnav {

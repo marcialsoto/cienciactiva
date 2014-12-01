@@ -65,14 +65,45 @@
               }
             }
             &.active{
-              background-color: @cyan
+              a{
+                background-color: @cyan
+              }
+            }
+
+            ul.dropdown-menu{
+              li{
+                &.active{
+                  a{
+                    background-color: lighten(@cyan, 15%);
+                  }
+                }
+                &.dropdown-submenu{
+                  a{
+                    background-color: lighten(@cyan, 15%);
+                  }
+                  ul.dropdown-menu{
+                    display: none;
+                  }
+                }
+
+                &.open, &.active{
+                  ul.dropdown-menu{
+                    display: block;
+                    li{
+                        a{
+                          background-color: lighten(@cyan, 25%);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
       }
     }
   }
-}
 
 //
 // CONTENT
@@ -99,6 +130,41 @@
           left: -32px;
           top: -1px;
           content: url(../../../images/bg/gc-section-bg.png);
+        }
+      }
+      .article-content{
+        strong{
+          color: darken(@cyan, 15%);
+        }
+      }
+    }
+  }
+}
+
+//
+// CONTENT
+// ---------------------------------------------------------
+
+table{
+  border-color: darken(@cyan, 15%);
+  &.table{
+    tr{
+      th{
+        background-color:lighten(@cyan, 15%);
+        color: darken(@cyan, 50%);
+      }
+      th, td{
+        border-top: 1px solid darken(@cyan, 15%);
+      }
+
+      &:hover{
+        td{
+          background-color: lighten(@cyan, 25%);
+          color: @gray-dark;
+        }
+        th{
+          background-color:lighten(@cyan, 15%);
+          color: darken(@cyan, 50%);
         }
       }
     }

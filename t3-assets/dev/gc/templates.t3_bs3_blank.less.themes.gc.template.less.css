@@ -11,8 +11,25 @@
 .t3-sidebar .t3-module .module-inner .module-ct ul.nav li a:hover {
   background-color: #d2eeee;
 }
-.t3-sidebar .t3-module .module-inner .module-ct ul.nav li.active {
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li.active a {
   background-color: #75cccb;
+}
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.active a {
+  background-color: #ade1e0;
+}
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.dropdown-submenu a {
+  background-color: #ade1e0;
+}
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.dropdown-submenu ul.dropdown-menu {
+  display: none;
+}
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.open ul.dropdown-menu,
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.active ul.dropdown-menu {
+  display: block;
+}
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.open ul.dropdown-menu li a,
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.active ul.dropdown-menu li a {
+  background-color: #d2eeee;
 }
 .t3-content .item-page article header {
   position: relative;
@@ -38,4 +55,26 @@
   left: -32px;
   top: -1px;
   content: url(../../../templates/t3_bs3_blank/images/bg/gc-section-bg.png);
+}
+.t3-content .item-page article .article-content strong {
+  color: #42b3b1;
+}
+table {
+  border-color: #42b3b1;
+}
+table.table tr th {
+  background-color: #ade1e0;
+  color: #123030;
+}
+table.table tr th,
+table.table tr td {
+  border-top: 1px solid #42b3b1;
+}
+table.table tr:hover td {
+  background-color: #d2eeee;
+  color: #333333;
+}
+table.table tr:hover th {
+  background-color: #ade1e0;
+  color: #123030;
 }
