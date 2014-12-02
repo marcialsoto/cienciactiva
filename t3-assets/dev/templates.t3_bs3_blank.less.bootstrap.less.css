@@ -151,6 +151,42 @@ fieldset[disabled] .btn-main-o.active {
   color: #ffffff;
   background-color: #333333;
 }
+.pdf-icon {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.pdf-icon:before {
+  content: "\f1c1";
+}
+.doc-icon {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.doc-icon:before {
+  content: "\f1c2";
+}
+.xls-icon {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.xls-icon:before {
+  content: "\f1c3";
+}
 
 html {
   font-family: sans-serif;

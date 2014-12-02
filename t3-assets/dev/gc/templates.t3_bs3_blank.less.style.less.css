@@ -533,6 +533,10 @@ a {
   font-size: 14px;
   color: #333333;
 }
+.t3-sidebar .t3-module .module-inner ul.nav li {
+  float: left;
+  width: 100%;
+}
 .t3-sidebar .t3-module .module-inner ul.nav li + li {
   margin-top: 0;
 }
@@ -571,6 +575,9 @@ a {
   left: 0;
   width: 100%;
 }
+.t3-sidebar .t3-module .module-inner ul.nav li.active ul.dropdown-menu li {
+  float: none;
+}
 .t3-sidebar .t3-module .module-inner ul.nav li.active ul.dropdown-menu li a {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -604,6 +611,16 @@ a {
 .t3-sidebar .t3-module .module-inner ul.nav li ul.dropdown-menu li.dropdown-submenu ul.dropdown-menu {
   display: none;
 }
+.t3-sidebar .t3-module .module-inner ul.nav li ul.dropdown-menu li.dropdown-submenu ul.dropdown-menu li {
+  float: none;
+}
+.t3-sidebar .t3-module .module-inner ul.nav li ul.dropdown-menu li.dropdown-submenu ul.dropdown-menu li.current a {
+  font-family: "robotobold", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .t3-sidebar .t3-module .module-inner ul.nav li ul.dropdown-menu li.open ul.dropdown-menu,
 .t3-sidebar .t3-module .module-inner ul.nav li ul.dropdown-menu li.active ul.dropdown-menu {
   display: block;
@@ -611,6 +628,11 @@ a {
 .t3-sidebar .t3-module .module-inner ul.nav li ul.dropdown-menu li.open ul.dropdown-menu li a,
 .t3-sidebar .t3-module .module-inner ul.nav li ul.dropdown-menu li.active ul.dropdown-menu li a {
   background-color: #eeeeee;
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .t3-sidebar .t3-module.modulemenu-gc img {
   min-width: 100%;
@@ -636,6 +658,42 @@ a.nueva:before {
 a.cerrada:before {
   content: '(Cerrada)\00a0';
   color: #fb2d08;
+}
+.pdf {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.pdf:before {
+  content: "\f1c1";
+}
+.doc {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.doc:before {
+  content: "\f1c2";
+}
+.xls {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.xls:before {
+  content: "\f1c3";
 }
 .t3-footnav {
   padding: 20px 0 0;

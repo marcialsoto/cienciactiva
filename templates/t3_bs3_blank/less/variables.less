@@ -837,8 +837,6 @@
 }
 
 .roboto(@family: regular){
-
-
   font-family: "roboto@{family}", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -888,4 +886,27 @@
   .bc;
 //  .border(1px, solid, @white);
   color: @white;
+}
+.fa{}
+.fa-file-pdf-o{}
+
+.pdf-icon{
+  .font-awesome;
+  &:before{
+    content: "\f1c1";
+  }
+}
+
+.doc-icon{
+  .font-awesome;
+  &:before{
+    content: "\f1c2";
+  }
+}
+
+.xls-icon{
+  .font-awesome;
+  &:before{
+    content: "\f1c3";
+  }
 }

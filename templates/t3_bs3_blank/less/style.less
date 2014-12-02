@@ -650,6 +650,8 @@ a{
     ul{
       &.nav{
         li{
+          float: left;
+          width: 100%;
           &+li{
             margin-top: 0;
           }
@@ -684,6 +686,7 @@ a{
               left: 0;
               width: 100%;
               li{
+                float: none;
                 a{
                   .border-radius(0);
                   white-space: inherit;
@@ -709,10 +712,22 @@ a{
           width: 100%;
           li{
             &.dropdown-submenu{
+
+              &.current{
+
+              }
+
               ul.dropdown-menu{display: none;
               li{
+                float: none;
                   a{
 
+                  }
+
+                  &.current{
+                    a{
+                      .roboto(bold);
+                    }
                   }
                 }
               }
@@ -723,6 +738,7 @@ a{
               li{
                 a{
                   background-color: @gray-lighter;
+                  .roboto;
                 }
               }
               }
@@ -769,6 +785,18 @@ a.cerrada{
     content: '(Cerrada)\00a0';
     color: @red;
   }
+}
+
+.pdf{
+  .pdf-icon;
+}
+
+.doc{
+  .doc-icon;
+}
+
+.xls{
+  .xls-icon;
 }
 
 
