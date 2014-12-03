@@ -54,6 +54,9 @@ h4 {
 .t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.active ul.dropdown-menu li a {
   background-color: #d2eeee;
 }
+.t3-sidebar .t3-module:before {
+  content: url('../../../templates/t3_bs3_blank/images/banners/menu-gc-head.jpg');
+}
 .t3-content .item-page article header {
   position: relative;
   margin: -10px 0 20px 0;

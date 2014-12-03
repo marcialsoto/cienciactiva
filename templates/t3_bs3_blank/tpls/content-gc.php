@@ -47,9 +47,6 @@ defined('_JEXEC') or die;
   <?php $this->loadBlock('footer') ?>
   </div>
 </div>
-
-
-
 </body>
 
 </html>

@@ -634,12 +634,6 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.t3-sidebar .t3-module.modulemenu-gc img {
-  min-width: 100%;
-}
-.t3-sidebar .t3-module.modulemenu-gc:before {
-  content: url('../../../templates/t3_bs3_blank/images/banners/menu-gc-head.jpg');
-}
 a.nueva:before,
 .cerrada:before {
   display: block;
