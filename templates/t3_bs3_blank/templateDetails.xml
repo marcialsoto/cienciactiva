@@ -65,6 +65,11 @@
 		<position>sidebar-gc</position>
 		<position>sidebar-ci</position>
 		<position>sidebar-ia</position>
+		<position>sidebar-fc</position>
+		<position>sidebar-et</position>
+		<position>sidebar-e</position>
+		<position>sidebar-p</position>
+		<position>sidebar-m</position>
 		<position>sidebar-main</position>
 		<position>sidebar-video</position>
 		<position>content-convocatorias</position>
