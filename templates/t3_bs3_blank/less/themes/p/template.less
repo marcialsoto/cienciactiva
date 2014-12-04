@@ -25,7 +25,7 @@
     .jumbotron {
       //jumbotron btn
       .btn {
-        border-color: #fff;
+        border-color: @white;
       }
     }
   }
@@ -45,12 +45,12 @@
 // ---------------------------------------------------------
 .category-list{
   h2{
-    background-color: @red;
+    background-color: @cyan;
       &:before{
         position: absolute;
         left: -16px;
         top: 10px;
-        content: url(../../../images/bg/section-bg-ci.png) !important;
+        content: url(../../../images/bg/section-bg-p.png) !important;
       }
     }
   }
@@ -59,7 +59,7 @@
 // UTIL
 // ---------------------------------------------------------
 h1, h2, h3, h4, h5, h6, strong{
-  color:  darken(@red, 15%);
+  color:  darken(@cyan, 15%);
 }
 
 h4{
@@ -79,25 +79,31 @@ h4{
           li{
             a{
               &:hover{
-                background-color: lighten(@red, 25%);
+                background-color: lighten(@cyan, 25%);
               }
             }
             &.active{
               a{
-                background-color: @red
+                background-color: @cyan
               }
             }
 
             ul.dropdown-menu{
               li{
+                a{
+                  background-color: lighten(@cyan, 15%);
+                  &:hover{
+                    background-color: lighten(@cyan, 25%);
+                  }
+                }
                 &.active{
                   a{
-                    background-color: lighten(@red, 15%);
+                    background-color: lighten(@cyan, 25%);
                   }
                 }
                 &.dropdown-submenu{
                   a{
-                    background-color: lighten(@red, 15%);
+                    background-color: lighten(@cyan, 15%);
                   }
                   ul.dropdown-menu{
                     display: none;
@@ -109,7 +115,7 @@ h4{
                     display: block;
                     li{
                         a{
-                          background-color: lighten(@red, 25%);
+                          background-color: lighten(@cyan, 25%);
                         }
                       }
                     }
@@ -122,7 +128,7 @@ h4{
       }
 
       &:before {
-        content: url('../../../../../templates/t3_bs3_blank/images/banners/menu-ci-head.jpg');
+        content: url('../../../../../templates/t3_bs3_blank/images/banners/menu-p-head.jpg');
       }
     }
   }
@@ -136,7 +142,7 @@ h4{
       header{
         position: relative;
         margin: -10px 0 20px 0;
-        background-color: @red;
+        background-color: @cyan;
         border: 1px solid @gray-dark;
         h1{
           .roboto(light);
@@ -151,12 +157,12 @@ h4{
           position: absolute;
           left: -32px;
           top: -1px;
-          content: url(../../../images/bg/section-bg-ci.png);
+          content: url(../../../images/bg/section-bg-p.png);
         }
       }
       .article-content{
         strong{
-          color: darken(@red, 15%);
+          color: darken(@cyan, 15%);
         }
       }
     }
@@ -168,25 +174,25 @@ h4{
 // ---------------------------------------------------------
 
 table{
-  border-color: darken(@red, 15%);
+  border-color: darken(@cyan, 15%);
   &.table{
     tr{
       th{
-        background-color:lighten(@red, 15%);
-        color: darken(@red, 50%);
+        background-color:lighten(@cyan, 15%);
+        color: darken(@cyan, 50%);
       }
       th, td{
-        border-top: 1px solid darken(@red, 15%);
+        border-top: 1px solid darken(@cyan, 15%);
       }
 
       &:hover{
         td{
-          background-color: lighten(@red, 25%);
+          background-color: lighten(@cyan, 25%);
           color: @gray-dark;
         }
         th{
-          background-color:lighten(@red, 15%);
-          color: darken(@red, 50%);
+          background-color:lighten(@cyan, 15%);
+          color: darken(@cyan, 50%);
         }
       }
     }
