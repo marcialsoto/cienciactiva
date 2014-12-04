@@ -25,7 +25,7 @@
     .jumbotron {
       //jumbotron btn
       .btn {
-        border-color: #fff;
+        border-color: @white;
       }
     }
   }
@@ -50,7 +50,7 @@
         position: absolute;
         left: -16px;
         top: 10px;
-        content: url(../../../images/bg/section-bg-ci.png) !important;
+        content: url(../../../images/bg/section-bg-e.png) !important;
       }
     }
   }
@@ -90,9 +90,15 @@ h4{
 
             ul.dropdown-menu{
               li{
+                a{
+                  background-color: lighten(@red, 15%);
+                  &:hover{
+                    background-color: lighten(@red, 25%);
+                  }
+                }
                 &.active{
                   a{
-                    background-color: lighten(@red, 15%);
+                    background-color: lighten(@red, 25%);
                   }
                 }
                 &.dropdown-submenu{
@@ -122,7 +128,7 @@ h4{
       }
 
       &:before {
-        content: url('../../../../../templates/t3_bs3_blank/images/banners/menu-ci-head.jpg');
+        content: url('../../../../../templates/t3_bs3_blank/images/banners/menu-e-head.jpg');
       }
     }
   }
@@ -151,7 +157,7 @@ h4{
           position: absolute;
           left: -32px;
           top: -1px;
-          content: url(../../../images/bg/section-bg-ci.png);
+          content: url(../../../images/bg/section-bg-e.png);
         }
       }
       .article-content{
