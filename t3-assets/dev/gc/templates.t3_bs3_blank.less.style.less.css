@@ -437,7 +437,7 @@ a:hover {
 }
 .main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc {
   left: 30px;
-  top: 55%;
+  top: 48%;
   padding: 15px;
   bottom: 0;
   border-top: 1px solid #999999;
@@ -823,11 +823,12 @@ a.cerrada:before {
     padding-top: 10px;
   }
   .container.t3-mainbody .t3-content .category-list h2 {
-    font-family: "robotolight", Helvetica, Arial, sans-serif;
+    font-family: "robotoregular", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #333333;
     margin: -10px 0 0 0;
     font-size: 26px;
     padding: 15px;
