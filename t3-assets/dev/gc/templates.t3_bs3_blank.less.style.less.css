@@ -550,11 +550,32 @@ a:hover {
 #t3-mainnav .t3-navbar .t3-megamenu ul.nav li.active a.oi {
   background-position: -1000px -250px;
 }
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.gc .mega-dropdown-menu,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.et .mega-dropdown-menu,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.p .mega-dropdown-menu,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.oi .mega-dropdown-menu {
+  background-color: #ade1e0;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.gc .mega-dropdown-menu ul.level1 li a,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.et .mega-dropdown-menu ul.level1 li a,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.p .mega-dropdown-menu ul.level1 li a,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.oi .mega-dropdown-menu ul.level1 li a {
+  border-top: 1px solid #88d3d2;
+  color: #266867;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.gc .mega-dropdown-menu ul.level1 li a:hover,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.et .mega-dropdown-menu ul.level1 li a:hover,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.p .mega-dropdown-menu ul.level1 li a:hover,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.oi .mega-dropdown-menu ul.level1 li a:hover {
+  background-color: transparent;
+  color: #0b1e1d;
+}
 #t3-mainnav .t3-navbar .t3-megamenu ul.nav li .nav-child ul.level1 li {
   width: 100%;
 }
 #t3-mainnav .t3-navbar .t3-megamenu ul.nav li .nav-child ul.level1 li a {
   text-align: left;
+  font-size: 14px;
 }
 .main {
   padding-top: 30px;
@@ -946,7 +967,7 @@ a.cerrada:before {
     width: 1100px;
   }
   .container {
-    width: 1000px;
+    width: 1100px;
   }
   .container.t3-mainbody {
     width: 970px;

@@ -644,6 +644,81 @@ a{
                 }
               }
             }
+
+            //Mega dropdown
+
+            &.gc, &.et, &.p, &.oi{
+              .mega-dropdown-menu{
+                background-color: lighten(@cyan, 15%);
+                ul.level1{
+                  li{
+                    a{
+                      border-top: 1px solid lighten(@cyan, 5%);
+                      color: darken(@cyan, 35%);
+                      &:hover{
+                        background-color: transparent;
+                        color: darken(@cyan, 55%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &.ci, &.e, &.m{
+              .mega-dropdown-menu{
+                background-color: lighten(@red, 15%);
+                ul.level1{
+                  li{
+                    a{
+                      border-top: 1px solid lighten(@red, 5%);
+                      color: darken(@red, 35%);
+                      &:hover{
+                        background-color: transparent;
+                        color: darken(@red, 55%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &.ia, &.ev{
+              .mega-dropdown-menu{
+                background-color: lighten(@green, 15%);
+                ul.level1{
+                  li{
+                    a{
+                      border-top: 1px solid lighten(@green, 5%);
+                      color: darken(@green, 35%);
+                      &:hover{
+                        background-color: transparent;
+                        color: darken(@green, 55%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &.fc, &.se{
+              .mega-dropdown-menu{
+                background-color: lighten(@yellow, 15%);
+                ul.level1{
+                  li{
+                    a{
+                      border-top: 1px solid lighten(@yellow, 5%);
+                      color: darken(@yellow, 35%);
+                      &:hover{
+                        background-color: transparent;
+                        color: darken(@yellow, 55%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
             .nav-child{
               ul{
                 &.level1{
@@ -651,6 +726,12 @@ a{
                     width: 100%;
                     a{
                       text-align: left;
+                      font-size: 14px;
+                    }
+                    &:first-child{
+                      a{
+                        border-top: none;
+                      }
                     }
                   }
                 }
@@ -865,7 +946,7 @@ a{
 
                   &.current{
                     a{
-                      
+
                     }
                   }
                 }
@@ -928,7 +1009,9 @@ a.cerrada{
 .xls{
   .xls-icon;
 }
-
+.dropdown-menu{
+  .border-radius(0);
+}
 
 // Foot Nav
 // --------
@@ -1066,7 +1149,7 @@ a.cerrada{
     }
   }
   .container {
-    width: 1000px;
+    width: 1100px;
     &.t3-mainbody{
       width: 970px;
       padding-top: 10px;
