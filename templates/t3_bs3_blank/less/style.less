@@ -464,24 +464,123 @@ a{
         width: 100%;
         &.nav{
           li{
-            width: 12.5%;
+            width: 9.09%;
             a{
               text-align: center;
               color:@gray-dark;
               font-size: 16px;
               border-top: 2px solid @white;
 
-              &.gc, &.et, &.p{
+              &.gc, &.et, &.p, &.ci, &.e, &.ev, &.m, &.ia, &.fc, &.se, &.oi{
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                height: 125px;
+                margin: 0;
+                padding: 0;
+                background-image: url(../images/bg/main-menu.png);
+              }
+
+              &.gc{
+                background-position: 0 0;
+                &:hover{
+                  background-position: 0 -125px;
+                }
+              }
+
+              &.ci{
+                background-position: -100px 0;
+                &:hover{
+                  background-position: -100px -125px;
+                }
+              }
+
+              &.ia{
+                background-position: -200px 0;
+                &:hover{
+                  background-position: -200px -125px;
+                }
+              }
+
+              &.fc{
+                background-position: -300px 0;
+                &:hover{
+                  background-position: -300px -125px;
+                }
+              }
+
+              &.et{
+                background-position: -400px 0;
+                &:hover{
+                  background-position: -400px -125px;
+                }
+              }
+
+              &.e{
+                background-position: -500px 0;
+                &:hover{
+                  background-position: -500px -125px;
+                }
+              }
+
+              &.p{
+                background-position: -600px 0;
+                &:hover{
+                  background-position: -600px -125px;
+                }
+              }
+
+              &.m{
+                background-position: -700px 0;
+                &:hover{
+                  background-position: -700px -125px;
+                }
+              }
+
+              &.ev{
+                background-position: -800px 0;
+                &:hover{
+                  background-position: -800px -125px;
+                }
+              }
+
+              &.se{
+                background-position: -900px 0;
+                &:hover{
+                  background-position: -900px -125px;
+                }
+              }
+
+              &.oi{
+                background-position: -1000px 0;
+                &:hover{
+                  background-position: -1000px -125px;
+                }
+              }
+
+              &.gc, &.et, &.p, &.oi{
                 border-top: 2px solid @cyan;
+                &:hover{
+                  background-color: @cyan;
+                }
               }
               &.ci, &.e, &.m{
                 border-top: 2px solid @red;
+                &:hover{
+                  background-color: @red;
+                }
               }
-              &.ia{
+              &.ia, &.ev{
                 border-top: 2px solid @green;
+                &:hover{
+                  background-color: @green;
+                }
               }
-              &.fc{
+              &.fc, &.se{
                 border-top: 2px solid @yellow;
+                &:hover{
+                  background-color: @yellow;
+                }
               }
 
               img{
@@ -497,17 +596,51 @@ a{
             }
             &.active{
               a{
-                &.gc, &.et, &.p{
-                  background-color: @cyan;
+                &.gc, &.et, &.p, &.ci, &.e, &.m, &.ia, &.ev, &.se, &.oi, &.fc {
+                  background-color: @white;
                 }
-                &.ci, &.e, &.m{
-                  background-color: @red;
+                &.gc{
+                  background-position: 0 -250px;
                 }
+
+                &.ci{
+                  background-position: -100px -250px;
+                }
+
                 &.ia{
-                  background-color: @green;
+                  background-position: -200px -250px;
                 }
+
                 &.fc{
-                  background-color: @yellow;
+                  background-position: -300px -250px;
+                }
+
+                &.et{
+                  background-position: -400px -250px;
+                }
+
+                &.e{
+                  background-position: -500px -250px;
+                }
+
+                &.p{
+                  background-position: -600px -250px;
+                }
+
+                &.m{
+                  background-position: -700px -250px;
+                }
+
+                &.ev{
+                  background-position: -800px -250px;
+                }
+
+                &.se{
+                  background-position: -900px -250px;
+                }
+
+                &.oi{
+                  background-position: -1000px -250px;
                 }
               }
             }
@@ -732,7 +865,7 @@ a{
 
                   &.current{
                     a{
-                      .roboto(bold);
+                      
                     }
                   }
                 }
@@ -921,7 +1054,7 @@ a.cerrada{
 }    /* or @screen-md */
 @media(min-width: @screen-lg-desktop){
   .t3-wrapper{
-    width: 1060px;
+    width: 1160px;
     .t3-header{
       .container{
         padding-left: 0;
@@ -929,7 +1062,7 @@ a.cerrada{
       }
     }
     .inner{
-      width: 1000px;
+      width: 1100px;
     }
   }
   .container {

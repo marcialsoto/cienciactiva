@@ -25,7 +25,7 @@ strong {
 }
 h4 {
   font-size: 18px;
-  font-family: "robotobold", Helvetica, Arial, sans-serif;
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -70,7 +70,7 @@ h4 {
   border: 1px solid #333333;
 }
 .t3-content .item-page article header h1 {
-  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
