@@ -570,12 +570,60 @@ a:hover {
   background-color: transparent;
   color: #0b1e1d;
 }
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.ci .mega-dropdown-menu,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.e .mega-dropdown-menu,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.m .mega-dropdown-menu {
+  background-color: #fc6d53;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.ci .mega-dropdown-menu ul.level1 li a,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.e .mega-dropdown-menu ul.level1 li a,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.m .mega-dropdown-menu ul.level1 li a {
+  border-top: 1px solid #fb4221;
+  color: #4f0d01;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.ci .mega-dropdown-menu ul.level1 li a:hover,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.e .mega-dropdown-menu ul.level1 li a:hover,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.m .mega-dropdown-menu ul.level1 li a:hover {
+  background-color: transparent;
+  color: #000000;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.ia .mega-dropdown-menu,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.ev .mega-dropdown-menu {
+  background-color: #62d390;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.ia .mega-dropdown-menu ul.level1 li a,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.ev .mega-dropdown-menu ul.level1 li a {
+  border-top: 1px solid #3bc874;
+  color: #0c2b18;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.ia .mega-dropdown-menu ul.level1 li a:hover,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.ev .mega-dropdown-menu ul.level1 li a:hover {
+  background-color: transparent;
+  color: #000000;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.fc .mega-dropdown-menu,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.se .mega-dropdown-menu {
+  background-color: #effb72;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.fc .mega-dropdown-menu ul.level1 li a,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.se .mega-dropdown-menu ul.level1 li a {
+  border-top: 1px solid #eafa41;
+  color: #636c03;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.fc .mega-dropdown-menu ul.level1 li a:hover,
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li.se .mega-dropdown-menu ul.level1 li a:hover {
+  background-color: transparent;
+  color: #080800;
+}
 #t3-mainnav .t3-navbar .t3-megamenu ul.nav li .nav-child ul.level1 li {
   width: 100%;
 }
 #t3-mainnav .t3-navbar .t3-megamenu ul.nav li .nav-child ul.level1 li a {
   text-align: left;
   font-size: 14px;
+}
+#t3-mainnav .t3-navbar .t3-megamenu ul.nav li .nav-child ul.level1 li:first-child a {
+  border-top: none;
 }
 .main {
   padding-top: 30px;
@@ -845,6 +893,14 @@ a.cerrada:before {
 }
 .xls:before {
   content: "\f1c3";
+}
+.dropdown-menu {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .t3-footnav {
   padding: 20px 0 0;
