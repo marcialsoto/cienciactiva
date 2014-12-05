@@ -19,6 +19,12 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: #33b668;
+  text-decoration: none;
+}
+a:hover {
+  color: #227a46;
+  text-decoration: none;
 }
 .t3-wrapper {
   margin: 30px auto;

@@ -90,9 +90,15 @@ h4{
 
             ul.dropdown-menu{
               li{
+                a{
+                  background-color: lighten(@yellow, 15%);
+                  &:hover{
+                    background-color: lighten(@yellow, 25%);
+                  }
+                }
                 &.active{
                   a{
-                    background-color: lighten(@yellow, 15%);
+                    background-color: lighten(@yellow, 25%);
                   }
                 }
                 &.dropdown-submenu{

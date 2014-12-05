@@ -37,8 +37,14 @@ h4 {
 .t3-sidebar .t3-module .module-inner .module-ct ul.nav li.active a {
   background-color: #e7f928;
 }
-.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.active a {
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li a {
   background-color: #effb72;
+}
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li a:hover {
+  background-color: #f5fca4;
+}
+.t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.active a {
+  background-color: #f5fca4;
 }
 .t3-sidebar .t3-module .module-inner .module-ct ul.nav li ul.dropdown-menu li.dropdown-submenu a {
   background-color: #effb72;

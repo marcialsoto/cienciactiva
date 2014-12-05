@@ -146,16 +146,18 @@
       margin-bottom: 0;
     }
   }
-
-  .btn-img-wrap{
-    position: relative;
-    .btn-img{
-      position: absolute;
-      top: 40%;
-      left: 25%;
-      a{
-        //display: none;
-        .opacity(0);
+.convocatorias{
+  .module-inner{
+    .btn-img-wrap{
+      position: relative;
+      .btn-img{
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        a{
+          //display: none;
+          .opacity(0);
+        }
       }
     }
     &:hover{
@@ -163,10 +165,18 @@
         a{
           //display: block;
           .opacity(1);
+          background-color: @green;
+          border-color: darken(@green, 15%);
+          &:hover{
+            color: @white;
+            .opacity(.85);
+          }
         }
       }
     }
   }
+}
+
 
 // End Home Spotlight
 }
