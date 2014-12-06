@@ -643,7 +643,7 @@ a:hover {
 }
 .main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc {
   left: 30px;
-  top: 53%;
+  top: 48%;
   padding: 15px;
   bottom: 0;
   border-top: 1px solid #999999;
@@ -1026,7 +1026,7 @@ a.cerrada:before {
     width: 1100px;
   }
   .container.t3-mainbody {
-    width: 970px;
+    width: 1060px;
     padding-top: 10px;
   }
   .container.t3-mainbody .t3-content .category-list h2 {
