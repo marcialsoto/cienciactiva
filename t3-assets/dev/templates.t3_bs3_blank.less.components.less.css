@@ -70,8 +70,8 @@
   }
 }
 .jumbotron-primary {
-  background-color: #428bca;
-  color: #ffffff;
+  background-color: #33b668;
+  color: #eefaf3;
 }
 .jumbotron-primary h1,
 .jumbotron-primary h2,
@@ -130,7 +130,7 @@ a.list-group-item.active:focus .list-group-item-heading {
 a.list-group-item.active .list-group-item-text,
 a.list-group-item.active:hover .list-group-item-text,
 a.list-group-item.active:focus .list-group-item-text {
-  color: #e1edf7;
+  color: #c6efd7;
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;

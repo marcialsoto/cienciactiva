@@ -102,11 +102,11 @@ html[dir="ltr"] .off-canvas-right.t3-off-canvas {
   padding: 6px 12px;
 }
 .t3-off-canvas .t3-off-canvas-body a {
-  color: #428bca;
+  color: #33b668;
 }
 .t3-off-canvas .t3-off-canvas-body a:hover,
 .t3-off-canvas .t3-off-canvas-body a:focus {
-  color: #2a6496;
+  color: #227a46;
 }
 .t3-off-canvas .t3-off-canvas-body a:focus {
   outline: thin dotted;

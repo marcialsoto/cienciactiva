@@ -63,13 +63,17 @@ h4 {
 .t3-sidebar .t3-module:before {
   content: url('../../../templates/t3_bs3_blank/images/banners/menu-s-head.jpg');
 }
-.t3-content .item-page article header {
+.t3-content .item-page article header,
+.t3-content .blog article header {
   position: relative;
   margin: -10px 0 20px 0;
   background-color: #e7f928;
   border: 1px solid #333333;
 }
-.t3-content .item-page article header h1 {
+.t3-content .item-page article header h1,
+.t3-content .blog article header h1,
+.t3-content .item-page article header h2,
+.t3-content .blog article header h2 {
   font-family: "robotoregular", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -79,16 +83,21 @@ h4 {
   margin: 0;
   padding: 15px;
 }
-.t3-content .item-page article header h1 a {
+.t3-content .item-page article header h1 a,
+.t3-content .blog article header h1 a,
+.t3-content .item-page article header h2 a,
+.t3-content .blog article header h2 a {
   color: #333333;
 }
-.t3-content .item-page article header:before {
+.t3-content .item-page article header:before,
+.t3-content .blog article header:before {
   position: absolute;
   left: -32px;
   top: -1px;
   content: url(../../../templates/t3_bs3_blank/images/bg/section-bg-s.png);
 }
-.t3-content .item-page article .article-content strong {
+.t3-content .item-page article .article-content strong,
+.t3-content .blog article .article-content strong {
   color: #bdcf06;
 }
 table {
