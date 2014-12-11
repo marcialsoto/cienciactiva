@@ -55,12 +55,79 @@
     background: @t3-spotlight-background;
     color: @t3-spotlight-text-color;
     border-bottom: 1px solid @t3-border-color;
-    // jumbotron
-    .jumbotron {
-      border-radius: 0;
-      //jumbotron btn
-      .btn {
-        margin-top: @line-height-computed;
+    // Slider
+    .ja-contentslider {
+      overflow: inherit;
+      .ja-button-control{
+        background: transparent;
+        border-bottom: 0 none;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        .ja-contentslider-left, .ja-contentslider-right {
+          height: 40px;
+          width: 20px;
+          border:0 none;
+          .transition(all 0.1s ease-in-out);
+        }
+
+        .ja-contentslider-right{
+          right: -10px;
+          z-index: 1000;
+        }
+        .ja-contentslider-left{
+          left: -10px;
+          z-index: 1000;
+        }
+      }
+
+      .ja-contentslider-center-wrap{
+        .ja_slidetitle{
+          position: absolute;
+          left: 30px;
+          width: 60%;
+          bottom: 0px;
+          padding: 20px;
+          font-weight: normal;
+          background: transparent url(../images/stripes-bg.png) repeat center top;
+          border:1px solid @gray-light;
+          .opacity(.85);
+          a{
+            .roboto();
+            font-size: 22px;
+            line-height: 24px;
+            color: @gray-dark;
+            text-decoration: none;
+            font-weight: normal;
+          }
+          &:hover{
+            .opacity(1);
+          }
+        }
+      }
+    }
+
+    #Mod142{
+      //height: 325px;
+      overflow: hidden;
+      p{
+        padding: 20px;
+        width: 60%;
+        margin: 0;
+        &.btn-que-es{
+          padding-top: 0;
+        }
+        .btn-main{
+          background-color: transparent;
+          color: @green;
+          border-color: darken(@green, 5%);
+          .border-radius(0);
+          //text-transform: uppercase;
+          &:hover{
+            background-color: @green;
+            color: @white;
+          }
+        }
       }
     }
   }

@@ -20,11 +20,89 @@
   color: #333333;
   border-bottom: 1px solid #eeeeee;
 }
-.home .t3-sl-1 .jumbotron {
-  border-radius: 0;
+.home .t3-sl-1 .ja-contentslider {
+  overflow: inherit;
 }
-.home .t3-sl-1 .jumbotron .btn {
-  margin-top: 20px;
+.home .t3-sl-1 .ja-contentslider .ja-button-control {
+  background: transparent;
+  border-bottom: 0 none;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.home .t3-sl-1 .ja-contentslider .ja-button-control .ja-contentslider-left,
+.home .t3-sl-1 .ja-contentslider .ja-button-control .ja-contentslider-right {
+  height: 40px;
+  width: 20px;
+  border: 0 none;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.home .t3-sl-1 .ja-contentslider .ja-button-control .ja-contentslider-right {
+  right: -10px;
+  z-index: 1000;
+}
+.home .t3-sl-1 .ja-contentslider .ja-button-control .ja-contentslider-left {
+  left: -10px;
+  z-index: 1000;
+}
+.home .t3-sl-1 .ja-contentslider .ja-contentslider-center-wrap .ja_slidetitle {
+  position: absolute;
+  left: 30px;
+  width: 60%;
+  bottom: 0px;
+  padding: 20px;
+  font-weight: normal;
+  background: transparent url(../../templates/t3_bs3_blank/images/stripes-bg.png) repeat center top;
+  border: 1px solid #999999;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+.home .t3-sl-1 .ja-contentslider .ja-contentslider-center-wrap .ja_slidetitle a {
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 22px;
+  line-height: 24px;
+  color: #333333;
+  text-decoration: none;
+  font-weight: normal;
+}
+.home .t3-sl-1 .ja-contentslider .ja-contentslider-center-wrap .ja_slidetitle:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.home .t3-sl-1 #Mod142 {
+  overflow: hidden;
+}
+.home .t3-sl-1 #Mod142 p {
+  padding: 20px;
+  width: 60%;
+  margin: 0;
+}
+.home .t3-sl-1 #Mod142 p.btn-que-es {
+  padding-top: 0;
+}
+.home .t3-sl-1 #Mod142 p .btn-main {
+  background-color: transparent;
+  color: #33b668;
+  border-color: #2da25d;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.home .t3-sl-1 #Mod142 p .btn-main:hover {
+  background-color: #33b668;
+  color: #ffffff;
 }
 .home .t3-sl-2 {
   text-align: center;
