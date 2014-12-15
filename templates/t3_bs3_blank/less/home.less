@@ -82,28 +82,35 @@
       }
 
       .ja-contentslider-center-wrap{
-        .ja_slidetitle{
-          position: absolute;
-          left: 30px;
-          width: 60%;
-          bottom: 0px;
-          padding: 20px;
-          font-weight: normal;
-          background: transparent url(../images/stripes-bg.png) repeat center top;
-          border:1px solid @gray-light;
-          .opacity(.85);
-          a{
-            .roboto();
-            font-size: 22px;
-            line-height: 24px;
-            color: @gray-dark;
-            text-decoration: none;
-            font-weight: normal;
+        .ja-contentslider-center{
+          width: 100% !important;
+            .jsslide{
+              width: 100% !important;
+
+              .ja_slidetitle{
+                position: absolute;
+                left: 30px;
+                width: 60%;
+                bottom: 0px;
+                padding: 20px;
+                font-weight: normal;
+                background: transparent url(../images/stripes-bg.png) repeat center top;
+                border:1px solid @gray-light;
+                .opacity(.85);
+                a{
+                  .roboto();
+                  font-size: 22px;
+                  line-height: 24px;
+                  color: @gray-dark;
+                  text-decoration: none;
+                  font-weight: normal;
+                }
+                &:hover{
+                  .opacity(1);
+                }
+              }
+            }
           }
-          &:hover{
-            .opacity(1);
-          }
-        }
       }
     }
 
@@ -246,4 +253,43 @@
 
 
 // End Home Spotlight
+}
+@media (min-width:@screen-phone) and (max-width: @screen-tablet)
+{
+  .home {
+    .t3-sl-1
+      {
+        .ja-contentslider
+        {
+          overflow: hidden;
+
+          .ja-button-control{
+            .ja-contentslider-right
+            {
+              right: 10px;
+            }
+
+            .ja-contentslider-left
+            {
+              left: 10px;
+            }
+          }
+
+          .ja-contentslider-center-wrap {
+            .ja-contentslider-center{
+              width: 100% !important;
+              .jsslide{
+                width: 100% !important;
+                .ja_slidetitle{
+                  position: relative;
+                  left: 0;
+                  width: auto;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
 }
