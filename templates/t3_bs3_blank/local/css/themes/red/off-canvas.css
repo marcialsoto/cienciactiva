@@ -102,11 +102,11 @@ html[dir="ltr"] .off-canvas-right.t3-off-canvas {
   padding: 6px 12px;
 }
 .t3-off-canvas .t3-off-canvas-body a {
-  color: #cc0000;
+  color: #fb2d08;
 }
 .t3-off-canvas .t3-off-canvas-body a:hover,
 .t3-off-canvas .t3-off-canvas-body a:focus {
-  color: #800000;
+  color: #b41e03;
 }
 .t3-off-canvas .t3-off-canvas-body a:focus {
   outline: thin dotted;
@@ -120,6 +120,7 @@ html[dir="ltr"] .off-canvas-right.t3-off-canvas {
   width: 100%;
   padding: 0;
   border: 0;
+  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -638,12 +639,12 @@ html[dir="ltr"] .off-canvas-right.old-ie .t3-off-canvas {
   padding: 24px 12px;
 }
 .t3-off-canvas .t3-off-canvas-body a {
-  color: #cc0000;
+  color: #fb2d08;
   text-decoration: none;
 }
 .t3-off-canvas .t3-off-canvas-body a:hover,
 .t3-off-canvas .t3-off-canvas-body a:focus {
-  color: #800000;
+  color: #b41e03;
   text-decoration: none;
 }
 .t3-off-canvas .t3-off-canvas-body a:focus {

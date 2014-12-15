@@ -197,6 +197,8 @@
   top: 0;
   border-radius: 0;
   border: 1px solid #aaa;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
   -webkit-transition: all 250ms;
   -o-transition: all 250ms;
   transition: all 250ms;

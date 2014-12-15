@@ -178,6 +178,8 @@
     opacity: 0;
   }
   .t3-megamenu.animate .mega.animating > .mega-dropdown-menu {
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
@@ -263,6 +265,8 @@
     overflow: hidden;
   }
   .t3-megamenu.animate.slide .mega > .mega-dropdown-menu > div {
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;

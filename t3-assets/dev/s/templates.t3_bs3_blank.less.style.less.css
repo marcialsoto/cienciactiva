@@ -24,6 +24,9 @@ a {
 a:hover {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+}
 .t3-wrapper {
   margin: 30px auto;
   padding-bottom: 30px;
@@ -193,6 +196,21 @@ a:hover {
 .t3-header {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.t3-header .logo .logo-text a {
+  width: 290px;
+  height: 50px;
+  background-image: url(../../../templates/t3_bs3_blank/images/banners/logo-sm.png);
+  background-repeat: no-repeat;
+}
+.t3-header .logo .logo-text a span {
+  position: relative;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 .t3-header .headnav {
   border-left: 1px solid #e0e0e0;
@@ -990,6 +1008,24 @@ a.cerrada:before {
   }
 }
 @media (min-width: 320px) and (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
+  .t3-header .headnav {
+    text-align: center;
+    margin: 5px auto;
+  }
+  .t3-header .headnav ul {
+    display: inline-block;
+  }
+  .t3-header .headnav ul li {
+    float: left;
+  }
+  .t3-header .logo .logo-text a {
+    width: 200px;
+    height: 50px;
+    background-image: url(../../../templates/t3_bs3_blank/images/banners/logo-xs.png);
+  }
   .main .ja-ss-wrap .ja-ss-items .ja-ss-item .ja-ss-desc {
     position: relative;
     width: auto;
@@ -1012,6 +1048,11 @@ a.cerrada:before {
 @media (min-width: 1200px) {
   .t3-wrapper {
     width: 1160px;
+  }
+  .t3-wrapper .t3-header .logo .logo-text a {
+    width: 490px;
+    height: 60px;
+    background-image: url(../../../templates/t3_bs3_blank/images/banners/logo.png);
   }
   .t3-wrapper .t3-header .container {
     padding-left: 0;

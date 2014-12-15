@@ -150,10 +150,10 @@ cite {
   color: #999999;
 }
 .text-primary {
-  color: #fb2d08;
+  color: #33b668;
 }
 a.text-primary:hover {
-  color: #cd2203;
+  color: #288e51;
 }
 .text-success {
   color: #468847;
@@ -181,10 +181,10 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #fb2d08;
+  background-color: #33b668;
 }
 a.bg-primary:hover {
-  background-color: #cd2203;
+  background-color: #288e51;
 }
 .bg-success {
   background-color: #dff0d8;
