@@ -209,6 +209,25 @@ a{
   padding-top: @t3-global-padding;
   padding-bottom: @t3-global-padding;
 
+  .logo{
+    .logo-text{
+      a{
+        width: 290px;
+        height: 50px;
+        background-image: url(../../../templates/t3_bs3_blank/images/banners/logo-sm.png);
+        background-repeat: no-repeat;
+        span{
+          position: relative;
+          display: block;
+          text-indent: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
   .headnav{
     border-left: 1px solid @gray-line;
     border-right: 1px solid @gray-line;
@@ -1103,6 +1122,29 @@ a.cerrada{
 
 
 @media (min-width:@screen-phone) and (max-width: @screen-tablet) {
+
+  .t3-header{
+    .headnav{
+      text-align: center;
+      margin: 5px auto;
+      ul{
+        display: inline-block;
+        li{
+          float: left;
+        }
+      }
+    }
+
+    .logo{
+      .logo-text{
+        a{
+          width: 200px;
+          height: 50px;
+          background-image: url(../../../templates/t3_bs3_blank/images/banners/logo-xs.png);
+        }
+      }
+    }
+  }
   .main{
     .ja-ss-wrap{
       .ja-ss-items{
@@ -1121,12 +1163,15 @@ a.cerrada{
 
 @media (max-width: @screen-xs-max){
 
+
 }
+
 @media(min-width: @screen-tablet){
   .navbar-header{
     display: none;
   }
 }     /* or @screen-sm */
+
 @media(min-width: @screen-desktop){
   .navbar-header{
     display: none;
@@ -1137,6 +1182,15 @@ a.cerrada{
   .t3-wrapper{
     width: 1160px;
     .t3-header{
+      .logo{
+        .logo-text{
+          a{
+            width: 490px;
+            height: 60px;
+            background-image: url(../../../templates/t3_bs3_blank/images/banners/logo.png);
+          }
+        }
+      }
       .container{
         padding-left: 0;
         padding-right: 0;
