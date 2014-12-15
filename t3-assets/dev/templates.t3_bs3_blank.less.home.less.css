@@ -87,15 +87,19 @@
 .home .t3-sl-1 #Mod142 {
   overflow: hidden;
 }
-.home .t3-sl-1 #Mod142 p {
+.home .t3-sl-1 #Mod142 .module-inner .module-ct .custom {
+  background-repeat: no-repeat;
+  background-position: 60px -55px;
+}
+.home .t3-sl-1 #Mod142 .module-inner .module-ct .custom p {
   padding: 20px;
   width: 60%;
   margin: 0;
 }
-.home .t3-sl-1 #Mod142 p.btn-que-es {
+.home .t3-sl-1 #Mod142 .module-inner .module-ct .custom p.btn-que-es {
   padding-top: 0;
 }
-.home .t3-sl-1 #Mod142 p .btn-main {
+.home .t3-sl-1 #Mod142 .module-inner .module-ct .custom p .btn-main {
   background-color: transparent;
   color: #33b668;
   border-color: #2da25d;
@@ -106,9 +110,15 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.home .t3-sl-1 #Mod142 p .btn-main:hover {
+.home .t3-sl-1 #Mod142 .module-inner .module-ct .custom p .btn-main:hover {
   background-color: #33b668;
   color: #ffffff;
+}
+.home .t3-sl-1 #Mod112 {
+  position: relative;
+  margin: 0 auto;
+  background-color: #C1BFC0;
+  text-align: center;
 }
 .home .t3-sl-2 {
   text-align: center;
@@ -219,5 +229,46 @@
     position: relative;
     left: 0;
     width: auto;
+  }
+  .home .t3-sl-1 #Mod142 {
+    overflow: hidden;
+  }
+  .home .t3-sl-1 #Mod142 .module-inner .module-ct .custom {
+    background-repeat: no-repeat;
+    background-position: 270px -55px;
+  }
+  .home .t3-sl-1 #Mod142 .module-inner .module-ct .custom p {
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+  }
+  .home .t3-sl-1 #Mod142 .module-inner .module-ct .custom p.btn-que-es {
+    padding-top: 0;
+  }
+  .home .t3-sl-1 #Mod142 .module-inner .module-ct .custom p .btn-main {
+    background-color: transparent;
+    color: #33b668;
+    border-color: #2da25d;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+  .home .t3-sl-1 #Mod142 .module-inner .module-ct .custom p .btn-main:hover {
+    background-color: #33b668;
+    color: #ffffff;
+  }
+  .home .t3-sl-1 #Mod112 {
+    margin-bottom: 20px;
+  }
+  .home .t3-sl-1 .t3-sidebar {
+    padding-bottom: 0;
+  }
+  .home .t3-sl-1 .t3-sidebar.noticias {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
   }
 }

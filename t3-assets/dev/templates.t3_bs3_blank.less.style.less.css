@@ -24,6 +24,9 @@ a {
 a:hover {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+}
 .t3-wrapper {
   margin: 30px auto;
   padding-bottom: 30px;
@@ -1005,6 +1008,9 @@ a.cerrada:before {
   }
 }
 @media (min-width: 320px) and (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
   .t3-header .headnav {
     text-align: center;
     margin: 5px auto;

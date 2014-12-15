@@ -19,7 +19,7 @@ defined('_JEXEC') or die;
 					<?php if ($this->countModules('content-convocatorias') || $this->countModules('banner-main')) : ?>
 						<div class="row">
 							<?php if ($this->checkSpotlight('feed', 'content-convocatorias')) : ?>
-							<div class="col-sm-8 convocatorias t3-sidebar">
+							<div class="col-sm-8 col-xs-8 convocatorias t3-sidebar">
 								<div class="t3-module">
 									<div class="module-inner">
 										<h3 class="module-title">Convocatorias Abiertas</h3>
@@ -37,7 +37,7 @@ defined('_JEXEC') or die;
 							</div>
 						<?php endif ?>
 							<?php if ($this->checkSpotlight('banner', 'banner-main')) : ?>
-								<div class="col-sm-4 banner t3-sidebar">
+								<div class="col-sm-4  col-xs-4 banner t3-sidebar">
 									<?php $this->spotlight('banner', 'banner-main') ?>
 								</div>
 							<?php endif ?>
