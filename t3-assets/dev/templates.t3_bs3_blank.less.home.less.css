@@ -195,14 +195,11 @@
   left: 25%;
 }
 .home .convocatorias .module-inner .btn-img-wrap .btn-img a {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.home .convocatorias .module-inner:hover .btn-img a {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   opacity: 1;
   filter: alpha(opacity=100);
+}
+.home .convocatorias .module-inner:hover .btn-img a {
   background-color: #33b668;
   border-color: #227a46;
 }
@@ -273,5 +270,33 @@
     padding-bottom: 0;
     padding-top: 0;
     margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .convocatorias .module-inner .btn-img-wrap {
+    position: relative;
+  }
+  .convocatorias .module-inner .btn-img-wrap .btn-img {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+  }
+  .convocatorias .module-inner .btn-img-wrap .btn-img a {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  .convocatorias .module-inner:hover .btn-img a {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: #33b668;
+    border-color: #227a46;
+  }
+  .convocatorias .module-inner:hover .btn-img a:hover {
+    color: #ffffff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+    opacity: 0.85;
+    filter: alpha(opacity=85);
   }
 }
