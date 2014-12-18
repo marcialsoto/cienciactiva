@@ -244,11 +244,13 @@
       position: relative;
       .btn-img{
         position: absolute;
-        top: 40%;
-        left: 25%;
+        bottom: 20px;
+        right: 20px;
         a{
           //display: none;
           .opacity(1);
+          background-color: @green;
+          border-color: darken(@green, 15%);
         }
       }
     }
@@ -256,12 +258,11 @@
       .btn-img{
         a{
           //display: block;
-          //.opacity(1);
-          background-color: @green;
-          border-color: darken(@green, 15%);
+          .opacity(1);
+
           &:hover{
             color: @white;
-            .opacity(.85);
+            .opacity(.85) !important;
           }
         }
       }
@@ -361,11 +362,11 @@
         position: relative;
         .btn-img{
           position: absolute;
-          top: 40%;
-          left: 25%;
+          bottom: 20px;
+          right: 20px;
           a{
             //display: none;
-            .opacity(0);
+            .opacity(0) !important;
           }
         }
       }
@@ -373,7 +374,7 @@
         .btn-img{
           a{
             //display: block;
-            .opacity(1);
+            .opacity(1) !important;
             background-color: @green;
             border-color: darken(@green, 15%);
             &:hover{
