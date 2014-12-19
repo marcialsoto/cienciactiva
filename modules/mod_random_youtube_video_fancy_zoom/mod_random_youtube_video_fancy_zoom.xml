@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	<name>Random youtube video fancy zoom</name>
+	<author>Gopi Ramasamy</author>
+	<creationDate>May 2014</creationDate>
+	<copyright>(C) 2010 - 2014 www.gopiplus.com, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2</license>
+	<authorEmail>gopiplus@gmail.com</authorEmail>
+	<authorUrl>http://www.gopiplus.com/extensions/2011/08/random-youtube-video-fancy-zoom-joomla-module/</authorUrl>
+	<version>3.3</version>
+	<description>Random youtube video fancy zoom</description>
+	<files>
+		<filename module="mod_random_youtube_video_fancy_zoom">mod_random_youtube_video_fancy_zoom.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+		<filename>mod_random_youtube_video_fancy_zoom.xml</filename>
+		<folder>tmpl</folder>
+		<folder>inc</folder>
+		<folder>images</folder>
+		<folder>own-image</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="Jquery" label="Jquery Settings">
+				<field name="ytfz_jquery" type="list" default="yes" label="Include jQuery" description="Add include of jquery js. If you have jquery include in other module, and you don't want to double include, choose 'No'">
+						<option value="yes">YES</option>
+						<option value="no">NO</option>
+				</field>
+			</fieldset>		
+			<fieldset name="YoutubeVideoLink" label="Youtube Video Link">
+				<field name="ytfz_videocode1" type="text" default="http://www.youtube.com/watch?v=xQ0oGVSXHJk" size="65" label="YouTube Video 1" maxLength="1024" description="example: http://www.youtube.com/watch?v=WG77EWWXRc4" />
+				<field name="ytfz_videocode2" type="text" default="http://www.youtube.com/watch?v=GjCxZz5hUqw" size="65" label="YouTube Video 2" maxLength="1024" description="example. http://www.youtube.com/watch?v=q1qJ_LBgEWk" />
+				<field name="ytfz_videocode3" type="text" default="http://www.youtube.com/watch?v=QzUmyGsrDoM" size="65" label="YouTube Video 3" maxLength="1024" description="example: http://www.youtube.com/watch?v=m0kWQOI8HOg" />
+				<field name="ytfz_videocode4" type="text" default="http://www.youtube.com/watch?v=9_wkjPlbNjQ" size="65" label="YouTube Video 4" maxLength="1024" description="Video 4" />
+				<field name="ytfz_videocode5" type="text" default="http://www.youtube.com/watch?v=WG77EWWXRc4" size="65" label="YouTube Video 5" maxLength="1024" description="Video 5" />
+				<field name="ytfz_videocode6" type="text" default="" size="65" label="YouTube Video 6" maxLength="1024" description="Video 6" />
+				<field name="ytfz_videocode7" type="text" default="" size="65" label="YouTube Video 7" maxLength="1024" description="Video 7" />
+				<field name="ytfz_videocode8" type="text" default="" size="65" label="YouTube Video 8" maxLength="1024" description="Video 8" />
+				<field name="ytfz_videocode9" type="text" default="" size="65" label="YouTube Video 9" maxLength="1024" description="Video 9" />
+				<field name="ytfz_videocode10" type="text" default="" size="65" label="YouTube Video 10" maxLength="1024" description="Video 10" />
+			</fieldset>	
+			<fieldset name="ThumbnailSetting" label="Thumbnail Setting">
+				<field name="ytfz_image" type="list" default="YouTubeImage" label="YouTube Image Option" description="Select the image type, Your own image should availabe in the below mentioned folder location, name of the image 1.jpg, 2.jpg ... 10.jpg">
+					<option value="YouTubeImage">YouTube Image</option>
+					<option value="OwnImage">Own Image</option>
+				</field>
+				<field name="ytfz_imgfolder" type="text" size="65" default="modules/mod_random_youtube_video_fancy_zoom/own-image" label="Own Image Folder" description="Path to the image folder relative to the site URL (e.g. modules/mod_random_youtube_video_fancy_zoom/own-image)." />
+				<field name="ytfz_width" type="text" default="200" label="Image Width" description="Width of the display image in pixels." />
+				<field name="ytfz_height" type="text" default="150" label="Image Height" description="Height of the display image in pixels." />
+				<field name="moduleclass_sfx" size="50" type="text" default="" label="Menu Class Suffix" description="A suffix to be applied to the CSS class of the menu items" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

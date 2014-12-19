@@ -96,7 +96,7 @@ img {
 }
 .t3-wrapper.footer .inner .t3-footer .row .t3-module h3:after {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -864,7 +864,7 @@ a.cerrada:before {
 }
 .pdf {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -876,7 +876,7 @@ a.cerrada:before {
 }
 .doc {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -888,7 +888,7 @@ a.cerrada:before {
 }
 .xls {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
