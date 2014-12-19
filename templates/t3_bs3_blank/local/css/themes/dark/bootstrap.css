@@ -1,6 +1,6 @@
 .font-awesome {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -152,7 +152,7 @@ fieldset[disabled] .btn-main-o.active {
 }
 .pdf-icon {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -164,7 +164,7 @@ fieldset[disabled] .btn-main-o.active {
 }
 .doc-icon {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -176,7 +176,7 @@ fieldset[disabled] .btn-main-o.active {
 }
 .xls-icon {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
