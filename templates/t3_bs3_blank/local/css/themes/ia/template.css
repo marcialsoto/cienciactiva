@@ -2397,7 +2397,7 @@ img {
   padding-bottom: 20px;
 }
 .t3-header .logo .logo-text a {
-  width: 290px;
+  width: 163px;
   height: 50px;
   background-image: url(../../../../../../templates/t3_bs3_blank/images/banners/logo-sm.png);
   background-repeat: no-repeat;
@@ -3221,7 +3221,7 @@ a.cerrada:before {
     float: left;
   }
   .t3-header .logo .logo-text a {
-    width: 200px;
+    width: 163px;
     height: 50px;
     background-image: url(../../../../../../templates/t3_bs3_blank/images/banners/logo-xs.png);
   }
@@ -3261,7 +3261,7 @@ a.cerrada:before {
     width: 1160px;
   }
   .t3-wrapper .t3-header .logo .logo-text a {
-    width: 490px;
+    width: 196px;
     height: 60px;
     background-image: url(../../../../../../templates/t3_bs3_blank/images/banners/logo.png);
   }
