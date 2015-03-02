@@ -1,13 +1,13 @@
-/**
+/** 
  *------------------------------------------------------------------------------
  * @package       T3 Framework for Joomla!
  *------------------------------------------------------------------------------
  * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
  * @license       GNU General Public License version 2 or later; see LICENSE.txt
- * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
  *                & Google group to become co-author)
  * @Google group: https://groups.google.com/forum/#!forum/t3fw
- * @Link:         http://t3-framework.org
+ * @Link:         http://t3-framework.org 
  *------------------------------------------------------------------------------
  */
 
@@ -44,7 +44,7 @@
 
 
 
-  //
+  // 
   // HOME SPOTLIGHTS
   // ---------------------------------------------------------
 
@@ -55,125 +55,13 @@
     background: @t3-spotlight-background;
     color: @t3-spotlight-text-color;
     border-bottom: 1px solid @t3-border-color;
-    // Slider
-    .ja-contentslider {
-      overflow: inherit;
-      .ja-button-control{
-        background: transparent;
-        border-bottom: 0 none;
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        .ja-contentslider-left, .ja-contentslider-right {
-          height: 40px;
-          width: 20px;
-          border:0 none;
-          .transition(all 0.1s ease-in-out);
-        }
-
-        .ja-contentslider-right{
-          right: -10px;
-          z-index: 1000;
-        }
-        .ja-contentslider-left{
-          left: -10px;
-          z-index: 1000;
-        }
+    // jumbotron
+    .jumbotron {
+      border-radius: 0;
+      //jumbotron btn
+      .btn {
+        margin-top: @line-height-computed;
       }
-
-      .ja-contentslider-center-wrap{
-        .ja-contentslider-center{
-          width: 100% !important;
-            .jsslide{
-              width: 100% !important;
-
-              .ja_slidetitle{
-                position: absolute;
-                left: 30px;
-                width: 60%;
-                bottom: 0px;
-                padding: 20px;
-                font-weight: normal;
-                background: transparent url(../images/stripes-bg.png) repeat center top;
-                border:1px solid @gray-light;
-                .opacity(.85);
-                a{
-                  .roboto();
-                  font-size: 125%;
-                  line-height: 24px;
-                  color: @gray-dark;
-                  text-decoration: none;
-                  font-weight: normal;
-                }
-                &:hover{
-                  .opacity(1);
-                }
-              }
-            }
-          }
-        }
-      }
-
-    #Mod142{
-      //height: 325px;
-      overflow: hidden;
-      .module-inner{
-        .module-ct{
-          .custom{
-            background-repeat: no-repeat;
-            background-position: 170px 35px;
-            p{
-              padding: 20px;
-              width: 60%;
-              margin: 0;
-              &.btn-que-es{
-                padding-top: 0;
-              }
-              .btn-main{
-                background-color: transparent;
-                color: @green;
-                border-color: darken(@green, 5%);
-                .border-radius(0);
-                //text-transform: uppercase;
-                &:hover{
-                  background-color: @green;
-                  color: @white;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #Mod144{
-      position: relative;
-      margin: 0 auto;
-      background-color: @black;
-      text-align: center;
-      h3{
-        text-align: left;
-      }
-      .gallery{
-        a{
-          &:after{
-            .font-awesome;
-            content: '\f16a';
-            position: absolute;
-            bottom: 30%;
-            right: 46.5%;
-            z-index: 1000;
-            font-size: 32px;
-          }
-            display: block;
-            img{
-            }
-        }
-      }
-    }
-    #Mod127{
-      text-align: center;
-      background-color: #D1CFD0;
     }
   }
 
@@ -258,199 +146,6 @@
       margin-bottom: 0;
     }
   }
-.convocatorias{
-  .module-inner{
-    .btn-img-wrap{
-      position: relative;
-      .btn-img{
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        a{
-          //display: none;
-          .opacity(1);
-          background-color: @green;
-          border-color: darken(@green, 15%);
-        }
-      }
-    }
-    &:hover{
-      .btn-img{
-        a{
-          //display: block;
-          .opacity(1);
-
-          &:hover{
-            color: @white;
-            .opacity(.85) !important;
-          }
-        }
-      }
-    }
-  }
-}
-
 
 // End Home Spotlight
-}
-@media (min-width:@screen-phone) and(max-width:@screen-tablet)
-{
-  .home {
-    .t3-sl-1
-      {
-        .ja-contentslider
-        {
-          overflow: hidden;
-
-          .ja-button-control{
-            .ja-contentslider-right
-            {
-              right: 0px !important;
-            }
-
-            .ja-contentslider-left
-            {
-              left: 0px !important;
-            }
-          }
-
-          .ja-contentslider-center-wrap {
-            .ja-contentslider-center{
-              width: 100% !important;
-              .jsslide{
-                width: 100% !important;
-                .ja_slidetitle{
-                  position: relative;
-                  left: 0;
-                  width: auto;
-
-                }
-              }
-            }
-
-          }
-        }
-
-        #Mod142{
-          overflow: hidden;
-          .module-inner{
-            .module-ct{
-              .custom{
-                background-repeat: no-repeat;
-                background-position: 465px 45px !important;
-                p{
-                  padding: 20px;
-                  width: 100%;
-                  margin: 0;
-                  &.btn-que-es{
-                    padding-top: 0;
-                  }
-                  .btn-main{
-                    background-color: transparent;
-                    color: @green;
-                    border-color: darken(@green, 5%);
-                    .border-radius(0);
-                    //text-transform: uppercase;
-                    &:hover{
-                      background-color: @green;
-                      color: @white;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        #Mod112{
-          margin-bottom: 20px ;
-        }
-        .t3-sidebar{
-          padding-bottom: 0;
-          &.noticias{
-            padding-bottom: 0;
-            padding-top: 0;
-            margin-top: 0;
-          }
-        }
-      }
-    }
-}
-
-@media(min-width: @screen-desktop){
-  .convocatorias{
-    .module-inner{
-      .btn-img-wrap{
-        position: relative;
-        .btn-img{
-          position: absolute;
-          bottom: 20px;
-          right: 20px;
-          a{
-            //display: none;
-            .opacity(0) !important;
-          }
-        }
-      }
-      &:hover{
-        .btn-img{
-          a{
-            //display: block;
-            .opacity(1) !important;
-            background-color: @green;
-            border-color: darken(@green, 15%);
-            &:hover{
-              color: @white;
-              .opacity(.85);
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .ja-contentslider-center-wrap{
-    .ja-contentslider-center{
-        .jsslide{
-          .ja_slidetitle{
-
-            a{
-              .roboto();
-              font-size: 24px !important;
-            }
-          }
-        }
-      }
-    }
-
-    #Mod142{
-      //height: 325px;
-      overflow: hidden;
-      .module-inner{
-        .module-ct{
-          .custom{
-            background-repeat: no-repeat;
-            background-position: 170px 35px !important;
-            p{
-              padding: 20px;
-              width: 60%;
-              margin: 0;
-              &.btn-que-es{
-                padding-top: 0;
-              }
-              .btn-main{
-                background-color: transparent;
-                color: @green;
-                border-color: darken(@green, 5%);
-                .border-radius(0);
-                //text-transform: uppercase;
-                &:hover{
-                  background-color: @green;
-                  color: @white;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
 }

@@ -11,14 +11,6 @@
 defined('_JEXEC') or die;
 ?>
 <div class="module">
-<div class="row-fluid">
-	<div class="col-sm-3">
-		<img width="190" height="32" class="" src="/cienciactiva/images/logos/logo-footer.png" alt="Cienciactiva">
-	</div>
-	<div class="col-sm-3 col-sm-offset-6">
-		<a href="http://www.peru.gob.pe" target="_blank">
-			<img width="85" height="32" class="pull-right" src="/cienciactiva/images/logos/logo-peru.png" alt="Cienciactiva">
-		</a>
-	</div>
-</div>
+	<small><?php echo $lineone; ?> Designed by <a href="http://www.joomlart.com/" title="Visit Joomlart.com!" <?php echo method_exists('T3', 'isHome') && T3::isHome() ? '' : 'rel="nofollow"' ?>>JoomlArt.com</a>.</small>
+	<small><?php echo JText::_( 'MOD_FOOTER_LINE2' ); ?></small>
 </div>

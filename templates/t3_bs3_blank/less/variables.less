@@ -1,16 +1,16 @@
-/**
+/** 
  *------------------------------------------------------------------------------
  * @package       T3 Framework for Joomla!
  *------------------------------------------------------------------------------
  * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
  * @license       GNU General Public License version 2 or later; see LICENSE.txt
- * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
  *                & Google group to become co-author)
  * @Google group: https://groups.google.com/forum/#!forum/t3fw
- * @Link:         http://t3-framework.org
+ * @Link:         http://t3-framework.org 
  *------------------------------------------------------------------------------
  */
-
+ 
 //
 // Variables
 // --------------------------------------------------
@@ -33,13 +33,12 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         @green;
-@brand-secondary:       @cyan; // T3 Note: Add secondary color
-@brand-success:         @green;
-@brand-warning:         @yellow;
-@brand-danger:          @red;
-@brand-info:            @cyan;
-
+@brand-primary:         #428bca;
+@brand-secondary:       #428bca; // T3 Note: Add secondary color
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
 
 
 // Accent colors
@@ -48,24 +47,13 @@
 @black:                 #000;
 @white:                 #fff;
 @blue:                  #07b;
+@green:                 #690;
+@cyan:                  #09c;
+@red:                   #c00;
+@yellow:                #fc0;
+@orange:                #f80;
 @pink:                  #d60a6c;
 @purple:                #8b08ae;
-@gray-line:             #e0e0e0;
-
-
-// Custom colors
-// -------------------------
-
-@cyan:         #75cccb;
-@red:          #fb2d08;
-@green:        #33b668;
-@yellow:       #e7f928;
-@orange:       #fd3d24;
-@fb-color:     #3b5998;
-@tw-color:     #00ACEE;
-@li-color:     #0177B5;
-@yt-color:     #C41A1F;
-@ig-color:     #D0BDAA;
 
 
 // Scaffolding
@@ -84,8 +72,7 @@
 
 // Typography
 // -------------------------
-@roboto-regular:  "robotoregular", Helvetica, Arial, sans-serif;
-@font-family-sans-serif:  @roboto-regular;
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -261,7 +248,7 @@
 // Extra small screen / phone
 // Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
 @screen-xs:                  480px;
-@screen-xs-min:              320px;
+@screen-xs-min:              @screen-xs;
 @screen-phone:               @screen-xs-min;
 
 // Small screen / tablet
@@ -758,14 +745,14 @@
 
 
 
-//
+// 
 // T3 ADD-ONS
 // --------------------------------------------------
 
 // Off-Canvas
 // -------------------------
 
-// Off-Canvas Width
+// Off-Canvas Width 
 @t3-off-canvas-width:                 250px;
 
 // Off-Canvas Header
@@ -780,133 +767,3 @@
 @t3-off-canvas-link-hover-color:      @link-hover-color;
 
 @t3-off-canvas-headings-color:        inherit;
-
-//
-// MIXINS
-// --------------------------------------------------
-
-// Radio
-// -------------------------
-
-.border-radius (@radius: 5px) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius:    @radius;
-  border-radius:         @radius;
-
-  -moz-background-clip:    padding;
-  -webkit-background-clip: padding-box;
-  background-clip:         padding-box;
-}
-
-.gradient (@startColor: #eee, @endColor: white) {
-	background-color: @startColor;
-	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
-	background: -webkit-linear-gradient(top, @startColor, @endColor);
-	background: -moz-linear-gradient(top, @startColor, @endColor);
-	background: -ms-linear-gradient(top, @startColor, @endColor);
-	background: -o-linear-gradient(top, @startColor, @endColor);
-}
-.horizontal-gradient (@startColor: #eee, @endColor: white) {
- 	background-color: @startColor;
-	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
-	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
-	background-image: -moz-linear-gradient(left, @startColor, @endColor);
-	background-image: -ms-linear-gradient(left, @startColor, @endColor);
-	background-image: -o-linear-gradient(left, @startColor, @endColor);
-}
-
-.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
-	text-shadow: @string;
-}
-
-.transition (@transition) {
-	-webkit-transition: @transition;
-	-moz-transition:    @transition;
-	-ms-transition:     @transition;
-	-o-transition:      @transition;
-}
-
-.font-awesome{
-  display: inline-block;
-  font-family: 'FontAwesome';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.roboto(@family: regular){
-  font-family: "roboto@{family}", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.opacity(@opacity: 1) {
-	@ieOpacity: @opacity * 100;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieOpacity})";
-	filter: ~"alpha(opacity=@{ieOpacity})";
-	opacity: @opacity;
-}
-
-.box-shadow (@string:none) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
-}
-
-.bc(@color: transparent){
-  background-color: @color;
-}
-//.border(@width: 1px, @type: solid, @color: @gray-light)
-
-.table{}
-
-.table-hover{}
-
-.table-stripped{}
-
-.table-condensed{}
-
-.table{
-  .table;
-  .table-hover;
-  .table-stripped;
-  .table-condensed;
-}
-
-.btn{}
-.btn-default{}
-.btn-main-o{
-  .btn;
-  .btn-default;
-  .border-radius(0);
-  .bc;
-//  .border(1px, solid, @white);
-  color: @white;
-}
-.fa{}
-.fa-file-pdf-o{}
-
-.pdf-icon{
-  .font-awesome;
-  &:before{
-    content: "\f1c1";
-  }
-}
-
-.doc-icon{
-  .font-awesome;
-  &:before{
-    content: "\f1c2";
-  }
-}
-
-.xls-icon{
-  .font-awesome;
-  &:before{
-    content: "\f1c3";
-  }
-}

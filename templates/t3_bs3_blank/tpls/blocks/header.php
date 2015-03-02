@@ -20,14 +20,13 @@ if (!$sitename) {
 
 $logosize = 'col-sm-12';
 if ($headright = $this->countModules('head-search or languageswitcherload')) {
-	$logosize = 'col-sm-6';
+	$logosize = 'col-sm-8';
 }
 
 ?>
 
 <!-- HEADER -->
-<header id="t3-header" class="t3-header">
-	<div class="container">
+<header id="t3-header" class="container t3-header">
 	<div class="row">
 
 		<!-- LOGO -->
@@ -47,39 +46,26 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 		</div>
 		<!-- //LOGO -->
 
-	<?php if ($headright): ?>
-		<div class="col-xs-12 col-sm-3">
-			<?php if ($this->countModules('headnav')) : ?>
-				<!-- HEAD SEARCH -->
-				<div class="headnav <?php $this->_c('headnav') ?>">
-					<jdoc:include type="modules" name="<?php $this->_p('headnav') ?>" style="raw" />
-				</div>
-				<!-- //HEAD SEARCH -->
-			<?php endif ?>
-		</div>
-	<?php endif ?>
+		<?php if ($headright): ?>
+			<div class="col-xs-12 col-sm-4">
+				<?php if ($this->countModules('head-search')) : ?>
+					<!-- HEAD SEARCH -->
+					<div class="head-search <?php $this->_c('head-search') ?>">
+						<jdoc:include type="modules" name="<?php $this->_p('head-search') ?>" style="raw" />
+					</div>
+					<!-- //HEAD SEARCH -->
+				<?php endif ?>
 
-	<?php if ($headright): ?>
-		<div class="col-xs-12 col-sm-3">
-			<?php if ($this->countModules('head-search')) : ?>
-				<!-- HEAD SEARCH -->
-				<div class="head-search <?php $this->_c('head-search') ?>">
-					<jdoc:include type="modules" name="<?php $this->_p('head-search') ?>" style="raw" />
-				</div>
-				<!-- //HEAD SEARCH -->
-			<?php endif ?>
+				<?php if ($this->countModules('languageswitcherload')) : ?>
+					<!-- LANGUAGE SWITCHER -->
+					<div class="languageswitcherload">
+						<jdoc:include type="modules" name="<?php $this->_p('languageswitcherload') ?>" style="raw" />
+					</div>
+					<!-- //LANGUAGE SWITCHER -->
+				<?php endif ?>
+			</div>
+		<?php endif ?>
 
-			<?php if ($this->countModules('languageswitcherload')) : ?>
-				<!-- LANGUAGE SWITCHER -->
-				<div class="languageswitcherload">
-					<jdoc:include type="modules" name="<?php $this->_p('languageswitcherload') ?>" style="raw" />
-				</div>
-				<!-- //LANGUAGE SWITCHER -->
-			<?php endif ?>
-		</div>
-	<?php endif ?>
-
-	</div>
 	</div>
 </header>
 <!-- //HEADER -->
