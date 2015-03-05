@@ -32,7 +32,7 @@ defined('_JEXEC') or die;
 
 	<?php $this->loadBlock('header') ?>
 
-	<?php $this->loadBlock('mainbody-home-1') ?>
+	<?php $this->loadBlock('mainbody-home-2') ?>
 
 	<?php $this->loadBlock('footer') ?>
 
