@@ -31,6 +31,8 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 
 		<!-- LOGO -->
 		<div class="col-xs-12 <?php echo $logosize ?> logo">
+			<ul class="list-inline header__logo__select">
+				<li>
 			<div class="logo-<?php echo $logotype, ($logoimgsm ? ' logo-control' : '') ?>">
 				<a href="<?php echo JURI::base(true) ?>" title="<?php echo strip_tags($sitename) ?>">
 					<?php if($logotype == 'image'): ?>
@@ -43,25 +45,32 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 				</a>
 				<small class="site-slogan"><?php echo $slogan ?></small>
 			</div>
+			</li>
+
+			<li>
+			<div class="">
+				<?php if ($this->countModules('select-menu--header')) : ?>
+					<!-- HEADER SELECT MENU -->
+					<div class="select-menu--header <?php $this->_c('select-menu--header') ?>">
+						<label>Soy</label>
+						<jdoc:include type="modules" name="<?php $this->_p('select-menu--header') ?>" style="raw" />
+					</div>
+					<!-- //HEADER SELECT MENU -->
+				<?php endif ?>
+			</div>
+		</li>
+		</ul>
 		</div>
 		<!-- //LOGO -->
 
 		<?php if ($headright): ?>
 			<div class="col-xs-12 col-sm-4">
-				<?php if ($this->countModules('head-search')) : ?>
+				<?php if ($this->countModules('head__logo--concytec')) : ?>
 					<!-- HEAD SEARCH -->
-					<div class="head-search <?php $this->_c('head-search') ?>">
-						<jdoc:include type="modules" name="<?php $this->_p('head-search') ?>" style="raw" />
+					<div class="hidden-xs head__logo--concytec <?php $this->_c('head__logo--concytec') ?>">
+						<jdoc:include type="modules" name="<?php $this->_p('head__logo--concytec') ?>" style="raw" />
 					</div>
-					<!-- //HEAD SEARCH -->
-				<?php endif ?>
-
-				<?php if ($this->countModules('languageswitcherload')) : ?>
-					<!-- LANGUAGE SWITCHER -->
-					<div class="languageswitcherload">
-						<jdoc:include type="modules" name="<?php $this->_p('languageswitcherload') ?>" style="raw" />
-					</div>
-					<!-- //LANGUAGE SWITCHER -->
+					<!-- //HEAD LOGO CONCYTEC -->
 				<?php endif ?>
 			</div>
 		<?php endif ?>

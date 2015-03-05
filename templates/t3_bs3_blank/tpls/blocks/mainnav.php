@@ -14,7 +14,7 @@ defined('_JEXEC') or die;
 
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-		
+
 			<?php if ($this->getParam('navigation_collapse_enable', 1) && $this->getParam('responsive', 1)) : ?>
 				<?php $this->addScript(T3_URL.'/js/nav-collapse.js'); ?>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".t3-navbar-collapse">
@@ -34,6 +34,10 @@ defined('_JEXEC') or die;
 
 		<div class="t3-navbar navbar-collapse collapse">
 			<jdoc:include type="<?php echo $this->getParam('navigation_type', 'megamenu') ?>" name="<?php echo $this->getParam('mm_type', 'mainmenu') ?>" />
+			<ul class="nav navbar-nav navbar-right">
+        <li><a href="<?php echo $this->baseurl . '/contacto' ?>">Contacto</a></li>
+        <li><a href="#"><i class="fa fa-phone"></i></a></li>
+      </ul>
 		</div>
 
 	</div>

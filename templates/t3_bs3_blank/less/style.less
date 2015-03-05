@@ -1,13 +1,13 @@
-/** 
+/**
  *------------------------------------------------------------------------------
  * @package       T3 Framework for Joomla!
  *------------------------------------------------------------------------------
  * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
  * @license       GNU General Public License version 2 or later; see LICENSE.txt
- * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github
  *                & Google group to become co-author)
  * @Google group: https://groups.google.com/forum/#!forum/t3fw
- * @Link:         http://t3-framework.org 
+ * @Link:         http://t3-framework.org
  *------------------------------------------------------------------------------
  */
 
@@ -15,13 +15,17 @@
 // MAIN TEMPLATE STYLES
 // ---------------------------------------------------------
 
-// 
+//
 // HEADER
 // ---------------------------------------------------------
 
 .t3-header {
+  position: relative;
   padding-top: @t3-global-padding;
   padding-bottom: @t3-global-padding;
+  margin-left:auto;
+  margin-right:auto;
+  z-index: 1000;
 }
 
 
@@ -56,11 +60,21 @@
 // ----------
 .logo-text {
 
-  a {
-    text-decoration: none;
-    font-size: ceil(@font-size-base * 2);
-    font-weight: bold;
+a{
+  width: 196px;
+  height: 60px;
+  background-image: url(../images/logo.png);
+
+  span{
+    position: relative;
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
+}
 
   &:hover a,
   a:hover,
@@ -71,11 +85,17 @@
 
   // Taglines
   .site-slogan {
-    display: block;
+    display: none;
     font-size: @font-size-base;
     margin-top: 5px;
   }
 
+}
+
+.header__logo__select{
+  li{
+    vertical-align: middle;
+  }
 }
 
 // Head Search
@@ -88,11 +108,11 @@
   form {
     margin: 0;
   }
-  
+
   label {
     display: none;
   }
-  
+
   .search {
     position: relative;
     // Place a search icon
@@ -110,7 +130,7 @@
       float: right;
     }
   }
-  
+
   .form-control {
     width : 100%;
     padding-left: 30px;
@@ -128,7 +148,34 @@
 
 }
 
+.head__logo--concytec{
+  text-align: right;
+}
 
+// ---------------------------------------------------------
+// NAVBAR
+// ---------------------------------------------------------
+
+.t3-mainnav{
+  &.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+
+    ul.nav{
+      li{
+        a{
+          font-weight: bold;
+        }
+        &.current.active{
+          a{
+            color: @gray-dark;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
 
 // ---------------------------------------------------------
 // SPOTLIGHTS
@@ -297,3 +344,16 @@
     display: inline-block;
   }
 }
+
+@media(max-width: @screen-xs-max){}
+@media(min-width: @screen-sm-min){}
+@media(min-width: @screen-md-min){
+  .t3-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+@media(min-width: @screen-lg-min){}

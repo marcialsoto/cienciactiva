@@ -7,12 +7,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #33b668;
+  color: #428bca;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #227a46;
+  color: #2a6496;
   text-decoration: underline;
 }
 a:focus {
@@ -55,10 +55,10 @@ table.contentpaneopen {
   border: 0;
 }
 .star {
-  color: #e7f928;
+  color: #ffcc00;
 }
 .red {
-  color: #fb2d08;
+  color: #cc0000;
 }
 hr {
   margin-top: 20px;

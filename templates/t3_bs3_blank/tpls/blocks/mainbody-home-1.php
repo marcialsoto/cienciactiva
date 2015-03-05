@@ -10,17 +10,18 @@ defined('_JEXEC') or die;
 
 <div class="home">
 
-	<?php if ($this->countModules('home-1')) : ?>
+	<?php if ($this->countModules('slider-main')) : ?>
 		<!-- HOME SL 1 -->
-		<div class="wrap t3-sl t3-sl-1 <?php $this->_c('home-1') ?>">
+		<div class="wrap t3-sl t3-sl-1 <?php $this->_c('slider-main') ?>">
 			<div class="container">
-				<jdoc:include type="modules" name="<?php $this->_p('home-1') ?>" style="raw" />
+				<jdoc:include type="modules" name="<?php $this->_p('slider-main') ?>" style="raw" />
 			</div>
 		</div>
 		<!-- //HOME SL 1 -->
 	<?php endif ?>
 
-	<?php if ($this->countModules('home-2')) : ?>
+	<?php
+ /*<?php if ($this->countModules('home-2')) : ?>
 		<!-- HOME SL 2 -->
 		<div class="wrap t3-sl t3-sl-2 <?php $this->_c('home-2') ?>">
 			<div class="container">
@@ -58,6 +59,6 @@ defined('_JEXEC') or die;
 			</div>
 		</div>
 		<!-- //HOME SL 5 -->
-	<?php endif ?>
+	<?php endif ?>*/?>
 
 </div>

@@ -70,8 +70,8 @@
   }
 }
 .jumbotron-primary {
-  background-color: #33b668;
-  color: #eefaf3;
+  background-color: #428bca;
+  color: #ffffff;
 }
 .jumbotron-primary h1,
 .jumbotron-primary h2,
@@ -130,7 +130,7 @@ a.list-group-item.active:focus .list-group-item-heading {
 a.list-group-item.active .list-group-item-text,
 a.list-group-item.active:hover .list-group-item-text,
 a.list-group-item.active:focus .list-group-item-text {
-  color: #c6efd7;
+  color: #e1edf7;
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
@@ -139,12 +139,10 @@ a.list-group-item.active:focus .list-group-item-text {
   color: inherit;
 }
 .modal-backdrop.fade {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -154,7 +152,6 @@ a.list-group-item.active:focus .list-group-item-text {
     margin: 30px auto;
   }
   .modal-content {
-    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }

@@ -628,7 +628,7 @@ div.finder {
 #article-index ul > .active > a,
 .article-index ul > .active > a {
   border: 0;
-  background: #33b668;
+  background: #428bca;
   color: #ffffff;
 }
 #article-index ul > .active > a:hover,
@@ -638,7 +638,7 @@ div.finder {
 #article-index ul > .active > a:focus,
 .article-index ul > .active > a:focus {
   border: 0;
-  background: #33b668;
+  background: #428bca;
   color: #ffffff;
 }
 .pagenav {
@@ -680,7 +680,7 @@ div.finder {
   margin: 10px 0;
 }
 .filters {
-  margin: 10px 0 5px;
+  margin: 10px 0;
 }
 .display-limit {
   margin: 10px 0 5px;
@@ -745,7 +745,6 @@ div.finder {
   background: #fff6df;
   border: 1px solid #fb3;
   border-radius: 5px;
-  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   max-width: 300px;
@@ -780,7 +779,7 @@ div.calendar {
 .edit.item-page fieldset .btn-toolbar {
   margin-top: 10px;
 }
-.edit.item-page .chzn-container-multi .chzn-choices li.search-field input[type="text"] {
+.chzn-container-multi .chzn-choices li.search-field input[type="text"] {
   height: auto;
 }
 .iframe-bordered {
@@ -804,7 +803,6 @@ div.calendar {
   border-color: #cccccc;
   height: 26px;
   border-radius: 0 3px 3px 0;
-  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
