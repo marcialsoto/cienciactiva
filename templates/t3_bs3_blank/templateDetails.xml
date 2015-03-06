@@ -55,6 +55,8 @@
 
 	<positions>
 		<position>select-menu--header</position>
+		<position>tabs--main</position>
+		<position>news--main</position>
 		<position>languageswitcherload</position>
 		<position>head-search</position>
 		<position>head__logo--concytec</position>

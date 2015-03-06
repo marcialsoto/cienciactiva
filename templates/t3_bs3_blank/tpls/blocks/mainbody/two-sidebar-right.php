@@ -14,7 +14,6 @@ defined('_JEXEC') or die;
 
 <div id="t3-mainbody" class="container t3-mainbody">
 	<div class="row">
-
 		<!-- MAIN CONTENT -->
 		<div id="t3-content" class="t3-content col-xs-12 col-sm-8 col-md-6">
 			<?php if($this->hasMessage()) : ?>
@@ -40,15 +39,15 @@ defined('_JEXEC') or die;
 					<jdoc:include type="modules" name="<?php $this->_p($vars['sidebar1']) ?>" style="T3Xhtml" />
 				</div>
 				<!-- //SIDEBAR 1 -->
-			
+
 				<!-- SIDEBAR 2 -->
 				<div class="t3-sidebar t3-sidebar-2 col-xs-6 col-sm-12 col-md-6 <?php $this->_c($vars['sidebar2']) ?>">
 					<jdoc:include type="modules" name="<?php $this->_p($vars['sidebar2']) ?>" style="T3Xhtml" />
 				</div>
 				<!-- //SIDEBAR 2 -->
-	
+
 			</div>
 		</div>
 
 	</div>
-</div> 
+</div>

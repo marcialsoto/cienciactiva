@@ -1,3 +1,12 @@
+body {
+  font-family: "open_sansregular", sans-serif;
+}
+.btn {
+  -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -o-border-radius: 500px;
+  border-radius: 500px;
+}
 .t3-header {
   position: relative;
   padding-top: 20px;
@@ -121,17 +130,173 @@
     padding-top: 60px;
   }
 }
+.home {
+  background-color: #f5f5f5;
+}
+.nn_tabs.top > ul.nav-tabs > li > a {
+  color: #ffffff;
+  background-color: #666;
+  font-weight: bold;
+  border: 0 none;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+.nn_tabs.top > ul.nav-tabs > li.active a,
+.nn_tabs.top > ul.nav-tabs > li.active a:hover {
+  background-color: #dbdbdb;
+  color: #666;
+  font-weight: bold;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+.nn_tabs.outline_content > .tab-content {
+  background-color: #fff;
+  border: 0 none;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+.nn_tabs.outline_handles ul.nav-tabs > li a,
+.nn_tabs.outline_handles ul.nav-tabs > li a:hover,
+.nav-tabs,
+.nn_tabs.nav-tabs {
+  border: 0 none;
+}
+ul.category-module {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+ul.category-module li {
+  position: relative;
+}
+ul.category-module li a.mod-articles-category-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+ul.category-module li span.mod-articles-category-category {
+  display: block;
+  color: white;
+}
+ul.category-module li span.mod-articles-category-category a {
+  position: relative;
+  left: -4px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #999999;
+}
+ul.category-module li span.mod-articles-category-date {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #999999;
+  font-size: 10px;
+}
+.tabs--main {
+  margin-bottom: 30px;
+}
+.news--main {
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.news--main a {
+  color: #333333;
+}
+.news--main .page-header h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "open_sanslight", sans-serif;
+}
 .t3-mainbody {
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
 }
 .t3-content {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#content__title {
+  background: transparent url(../../templates/t3_bs3_blank/images/content__title__bg.jpg);
+}
+#content__title .page-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#content__title .page-header h3 {
+  font-family: "open_sanslight", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
 .t3-sidebar {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.t3-sidebar .t3-module {
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.t3-sidebar .t3-module .module-inner {
+  padding: 15px;
+}
+.t3-sidebar .t3-module.modulesearch {
+  background-color: #909090;
+  color: #ffffff;
+}
+.t3-sidebar .t3-module.modulesearch h3.module-title {
+  text-align: center;
+}
+.t3-sidebar .t3-module.modulesearch .btn {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: transparent;
+}
+.t3-sidebar .t3-module.modulevideos {
+  border: 1px solid #eeeeee;
+}
+.t3-sidebar .t3-module.modulevideos .module-inner {
+  padding: 0;
+}
+.t3-sidebar .t3-module.modulevideos .module-inner h3.module-title {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 15px;
+}
+.t3-sidebar .t3-module.modulemailing {
+  border: 1px solid #eeeeee;
+  background: #000e21 url(../../templates/t3_bs3_blank/images/mailing__bg.jpg) repeat-x center top;
+}
+.t3-sidebar .t3-module.modulemailing h3.module-title,
+.t3-sidebar .t3-module.modulemailing p {
+  color: #ffffff;
+}
+.t3-sidebar .t3-module.modulemailing .acymailing_form {
+  width: 100%;
+}
+.t3-sidebar .t3-module.modulemailing .acymailing_form input {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+.t3-sidebar .t3-module.modulemailing .acymailing_form input.button {
+  width: 100%;
+  border-color: transparent;
+  background-color: #f55261;
+}
+.t3-sidebar .t3-module.modulemailing .acymailing_form .acysubbuttons {
+  text-align: left;
 }
 .t3-footer {
   border-top: 1px solid #eeeeee;
@@ -272,5 +437,8 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+  .t3-sidebar {
+    top: -75px;
   }
 }
