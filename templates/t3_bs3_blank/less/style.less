@@ -249,7 +249,7 @@ a{
 .t3-footer {
   border-top: 1px solid @t3-border-color;
   background: @t3-footer-background;
-  color: @t3-footer-text-color;
+  color: @white;
   .clearfix();
 
   // small
@@ -264,13 +264,28 @@ a{
     &:hover, &:active, &:focus {
     }
   }
+  .container{
+    position: relative;
 
+    .social__links ul{
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      text-align: center;
+      top: -19px;
+      font-size: 24px;
+    }
+  }
 }
 
 // Foot Nav
 // --------
 .t3-footnav {
-  padding: @t3-global-padding 0;
+  padding: 20px 0;
   .clearfix();
 
   // Larger padding on Tablet / Desktop
@@ -281,12 +296,17 @@ a{
   // Footnav Modules
   .t3-module {
     background: @t3-footer-module-background;
-    color: @t3-footer-module-text-color;
+    color: @gray-light;
     margin-top: @line-height-computed / 2;
     margin-bottom: @line-height-computed / 2;
-
+      a{
+        color: @gray-light;
+        &:hover{
+          color: @white;
+        }
+      }
     .module-title {
-      color: @t3-footer-module-title-color;
+      color: @white;
       font-size: @font-size-large;
       margin-bottom: @line-height-computed / 2;
     }
@@ -301,10 +321,10 @@ a{
         line-height: 24px;
         // links
         > a {
-          color: @t3-footer-module-text-color;
+          color: @gray-light;
           // Link States
           &:hover, &:active, &:focus {
-            color: @t3-footer-module-text-color;
+            color: @white;
           }
         }
       }
@@ -314,15 +334,31 @@ a{
 
 }
 
+.sponsors{
+  padding: 45px 0 0px 0;
+
+  .sponsors__list{
+    border-top: 1px solid #616569;
+    border-bottom: 1px solid #616569;
+    padding: 15px 0 7px 0;
+  }
+}
+
 // Copyright
 // ---------
 .t3-copyright {
-  border-top: 1px solid @t3-border-color;
+  border-top: 1px solid #616569;
   font-size: @font-size-small;
-  padding: (@t3-global-padding * 2) 0 (@t3-global-padding * 4);
+  padding-top: 5px;
+  text-align: center;
+  color: @gray-light;
   .clearfix();
   small {
     margin-bottom: 5px;
+  }
+
+  a{
+    color: @gray-light;
   }
 }
 

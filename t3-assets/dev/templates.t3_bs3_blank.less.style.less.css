@@ -135,8 +135,8 @@
 }
 .t3-footer {
   border-top: 1px solid #eeeeee;
-  background: #f8f8f8;
-  color: #555555;
+  background: #595d61;
+  color: #ffffff;
 }
 .t3-footer:before,
 .t3-footer:after {
@@ -149,6 +149,21 @@
 .t3-footer small {
   display: block;
   font-size: 100%;
+}
+.t3-footer .container {
+  position: relative;
+}
+.t3-footer .container .social__links ul {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  top: -19px;
+  font-size: 24px;
 }
 .t3-footnav {
   padding: 20px 0;
@@ -167,13 +182,19 @@
   }
 }
 .t3-footnav .t3-module {
-  background: #f8f8f8;
-  color: #555555;
+  background: #595d61;
+  color: #999999;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.t3-footnav .t3-module a {
+  color: #999999;
+}
+.t3-footnav .t3-module a:hover {
+  color: #ffffff;
+}
 .t3-footnav .t3-module .module-title {
-  color: #333333;
+  color: #ffffff;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -187,17 +208,27 @@
   line-height: 24px;
 }
 .t3-footnav .t3-module ul > li > a {
-  color: #555555;
+  color: #999999;
 }
 .t3-footnav .t3-module ul > li > a:hover,
 .t3-footnav .t3-module ul > li > a:active,
 .t3-footnav .t3-module ul > li > a:focus {
-  color: #555555;
+  color: #ffffff;
+}
+.sponsors {
+  padding: 45px 0 0px 0;
+}
+.sponsors .sponsors__list {
+  border-top: 1px solid #616569;
+  border-bottom: 1px solid #616569;
+  padding: 15px 0 7px 0;
 }
 .t3-copyright {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #616569;
   font-size: 12px;
-  padding: 40px 0 80px;
+  padding-top: 5px;
+  text-align: center;
+  color: #999999;
 }
 .t3-copyright:before,
 .t3-copyright:after {
@@ -209,6 +240,9 @@
 }
 .t3-copyright small {
   margin-bottom: 5px;
+}
+.t3-copyright a {
+  color: #999999;
 }
 .copyright {
   margin-bottom: 20px;

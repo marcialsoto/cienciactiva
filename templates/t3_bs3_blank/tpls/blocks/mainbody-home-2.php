@@ -20,12 +20,6 @@ defined('_JEXEC') or die;
 
 	<?php $this->loadBlock('mainbody') ?>
 
-	<?php if ($this->countModules('home-5')) : ?>
-		<!-- HOME SL 5 -->
-		<div class="wrap t3-sl t3-sl-5 <?php $this->_c('home-5') ?>">
-			<jdoc:include type="modules" name="<?php $this->_p('home-5') ?>" style="raw" />
-		</div>
-		<!-- //HOME SL 5 -->
-	<?php endif ?>
+
 
 </div>
