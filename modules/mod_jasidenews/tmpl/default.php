@@ -12,6 +12,12 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 ?>
+
+<?php
+	$iwidth = 200;
+	$iheight = 150;
+
+?>
 <div class="ja-sidenews-list clearfix">
 	<ul class="media-list">
 	<?php foreach( $list as $item ) :
@@ -36,10 +42,11 @@ defined('_JEXEC') or die('Restricted access');
 				<?php endif; ?>
 			</a>
 			<div class="media-body">
-				<h4 class="media-heading"><a href="<?php echo  $item->link; ?>"><?php echo  $helper->trimString( $item->title, $titleMaxChars );?></a></h4>
 				<?php if (isset($item->date)) : ?>
-					<p><span class="ja-createdate"><?php echo JHTML::_('date', $item->date, JText::_('DATE_FORMAT_LC4')); ?> - </span></p>
+					<p><span class="ja-createdate"><?php echo JHTML::_('date', $item->date, JText::_('d F Y')); ?> </span></p>
 				<?php endif; ?>
+				<h4 class="media-heading"><a href="<?php echo  $item->link; ?>"><?php echo  $helper->trimString( $item->title, $titleMaxChars );?></a></h4>
+
 				<?php if ($descMaxChars!=0) : ?>
 				<?php echo $helper->trimString( strip_tags($item->introtext), $descMaxChars); ?>
 				<?php endif;?>

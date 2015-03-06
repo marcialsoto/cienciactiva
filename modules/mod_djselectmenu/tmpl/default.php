@@ -5,8 +5,10 @@ defined ('_JEXEC') or die('Restricted access');
 ?>
 	<div class="djselect_menu">
 		<?php
+
+
 		echo '<select class="djsm-select" onchange="DJSelectMenu(this.value)" >';
-			echo '<option value="">'.JText::_('MOD_DJSELECTMENU_PLEASE_SELECT_ELEMENT').'</option>';
+			echo '<option value="">'.JText::_('Seleccionar').'</option>';
 			foreach($list as $li){
 				if($li->level==1){
 					echo '<option ';

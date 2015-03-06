@@ -44,7 +44,7 @@ defined('_JEXEC') or die;
 				<!-- HEADER SELECT MENU -->
 				<div class="news--main <?php $this->_c('news--main') ?>">
 					<div class="page-header">
-						<h3>Noticias</h3>
+						<h3><span>Noticias</span></h3>
 					</div>
 					<jdoc:include type="modules" name="<?php $this->_p('news--main') ?>" style="raw" />
 				</div>
