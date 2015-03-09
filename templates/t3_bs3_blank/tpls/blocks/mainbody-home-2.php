@@ -18,7 +18,7 @@ defined('_JEXEC') or die;
 		<!-- //HOME SL 1 -->
 	<?php endif ?>
 
-	<?php $this->loadBlock('mainbody') ?>
+	<?php $this->loadBlock('mainbody-home') ?>
 
 
 
