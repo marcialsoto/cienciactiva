@@ -1,6 +1,12 @@
 body {
   font-family: "open_sansregular", sans-serif;
 }
+a {
+  color: #333333;
+}
+a:hover {
+  color: #555555;
+}
 .btn {
   -moz-border-radius: 500px;
   -webkit-border-radius: 500px;
