@@ -13,6 +13,26 @@ a:hover {
   -o-border-radius: 500px;
   border-radius: 500px;
 }
+.select-menu--header label {
+  font-family: "open_sanslight", sans-serif;
+}
+.select-menu--header select.djsm-select {
+  border: 0 none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-bottom: 1px solid #555555;
+  color: #333333;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-family: "open_sansbold", sans-serif;
+  padding-left: 0;
+}
 .t3-header {
   position: relative;
   padding-top: 20px;

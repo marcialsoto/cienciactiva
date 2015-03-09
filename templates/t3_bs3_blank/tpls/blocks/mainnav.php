@@ -34,10 +34,19 @@ defined('_JEXEC') or die;
 
 		<div class="t3-navbar navbar-collapse collapse">
 			<jdoc:include type="<?php echo $this->getParam('navigation_type', 'megamenu') ?>" name="<?php echo $this->getParam('mm_type', 'mainmenu') ?>" />
-			<ul class="nav navbar-nav navbar-right">
+
+			<?php if ($this->countModules('menu--contacto')) : ?>
+				<!-- SOCIAL MENU -->
+				<div class="menu--contacto <?php $this->_c('menu--contacto') ?>">
+					<jdoc:include type="modules" name="<?php $this->_p('menu--contacto') ?>" style="raw" />
+				</div>
+				<!-- //SOCIAL MENU -->
+			<?php endif ?>
+
+			<?php /**<ul class="nav navbar-nav navbar-right">
         <li><a href="<?php echo $this->baseurl . '/contacto' ?>">Contacto</a></li>
         <li><a href="#"><i class="fa fa-phone"></i></a></li>
-      </ul>
+      </ul>*/ ?>
 		</div>
 
 	</div>

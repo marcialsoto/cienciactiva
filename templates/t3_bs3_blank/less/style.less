@@ -32,7 +32,28 @@ a{
   -o-border-radius: 500px;
   border-radius: 500px;
 }
-
+.select-menu--header {
+  label{
+    font-family: "open_sanslight", sans-serif;
+  }
+  select.djsm-select{
+    border: 0 none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-bottom: 1px solid @gray;
+    color: @gray-dark;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-family: "open_sansbold", sans-serif;
+    padding-left: 0;
+  }
+}
 //
 // HEADER
 // ---------------------------------------------------------
@@ -190,6 +211,14 @@ a{
             background-color: transparent;
           }
         }
+      }
+    }
+  }
+  ul.menu--contacto{
+    li{
+      a{
+        font-weight: normal;
+        font-family: "open_sanslight", sans-serif;
       }
     }
   }
@@ -506,6 +535,8 @@ ul.category-module{
 
 
 
+
+
 // ---------------------------------------------------------
 // FOOTER
 // ---------------------------------------------------------
@@ -541,6 +572,50 @@ ul.category-module{
       text-align: center;
       top: -19px;
       font-size: 24px;
+
+      li{
+        &.fb, &.li, &.tw, &.yt{
+          a{
+            background-image: url(../images/social__links__icons__bg.png);
+            background-repeat: no-repeat;
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 28px;
+            text-align: center;
+            line-height: 1;
+            color: @white;
+            .fa{
+              font-size: 14px;
+            }
+          }
+        }
+
+        &.fb{
+          a{
+            background-position: 0 0;
+            &:hover{
+
+            }
+          }
+        }
+        &.li{
+          a{
+            background-position: -30px 0;
+          }
+        }
+        &.tw{
+          a{
+            background-position: -60px 0;
+          }
+        }
+        &.yt{
+          a{
+            background-position: -90px 0;
+          }
+        }
+
+      }
     }
   }
 }

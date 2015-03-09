@@ -15,9 +15,15 @@ defined('_JEXEC') or die;
 		<!-- FOOT NAVIGATION -->
 		<div class="container">
 			<div class="social__links">
-				<ul class="list-inline social">
-					<li><a href="#"><img src="../cienciactiva/images/tmp__social-icons.png" /></a></li>
-				</ul>
+				<div class="">
+					<?php if ($this->countModules('menu--social')) : ?>
+						<!-- SOCIAL MENU -->
+						<div class="menu--social <?php $this->_c('menu--social') ?>">
+							<jdoc:include type="modules" name="<?php $this->_p('menu--social') ?>" style="raw" />
+						</div>
+						<!-- //SOCIAL MENU -->
+					<?php endif ?>
+				</div>
 			</div>
 			<div class="row sponsors">
 				<div class="col-sm-3">
