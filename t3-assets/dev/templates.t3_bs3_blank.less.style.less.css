@@ -1,5 +1,7 @@
 body {
   font-family: "open_sansregular", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 a {
   color: #333333;
@@ -136,7 +138,7 @@ a:hover {
   text-align: right;
 }
 .t3-mainnav.navbar-default {
-  background-color: transparent;
+  background-color: #ffffff;
   border-color: transparent;
 }
 .t3-mainnav.navbar-default ul.nav li a {
@@ -237,7 +239,7 @@ ul.category-module li span.mod-articles-category-category a {
 }
 ul.category-module li span.mod-articles-category-date {
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   right: 0;
   color: #999999;
   font-size: 10px;

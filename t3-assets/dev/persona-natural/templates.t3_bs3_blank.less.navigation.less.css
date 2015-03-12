@@ -33,12 +33,12 @@
   }
 }
 .nav .caret {
-  border-top-color: #830280;
-  border-bottom-color: #830280;
+  border-top-color: #005169;
+  border-bottom-color: #005169;
 }
 .nav a:hover .caret {
-  border-top-color: #380136;
-  border-bottom-color: #380136;
+  border-top-color: #00161c;
+  border-bottom-color: #00161c;
 }
 .t3-navhelper {
   background: #f5f5f5;

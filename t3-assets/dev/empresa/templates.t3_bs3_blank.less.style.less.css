@@ -13,6 +13,26 @@ a:hover {
   -o-border-radius: 500px;
   border-radius: 500px;
 }
+.select-menu--header label {
+  font-family: "open_sanslight", sans-serif;
+}
+.select-menu--header select.djsm-select {
+  border: 0 none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-bottom: 1px solid #555555;
+  color: #333333;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-family: "open_sansbold", sans-serif;
+  padding-left: 0;
+}
 .t3-header {
   position: relative;
   padding-top: 20px;
@@ -126,6 +146,10 @@ a:hover {
   color: #333333;
   background-color: transparent;
 }
+.t3-mainnav ul.menu--contacto li a {
+  font-weight: normal;
+  font-family: "open_sanslight", sans-serif;
+}
 .t3-sl {
   padding-bottom: 40px;
   padding-top: 40px;
@@ -213,7 +237,7 @@ ul.category-module li span.mod-articles-category-category a {
 }
 ul.category-module li span.mod-articles-category-date {
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   right: 0;
   color: #999999;
   font-size: 10px;
@@ -377,6 +401,38 @@ ul.category-module li span.mod-articles-category-date {
   text-align: center;
   top: -19px;
   font-size: 24px;
+}
+.t3-footer .container .social__links ul li.fb a,
+.t3-footer .container .social__links ul li.li a,
+.t3-footer .container .social__links ul li.tw a,
+.t3-footer .container .social__links ul li.yt a {
+  background-image: url(../../../templates/t3_bs3_blank/images/social__links__icons__bg.png);
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 28px;
+  text-align: center;
+  line-height: 1;
+  color: #ffffff;
+}
+.t3-footer .container .social__links ul li.fb a .fa,
+.t3-footer .container .social__links ul li.li a .fa,
+.t3-footer .container .social__links ul li.tw a .fa,
+.t3-footer .container .social__links ul li.yt a .fa {
+  font-size: 14px;
+}
+.t3-footer .container .social__links ul li.fb a {
+  background-position: 0 0;
+}
+.t3-footer .container .social__links ul li.li a {
+  background-position: -30px 0;
+}
+.t3-footer .container .social__links ul li.tw a {
+  background-position: -60px 0;
+}
+.t3-footer .container .social__links ul li.yt a {
+  background-position: -90px 0;
 }
 .t3-footnav {
   padding: 20px 0;

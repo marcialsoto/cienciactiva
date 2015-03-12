@@ -9,7 +9,7 @@ defined('_JEXEC') or die;
 ?>
 
 <!-- MAIN NAVIGATION -->
-<nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav">
+<nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav  navbar-fixed-top">
 	<div class="container">
 
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -35,18 +35,16 @@ defined('_JEXEC') or die;
 		<div class="t3-navbar navbar-collapse collapse">
 			<jdoc:include type="<?php echo $this->getParam('navigation_type', 'megamenu') ?>" name="<?php echo $this->getParam('mm_type', 'mainmenu') ?>" />
 
-			<?php if ($this->countModules('menu--contacto')) : ?>
-				<!-- SOCIAL MENU -->
-				<div class="menu--contacto <?php $this->_c('menu--contacto') ?>">
-					<jdoc:include type="modules" name="<?php $this->_p('menu--contacto') ?>" style="raw" />
+			<?php if ($this->countModules('head-search')) : ?>
+				<!-- SEARCH FORM -->
+				<div class="navbar-form navbar-right">
+					<div class="header__search <?php $this->_c('head-search') ?>">
+						<jdoc:include type="modules" name="<?php $this->_p('head-search') ?>" style="raw" />
+					</div>
 				</div>
-				<!-- //SOCIAL MENU -->
+				<!-- //SEARCH FORM -->
 			<?php endif ?>
 
-			<?php /**<ul class="nav navbar-nav navbar-right">
-        <li><a href="<?php echo $this->baseurl . '/contacto' ?>">Contacto</a></li>
-        <li><a href="#"><i class="fa fa-phone"></i></a></li>
-      </ul>*/ ?>
 		</div>
 
 	</div>
