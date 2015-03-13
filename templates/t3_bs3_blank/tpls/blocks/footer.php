@@ -30,8 +30,11 @@ defined('_JEXEC') or die;
 					<a href="#"><img src="../cienciactiva/images/footer__logo--concytec.png" /></a>
 				</div>
 				<div class="col-sm-9 sponsors__list">
-					<ul class="list-inline">
-						<li><a href="#"><img src="../cienciactiva/images/footer__logo--fondecyt.png" /></a></li>
+					<ul class="list-inline row text-center">
+						<li class="col-sm-3"><a href="http://www.fondecyt.gob.pe" target="_blank"><img src="../cienciactiva/images/footer__logo--fondecyt.png" /></a></li>
+						<li class="col-sm-3"><a href="http://alicia.concytec.gob.pe/vufind/" target="_blank"><img src="../cienciactiva/images/footer__logo--alicia.png" /></a></li>
+						<li class="col-sm-3"><a href="http://dina.concytec.gob.pe/appDirectorioCTI/" target="_blank"><img src="../cienciactiva/images/footer__logo--dina.png" /></a></li>
+						<li class="col-sm-3"><a href="http://activanet.pe/index.php/component/content/article?id=5" target="_blank"><img src="../cienciactiva/images/footer__logo--activanet.png" /></a></li>
 					</ul>
 				</div>
 			</div>

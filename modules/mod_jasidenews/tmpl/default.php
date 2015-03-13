@@ -15,7 +15,7 @@ defined('_JEXEC') or die('Restricted access');
 
 <?php
 	$iwidth = 200;
-	$iheight = 150;
+	$iheight = 125;
 
 ?>
 <div class="ja-sidenews-list clearfix">
