@@ -1,5 +1,6 @@
 body {
   font-family: "open_sansregular", sans-serif;
+  padding-top: 50px;
 }
 a {
   color: #333333;
@@ -136,7 +137,7 @@ a:hover {
   text-align: right;
 }
 .t3-mainnav.navbar-default {
-  background-color: transparent;
+  background-color: #ffffff;
   border-color: transparent;
 }
 .t3-mainnav.navbar-default ul.nav li a {
@@ -536,4 +537,23 @@ ul.category-module li span.mod-articles-category-date {
 }
 #Mod140 .module-inner {
   padding: 0;
+}
+.findersearch.smart-search input {
+  width: 100%;
+}
+.findersearch.smart-search .controls select,
+.findersearch.smart-search .controls input {
+  width: 100%;
+}
+.findersearch.smart-search .ss-author,
+.findersearch.smart-search .ss-country,
+.findersearch.smart-search .ss-language,
+.findersearch.smart-search .ss-region,
+.findersearch.smart-search .ss-type {
+  display: none;
+}
+@media (min-width: 768px) {
+  .masthead {
+    padding: 122px 0;
+  }
 }
