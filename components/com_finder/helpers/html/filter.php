@@ -393,7 +393,7 @@ abstract class JHtmlFilter
 			$html .= JHtml::_('filter.dates', $idxQuery, $options);
 		}
 
-		$html .= '<div id="finder-filter-select-list" class="form-horizontal">';
+		$html .= '<div id="finder-filter-select-list" class="form">';
 
 		// Iterate through all branches and build code.
 		foreach ($branches as $bk => $bv)
@@ -417,7 +417,7 @@ abstract class JHtmlFilter
 				$active = count($active) === 1 ? array_shift($active) : null;
 			}
 
-			$html .= '<div class="filter-branch' . $classSuffix . ' control-group">';
+			$html .= '<div class="ss-' . JFilterOutput::stringUrlSafe($bv->title) . ' filter-branch' . $classSuffix . ' control-group">';
 			$html .= '<label for="tax-' . JFilterOutput::stringUrlSafe($bv->title) . '" class="control-label">';
 			$html .= JText::sprintf('COM_FINDER_FILTER_BRANCH_LABEL', JText::_(FinderHelperLanguage::branchSingular($bv->title)));
 			$html .= '</label>';

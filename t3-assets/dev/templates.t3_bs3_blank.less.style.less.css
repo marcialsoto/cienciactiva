@@ -538,3 +538,17 @@ ul.category-module li span.mod-articles-category-date {
 #Mod140 .module-inner {
   padding: 0;
 }
+.findersearch.smart-search input {
+  width: 100%;
+}
+.findersearch.smart-search .controls select,
+.findersearch.smart-search .controls input {
+  width: 100%;
+}
+.findersearch.smart-search .ss-author,
+.findersearch.smart-search .ss-country,
+.findersearch.smart-search .ss-language,
+.findersearch.smart-search .ss-region,
+.findersearch.smart-search .ss-type {
+  display: none;
+}
