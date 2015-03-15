@@ -29,7 +29,20 @@ defined('_JEXEC') or die;
 		</div>
 
 		<?php if ($this->getParam('navigation_collapse_enable')) : ?>
-			<div class="t3-navbar-collapse navbar-collapse collapse"></div>
+			<div class="t3-navbar-collapse navbar-collapse collapse">
+				<jdoc:include type="<?php echo $this->getParam('navigation_type', 'megamenu') ?>" name="<?php echo $this->getParam('mm_type', 'mainmenu') ?>" />
+
+				<?php if ($this->countModules('head-search')) : ?>
+					<!-- SEARCH FORM -->
+					<div class="navbar-form navbar-right">
+						<div class="header__search <?php $this->_c('head-search') ?>">
+							<jdoc:include type="modules" name="<?php $this->_p('head-search') ?>" style="raw" />
+						</div>
+					</div>
+					<!-- //SEARCH FORM -->
+				<?php endif ?>
+
+			</div>
 		<?php endif ?>
 
 		<div class="t3-navbar navbar-collapse collapse">
