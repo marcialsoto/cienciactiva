@@ -46,7 +46,7 @@ defined('_JEXEC') or die('Restricted access');
 					<p><span class="ja-createdate"><?php echo JHTML::_('date', $item->date, JText::_('d F Y')); ?> </span></p>
 				<?php endif; ?>
 				<h4 class="media-heading"><a href="<?php echo  $item->link; ?>"><?php echo  $helper->trimString( $item->title, $titleMaxChars );?></a></h4>
-
+				<?php echo  $item->link; ?>
 				<?php if ($descMaxChars!=0) : ?>
 				<div class="desc__social">
 					<div class="desc">
@@ -56,7 +56,7 @@ defined('_JEXEC') or die('Restricted access');
 						<ul class="list-inline">
 							<li>Compartir:</li>
 							<li><!--Twitter-->
-							<a class="twitter" href="http://twitter.com/home?status=Reading: <?php echo  $item->link; ?>" title="Share this post on Twitter!" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<a class="twitter" href="http://twitter.com/home?status=Reading: <?php $base = JURI::base(); echo $base . $item->link; ?>" title="Share this post on Twitter!" target="_blank" itemprop="url"><i class="fa fa-twitter"></i></a></li>
 							<li><!--Facebook-->
 							<a class="facebook" href="http://www.facebook.com/sharer.php?u=<?php echo  $item->link; ?>&amp;t=<?php echo  $helper->trimString( $item->title, $titleMaxChars );?>" title="Share this post on Facebook!" onclick="window.open(this.href); return false;"><i class="fa fa-facebook"></i></a></li>
 							<li><!--Google Plus-->
