@@ -22,14 +22,14 @@ defined('_JEXEC') or die;
 		</div>
 		<div class="media-body">
 			<h4 class="media-heading">
-				<a href="/<?php echo $item->link; ?>" itemprop="url">
+				<a href="<?php echo $item->link; ?>" itemprop="url">
 					<span itemprop="name">
 						<?php echo $item->title; ?>
 					</span>
 				</a>
 			</h4>
 			<p>
-				<a href="/<?php echo $item->link; ?>" itemprop="url">
+				<a href="<?php echo $item->link; ?>" itemprop="url">
 					<span itemprop="name">
 						Más detalles
 					</span>
