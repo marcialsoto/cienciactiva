@@ -17,8 +17,24 @@ a:hover {
 .module-title {
   font-family: "open_sanssemibold", sans-serif;
 }
+.select-menu--header {
+  border: 1px solid #999999;
+  position: relative;
+}
 .select-menu--header label {
   font-family: "open_sanslight", sans-serif;
+  padding: 2px 10px 3px;
+  margin-bottom: 0;
+}
+.select-menu--header label:before {
+  position: absolute;
+  left: -7px;
+  font: normal normal normal 18px/1 FontAwesome;
+  content: "\f0d9";
+  color: #999999;
+}
+.select-menu--header:hover select.djsm-select {
+  border-top: 1px solid #404040;
 }
 .select-menu--header select.djsm-select {
   border: 0 none;
@@ -27,15 +43,15 @@ a:hover {
   -o-box-shadow: none;
   box-shadow: none;
   background-color: transparent;
-  border-bottom: 1px solid #555555;
-  color: #333333;
+  color: #555555;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
   border-radius: 0px;
   text-transform: uppercase;
   font-family: "open_sansbold", sans-serif;
-  padding-left: 0;
+  padding-left: 10px;
+  border-top: 1px solid #999999;
 }
 .t3-header {
   position: relative;
@@ -276,6 +292,22 @@ ul.category-module li span.mod-articles-category-date {
 .news--main .page-header h3 span {
   background-color: #ffffff;
   padding-right: 10px;
+}
+.news--main .ja-sidenews-list ul.media-list .ja-slidenews-item {
+  position: relative;
+}
+.news--main .ja-sidenews-list ul.media-list .ja-slidenews-item .desc__social .desc {
+  display: block;
+}
+.news--main .ja-sidenews-list ul.media-list .ja-slidenews-item .desc__social .social--share {
+  display: none;
+  bottom: 5px;
+}
+.news--main .ja-sidenews-list ul.media-list .ja-slidenews-item:hover .desc {
+  display: none;
+}
+.news--main .ja-sidenews-list ul.media-list .ja-slidenews-item:hover .social--share {
+  display: block;
 }
 .ja-slidenews-item .ja-createdate {
   font-weight: normal;
@@ -608,6 +640,27 @@ ul.category-module li span.mod-articles-category-date {
 }
 @media (min-width: 768px) {
   .masthead {
-    padding: 133px 0;
+    padding: 106px 0;
+  }
+}
+@media (max-width: 991px) {
+  .t3-footer .container .col-sm-3 {
+    text-align: center;
+  }
+  .t3-footer .container .sponsors__list {
+    padding: 10px 0 5px !important;
+  }
+  .t3-footer .container .sponsors__list ul {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .t3-footer .container .sponsors__list ul li {
+    width: 100%;
+    padding: 10px 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  .nn_tabs ul.nav li.nn_tabs-tab {
+    width: 100%;
   }
 }

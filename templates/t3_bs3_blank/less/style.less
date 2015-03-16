@@ -41,15 +41,19 @@ a{
 .select-menu--header {
   border: 1px solid @gray-light;
   position: relative;
+  margin-top: 20px;
   label{
     font-family: "open_sanslight", sans-serif;
     padding: 2px 10px 3px;
     margin-bottom: 0;
     &:before{
       position: absolute;
-      left:-7px;
+      top:-13px;
+      left: 0;
+      right: 0;
+      width: 100%;
       font: normal normal normal 18px/1 FontAwesome;
-      content: "\f0d9";
+      content: "\f0d8";
       color: @gray-light;
     }
   }
@@ -587,6 +591,43 @@ ul.category-module{
             padding-bottom: 0px;
             margin-bottom: 15px;
           }
+          .module-ct{
+            .gallery{
+              a{
+                position: relative;
+                width: 100%;
+                height: 190px;
+                margin: 0px auto 0px;
+                clear: both;
+                display: block;
+                &:after{
+                  height: 36px;
+                  width: 100%;
+                  overflow: auto;
+                  margin: auto;
+                  position: absolute;
+                  text-align: center;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  font: normal normal normal 36px/1 FontAwesome;
+                  content: '\f16a';
+                  color: @red;
+                }
+
+                &:hover{
+                  &:after{
+                    color: lighten(@red, 15%);
+                  }
+                }
+
+                img{
+
+                }
+              }
+            }
+          }
         }
       }
 
@@ -837,6 +878,26 @@ ul.category-module{
 
 
 @media(max-width: @screen-xs-max){}
+
+@media(min-width: @screen-xs-max)
+{
+  .select-menu--header {
+    margin-top: 0;
+    label{
+      &:before{
+        left:-7px;
+        top: 3px;
+        content: '\f0d9';
+      }
+    }
+    &:hover{
+      select.djsm-select{
+      }
+    }
+    select.djsm-select{
+    }
+  }
+}
 @media(min-width: @screen-sm-min){
   .masthead {
     padding: 106px 0;

@@ -46,7 +46,6 @@ defined('_JEXEC') or die('Restricted access');
 					<p><span class="ja-createdate"><?php echo JHTML::_('date', $item->date, JText::_('d F Y')); ?> </span></p>
 				<?php endif; ?>
 				<h4 class="media-heading"><a href="<?php echo  $item->link; ?>"><?php echo  $helper->trimString( $item->title, $titleMaxChars );?></a></h4>
-				<?php echo  $item->link; ?>
 				<?php if ($descMaxChars!=0) : ?>
 				<div class="desc__social">
 					<div class="desc">

@@ -20,6 +20,7 @@ a:hover {
 .select-menu--header {
   border: 1px solid #999999;
   position: relative;
+  margin-top: 20px;
 }
 .select-menu--header label {
   font-family: "open_sanslight", sans-serif;
@@ -28,9 +29,12 @@ a:hover {
 }
 .select-menu--header label:before {
   position: absolute;
-  left: -7px;
+  top: -13px;
+  left: 0;
+  right: 0;
+  width: 100%;
   font: normal normal normal 18px/1 FontAwesome;
-  content: "\f0d9";
+  content: "\f0d8";
   color: #999999;
 }
 .select-menu--header:hover select.djsm-select {
@@ -432,6 +436,32 @@ ul.category-module li span.mod-articles-category-date {
   padding-bottom: 0px;
   margin-bottom: 15px;
 }
+.t3-sidebar .t3-module.modulevideos .module-inner .module-ct .gallery a {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  margin: 0px auto 0px;
+  clear: both;
+  display: block;
+}
+.t3-sidebar .t3-module.modulevideos .module-inner .module-ct .gallery a:after {
+  height: 36px;
+  width: 100%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font: normal normal normal 36px/1 FontAwesome;
+  content: '\f16a';
+  color: #cc0000;
+}
+.t3-sidebar .t3-module.modulevideos .module-inner .module-ct .gallery a:hover:after {
+  color: #ff1a1a;
+}
 .t3-sidebar .t3-module.modulemailing {
   border: 1px solid #eeeeee;
   background: #000e21 url(../../templates/t3_bs3_blank/images/mailing__bg.jpg) repeat-x center top;
@@ -637,6 +667,16 @@ ul.category-module li span.mod-articles-category-date {
 .findersearch.smart-search .ss-region,
 .findersearch.smart-search .ss-type {
   display: none;
+}
+@media (min-width: 767px) {
+  .select-menu--header {
+    margin-top: 0;
+  }
+  .select-menu--header label:before {
+    left: -7px;
+    top: 3px;
+    content: '\f0d9';
+  }
 }
 @media (min-width: 768px) {
   .masthead {
