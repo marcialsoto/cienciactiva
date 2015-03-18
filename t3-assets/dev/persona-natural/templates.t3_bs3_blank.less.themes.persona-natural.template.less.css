@@ -8,3 +8,16 @@
 .news--main a {
   color: #005169 !important;
 }
+ul.category-module li span.mod-articles-category-category a {
+  color: #005169 !important;
+}
+.t3-sidebar .modulesearch {
+  background-color: #005169 !important;
+}
+.nn_tabs.top > ul.nav-tabs > li > a {
+  background-color: #005169 !important;
+}
+.nn_tabs.top > ul.nav-tabs > li.active a,
+.nn_tabs.top > ul.nav-tabs > li.active a:hover {
+  background-color: #b6eeff !important;
+}
