@@ -314,6 +314,11 @@ ul.category-module li span.mod-articles-category-date {
   color: #999999;
   font-size: 12px;
 }
+#t3-content {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-top: 25px;
+}
 .t3-mainbody {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -599,6 +604,9 @@ ul.category-module li span.mod-articles-category-date {
 }
 .social__links ul li.yt a {
   background-position: -90px 0;
+}
+.nn_tabs.outline_content > .tab-content > .tab-pane {
+  padding: 0;
 }
 .t3-footer {
   border-top: 1px solid #eeeeee;
