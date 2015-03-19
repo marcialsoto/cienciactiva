@@ -495,9 +495,8 @@ ul.category-module{
     padding-bottom: 0;
     h3{
       font-family: "open_sanslight", sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       margin: 0;
-      text-transform: uppercase;
       font-weight: normal;
     }
   }
@@ -515,6 +514,73 @@ ul.category-module{
     .module-inner{
       padding: 30px;
     }
+
+      &.modulesocial__list--sidebar{
+        background-color: transparent !important;
+        text-align: center;
+        .module-inner{
+          padding: 0 !important;
+          h3.module-title{
+            font-family: "open_sanslight", sans-serif;
+            margin-bottom: 7px;
+          }
+          ul.list-inline.social{
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+            top: -19px;
+            font-size: 24px;
+
+            li{
+              &.fb, &.li, &.tw, &.yt{
+                a{
+                  background-image: url(../images/social__links__icons__bg.png);
+                  background-repeat: no-repeat;
+                  display: block;
+                  position: relative;
+                  width: 30px;
+                  height: 28px;
+                  text-align: center;
+                  line-height: 1;
+                  color: @white;
+                  .fa{
+                    font-size: 14px;
+                  }
+                }
+              }
+
+              &.fb{
+                a{
+                  background-position: 0 0;
+                  &:hover{
+
+                  }
+                }
+              }
+              &.li{
+                a{
+                  background-position: -30px 0;
+                }
+              }
+              &.tw{
+                a{
+                  background-position: -60px 0;
+                }
+              }
+              &.yt{
+                a{
+                  background-position: -90px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
       &.modulesearch {
         background-color: #909090;
         color: @white;
@@ -667,6 +733,63 @@ ul.category-module{
 .t3-sidebar-2 {
 }
 
+.social__links ul{
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  top: -19px;
+  font-size: 24px;
+
+  li{
+    &.fb, &.li, &.tw, &.yt{
+      a{
+        background-image: url(../images/social__links__icons__bg.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 28px;
+        text-align: center;
+        line-height: 1;
+        color: @white;
+        .fa{
+          font-size: 14px;
+        }
+      }
+    }
+
+    &.fb{
+      a{
+        background-position: 0 0;
+        &:hover{
+
+        }
+      }
+    }
+    &.li{
+      a{
+        background-position: -30px 0;
+      }
+    }
+    &.tw{
+      a{
+        background-position: -60px 0;
+      }
+    }
+    &.yt{
+      a{
+        background-position: -90px 0;
+      }
+    }
+
+  }
+}
+
 
 
 
@@ -694,63 +817,6 @@ ul.category-module{
   }
   .container{
     position: relative;
-
-    .social__links ul{
-      position: absolute;
-      right: 0;
-      left: 0;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      text-align: center;
-      top: -19px;
-      font-size: 24px;
-
-      li{
-        &.fb, &.li, &.tw, &.yt{
-          a{
-            background-image: url(../images/social__links__icons__bg.png);
-            background-repeat: no-repeat;
-            display: block;
-            position: relative;
-            width: 30px;
-            height: 28px;
-            text-align: center;
-            line-height: 1;
-            color: @white;
-            .fa{
-              font-size: 14px;
-            }
-          }
-        }
-
-        &.fb{
-          a{
-            background-position: 0 0;
-            &:hover{
-
-            }
-          }
-        }
-        &.li{
-          a{
-            background-position: -30px 0;
-          }
-        }
-        &.tw{
-          a{
-            background-position: -60px 0;
-          }
-        }
-        &.yt{
-          a{
-            background-position: -90px 0;
-          }
-        }
-
-      }
-    }
   }
 
 
