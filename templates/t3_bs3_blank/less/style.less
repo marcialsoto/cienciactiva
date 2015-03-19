@@ -486,6 +486,45 @@ ul.category-module{
 .t3-content {
   padding-top: @line-height-computed ;
   padding-bottom: @line-height-computed;
+
+  .conv--categ {
+    .categories-module{
+      .col-sm-12{
+        padding: 15px;
+        background-color: #fff;
+        margin-bottom: 15px;
+        h4{
+          text-transform: uppercase;
+          font-family: "open_sansbold", sans-serif;
+        }
+
+        ul, .col-sm-12{
+          padding: 0;
+          margin: 0;
+          background-color: transparent;
+          h5{
+
+          }
+        }
+
+        &.Movilizaciones{
+          background-color: @esq__green;
+        }
+        &.Proyectos{
+          background-color: @esq__blue--light;
+        }
+        &.Eventos{
+          background-color: @esq__purple--light;
+        }
+        &.Becas{
+          background-color: @esq__red--light;
+        }
+        &.Premios{
+          background-color: @esq__orange;
+        }
+      }
+    }
+  }
 }
 
 #content__title{

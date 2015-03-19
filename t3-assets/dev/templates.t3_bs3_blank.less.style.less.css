@@ -323,6 +323,36 @@ ul.category-module li span.mod-articles-category-date {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.t3-content .conv--categ .categories-module .col-sm-12 {
+  padding: 15px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.t3-content .conv--categ .categories-module .col-sm-12 h4 {
+  text-transform: uppercase;
+  font-family: "open_sansbold", sans-serif;
+}
+.t3-content .conv--categ .categories-module .col-sm-12 ul,
+.t3-content .conv--categ .categories-module .col-sm-12 .col-sm-12 {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+.t3-content .conv--categ .categories-module .col-sm-12.Movilizaciones {
+  background-color: #91cfa6;
+}
+.t3-content .conv--categ .categories-module .col-sm-12.Proyectos {
+  background-color: #80d1e0;
+}
+.t3-content .conv--categ .categories-module .col-sm-12.Eventos {
+  background-color: #a78abb;
+}
+.t3-content .conv--categ .categories-module .col-sm-12.Becas {
+  background-color: #ed908e;
+}
+.t3-content .conv--categ .categories-module .col-sm-12.Premios {
+  background-color: #ffa55a;
+}
 #content__title {
   background: transparent url(../../templates/t3_bs3_blank/images/content__title__bg.jpg);
 }

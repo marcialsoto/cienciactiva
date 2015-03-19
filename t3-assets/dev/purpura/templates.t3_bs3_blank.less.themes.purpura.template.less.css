@@ -1,0 +1,30 @@
+.home .t3-sl-1,
+.home .t3-sl-5 {
+  background-color: #a78abb !important;
+}
+.home .t3-sl-1 .jumbotron .btn,
+.home .t3-sl-5 .jumbotron .btn {
+  border-color: #fff;
+}
+.t3-mainnav {
+  border-bottom: none;
+}
+.news--main a {
+  color: #a78abb !important;
+}
+ul.category-module li span.mod-articles-category-category a {
+  color: #a78abb !important;
+}
+.t3-sidebar .modulesearch {
+  background-color: #a78abb !important;
+}
+.nn_tabs.top > ul.nav-tabs > li > a {
+  background-color: #a78abb !important;
+}
+.nn_tabs.top > ul.nav-tabs > li.active a,
+.nn_tabs.top > ul.nav-tabs > li.active a:hover {
+  background-color: #ffffff !important;
+}
+table.category tr th {
+  background-color: #a78abb !important;
+}
