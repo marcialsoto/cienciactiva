@@ -34,22 +34,6 @@ class ContentModelCategories extends JModelList
 
 	private $_parent = null;
 
-	private $_items = null;
-  
-  // Mcats
-  /**
-   * Items total
-   * @var integer
-   */
-  var $_total = null;
- 
-  /**
-   * Pagination object
-   * @var object
-   */
-  var $_pagination = null;
-  // END MCats 
-  
 	/**
 	 * Method to auto-populate the model state.
 	 *
@@ -76,25 +60,7 @@ class ContentModelCategories extends JModelList
 
 		$this->setState('filter.published',	1);
 		$this->setState('filter.access',	true);
-    // Multicats
-    // Get pagination request variables
-  	$limit = $app->getUserStateFromRequest('global.list.limit', 'limit', $app->getCfg('list_limit'), 'int');
-  	$limitstart = JRequest::getVar('limitstart', 0, '', 'int');
-   
-    $session = JFactory::getSession();
-    $registry    = $session->get('registry');
-    
-    
-    $limitstart = $registry->set('global.list.start', JRequest::getVar('limitstart', 0, '', 'int'));
-    
-    //$this->setState('list.start', JRequest::getVar('limitstart', 0, '', 'int'));
-  	// In case limit has been changed, adjust it
-  	$limitstart = ($limit != 0 ? (floor($limitstart / $limit) * $limit) : 0);
-    //$limitstart = 3;
-  	$this->setState('limit', $limit);
-  	$this->setState('limitstart', $limitstart);
-	  // End Multicats
-	} 
+	}
 
 	/**
 	 * Method to get a store id based on model configuration state.
@@ -129,7 +95,9 @@ class ContentModelCategories extends JModelList
 	 */
 	public function getItems($recursive = false)
 	{
-		if (!count($this->_items))
+		$store = $this->getStoreId();
+
+		if (!isset($this->cache[$store]))
 		{
 			$app = JFactory::getApplication();
 			$menu = $app->getMenu();
@@ -148,15 +116,15 @@ class ContentModelCategories extends JModelList
 
 			if (is_object($this->_parent))
 			{
-				$this->_items = $this->_parent->getChildren($recursive);
+				$this->cache[$store] = $this->_parent->getChildren($recursive);
 			}
 			else
 			{
-				$this->_items = false;
+				$this->cache[$store] = false;
 			}
 		}
 
-		return $this->_items;
+		return $this->cache[$store];
 	}
 
 	/**
@@ -175,48 +143,4 @@ class ContentModelCategories extends JModelList
 
 		return $this->_parent;
 	}
-  
-  /**
-   * Multicats override functions
-   */     
-  function getData() 
-  {
- 	// if data hasn't already been obtained, load it
- 	if (empty($this->_data)) {
- 	    //$query = $this->_buildQuery();
- 	    $this->_data = $this->_getList($query, $this->getState('limitstart'), $this->getState('limit'));	
- 	}
- 	return $this->_data;
-  }
-  
-  
-  function getTotal()
-  {
- 	// Load the content if it doesn't already exist
- 	if (empty($this->_total)) {
- 	    //$query = $this->_buildQuery();
-       //$this->_total = $this->_getListCount($query);	
- 	}
-    $user  = JFactory::getUser();
-
-    $aid = $user->getAuthorisedViewLevels();
-    $levels = implode(',',$aid);
-    
-    $db		= JFactory::getDbo();
-    $query = "SELECT count(id) FROM #__categories WHERE extension = 'com_content' AND access IN(".$levels.") ";
-    $db->setQuery($query);
-    $this->_total = $db->loadResult();
-    
-    return $this->_total;
-  }
-  
-  function getPagination()
-  {
- 	// Load the content if it doesn't already exist
- 	if (empty($this->_pagination)) {
- 	    jimport('joomla.html.pagination');
- 	    $this->_pagination = new JPagination($this->getTotal(), $this->getState('limitstart'), $this->getState('limit') );
- 	}
- 	return $this->_pagination;
-  }       
 }

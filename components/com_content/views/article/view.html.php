@@ -35,14 +35,14 @@ class ContentViewArticle extends JViewLegacy
 	 */
 	public function display($tpl = null)
 	{
-		$app		= JFactory::getApplication();
-		$user		= JFactory::getUser();
-		$dispatcher	= JEventDispatcher::getInstance();
+		$app        = JFactory::getApplication();
+		$user       = JFactory::getUser();
+		$dispatcher = JEventDispatcher::getInstance();
 
-		$this->item		= $this->get('Item');
-		$this->print	= $app->input->getBool('print');
-		$this->state	= $this->get('State');
-		$this->user		= $user;
+		$this->item  = $this->get('Item');
+		$this->print = $app->input->getBool('print');
+		$this->state = $this->get('State');
+		$this->user  = $user;
 
 		// Check for errors.
 		if (count($errors = $this->get('Errors')))
@@ -53,19 +53,13 @@ class ContentViewArticle extends JViewLegacy
 		}
 
 		// Create a shortcut for $item.
-		$item = $this->item;
+		$item            = $this->item;
 		$item->tagLayout = new JLayoutFile('joomla.content.tags');
 
-    //Mcats
-    $cat = ContentHelperRoute::getMCat($item->id, $item->catid);
-		    
-    // Add router helpers.
-		$item->slug			= $item->alias ? ($item->id.':'.$item->alias) : $item->id;
-    $item->catslug		= $item->category_alias ? ($cat->id.':'.$cat->alias) : $cat->id; //updated for mcats
-    //End Mcats
-		//$item->slug			= $item->alias ? ($item->id . ':' . $item->alias) : $item->id;
-		//$item->catslug		= $item->category_alias ? ($item->catid . ':' . $item->category_alias) : $item->catid;
-		$item->parent_slug	= $item->parent_alias ? ($item->parent_id . ':' . $item->parent_alias) : $item->parent_id;
+		// Add router helpers.
+		$item->slug        = $item->alias ? ($item->id . ':' . $item->alias) : $item->id;
+		$item->catslug     = $item->category_alias ? ($item->catid . ':' . $item->category_alias) : $item->catid;
+		$item->parent_slug = $item->parent_alias ? ($item->parent_id . ':' . $item->parent_alias) : $item->parent_id;
 
 		// No link for ROOT category
 		if ($item->parent_alias == 'root')
@@ -74,17 +68,13 @@ class ContentViewArticle extends JViewLegacy
 		}
 
 		// TODO: Change based on shownoauth
-		//Mcats
-		//$item->readmore_link = JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catslug));
-    $link = ContentHelperRoute::getArticleRoute($item->slug, $item->catslug);
-    $item->readmore_link = JRoute::_($link);
-    //End Mcats
-    
+		$item->readmore_link = JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catid, $item->language));
+
 		// Merge article params. If this is single-article view, menu params override article params
 		// Otherwise, article params override menu item params
 		$this->params = $this->state->get('params');
-		$active = $app->getMenu()->getActive();
-		$temp = clone $this->params;
+		$active       = $app->getMenu()->getActive();
+		$temp         = clone $this->params;
 
 		// Check to see which parameters should take priority
 		if ($active)
@@ -167,16 +157,16 @@ class ContentViewArticle extends JViewLegacy
 		// Process the content plugins.
 
 		JPluginHelper::importPlugin('content');
-		$dispatcher->trigger('onContentPrepare', array ('com_content.article', &$item, &$this->params, $offset));
+		$dispatcher->trigger('onContentPrepare', array ('com_content.article', &$item, &$item->params, $offset));
 
 		$item->event = new stdClass;
-		$results = $dispatcher->trigger('onContentAfterTitle', array('com_content.article', &$item, &$this->params, $offset));
+		$results = $dispatcher->trigger('onContentAfterTitle', array('com_content.article', &$item, &$item->params, $offset));
 		$item->event->afterDisplayTitle = trim(implode("\n", $results));
 
-		$results = $dispatcher->trigger('onContentBeforeDisplay', array('com_content.article', &$item, &$this->params, $offset));
+		$results = $dispatcher->trigger('onContentBeforeDisplay', array('com_content.article', &$item, &$item->params, $offset));
 		$item->event->beforeDisplayContent = trim(implode("\n", $results));
 
-		$results = $dispatcher->trigger('onContentAfterDisplay', array('com_content.article', &$item, &$this->params, $offset));
+		$results = $dispatcher->trigger('onContentAfterDisplay', array('com_content.article', &$item, &$item->params, $offset));
 		$item->event->afterDisplayContent = trim(implode("\n", $results));
 
 		// Increment the hit counter of the article.
@@ -191,35 +181,6 @@ class ContentViewArticle extends JViewLegacy
 
 		$this->_prepareDocument();
 
-    // Multicats
-    //get param for canonical
-    $params		= JComponentHelper::getParams('com_multicats');
-	  $canonical_urls	= $params->get('use_canonical_urls', 0); 
-    if($canonical_urls == true){
-      //mcats - canonical urls
-      $doc = JFactory::getDocument();
-      
-      // get first category ID into $cid
-      $catids = explode(',',$this->item->catid);
-      $cid = $catids[0];
- 
-      //remove current incorrect canonical links
-      foreach($doc->_links as $key => $link){
-        unset($doc->_links[$key]);
-      }
-        
-      $uri     = JUri::getInstance();
-  		$domain = $uri->toString(array('scheme', 'host', 'port'));
-  		        
-      $href = $domain.JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $cat->id));
-      if(JUri::current() != $href){
-        $attribs = array(); 
-        $doc->addHeadLink( $href, 'canonical', 'rel', $attribs );
-      }     
-      
-    }
-    //End Multicats 
-
 		parent::display($tpl);
 	}
 
@@ -230,10 +191,10 @@ class ContentViewArticle extends JViewLegacy
 	 */
 	protected function _prepareDocument()
 	{
-		$app		= JFactory::getApplication();
-		$menus		= $app->getMenu();
-		$pathway	= $app->getPathway();
-		$title		= null;
+		$app     = JFactory::getApplication();
+		$menus   = $app->getMenu();
+		$pathway = $app->getPathway();
+		$title   = null;
 
 		// Because the application sets a default page title,
 		// we need to get it from the menu item itself
@@ -261,40 +222,21 @@ class ContentViewArticle extends JViewLegacy
 				$title = $this->item->title;
 			}
 
-			$path = array(array('title' => $this->item->title, 'link' => ''));
+			$path     = array(array('title' => $this->item->title, 'link' => ''));
 			$category = JCategories::getInstance('Content')->get($this->item->catid);
 
 			while ($category && ($menu->query['option'] != 'com_content' || $menu->query['view'] == 'article' || $id != $category->id) && $category->id > 1)
 			{
-				$path[] = array('title' => $category->title, 'link' => ContentHelperRoute::getCategoryRoute($category->id));
+				$path[]   = array('title' => $category->title, 'link' => ContentHelperRoute::getCategoryRoute($category->id));
 				$category = $category->getParent();
 			}
 
 			$path = array_reverse($path);
 
-      // Multicats
-      if(JRequest::getVar('catid')) { $catid = JRequest::getVar('catid'); }
-      else { $catid = $this->item->catid; }
-
-      $category = JCategories::getInstance('Content')->get($catid);      
-      //$category = JCategories::getInstance('Content')->get($this->item->catid);
-			// END Multicats
-      
-      while ($category && ($menu->query['option'] != 'com_content' || $menu->query['view'] == 'article' || $id != $category->id) && $category->id > 1)
-			{
-				$path[] = array('title' => $category->title, 'link' => ContentHelperRoute::getCategoryRoute($category->id));
-				$category = $category->getParent();
-			}
-      
-      // Multicats
-      $pathway->addItem($path[0]['title'], $path[0]['link']);
-			/*
-      $path = array_reverse($path);
-      foreach($path as $item)
+			foreach ($path as $item)
 			{
 				$pathway->addItem($item['title'], $item['link']);
 			}
-      */ 
 		}
 
 		// Check for empty title and add site name if param is set
