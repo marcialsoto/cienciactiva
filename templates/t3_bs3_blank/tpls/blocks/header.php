@@ -30,7 +30,7 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 	<div class="row">
 
 		<!-- LOGO -->
-		<div class="col-xs-12 <?php echo $logosize ?> logo">
+		<div class="col-xs-6 <?php echo $logosize ?> logo">
 			<ul class="list-inline header__logo__select">
 				<li>
 			<div class="logo-<?php echo $logotype, ($logoimgsm ? ' logo-control' : '') ?>">
@@ -48,7 +48,6 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 			</li>
 
 			<li>
-			<div class="">
 				<?php if ($this->countModules('select-menu--header')) : ?>
 					<!-- HEADER SELECT MENU -->
 					<div class="select-menu--header <?php $this->_c('select-menu--header') ?>">
@@ -57,17 +56,16 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 					</div>
 					<!-- //HEADER SELECT MENU -->
 				<?php endif ?>
-			</div>
 		</li>
 		</ul>
 		</div>
 		<!-- //LOGO -->
 
 		<?php if ($headright): ?>
-			<div class="col-xs-12 col-sm-4">
+			<div class="col-xs-6 col-sm-4">
 				<?php if ($this->countModules('head__logo--concytec')) : ?>
 					<!-- HEAD SEARCH -->
-					<div class="hidden-xs head__logo--concytec <?php $this->_c('head__logo--concytec') ?>">
+					<div class="head__logo--concytec <?php $this->_c('head__logo--concytec') ?>">
 						<jdoc:include type="modules" name="<?php $this->_p('head__logo--concytec') ?>" style="raw" />
 					</div>
 					<!-- //HEAD LOGO CONCYTEC -->

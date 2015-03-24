@@ -688,6 +688,17 @@ ul.category-module li span.mod-articles-category-date {
   border-bottom: 1px solid #616569;
   padding: 15px 0 7px 0;
 }
+.sponsors .sponsors__list li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sponsors .sponsors__list li p {
+  font-size: 10px;
+  line-height: 16px;
+  color: #999999;
+  margin-top: 12px;
+  text-align: justify;
+}
 .t3-copyright {
   border-top: 1px solid #616569;
   font-size: 12px;
@@ -787,6 +798,9 @@ ul li.item-873 span {
   .t3-footer .container .sponsors__list ul li {
     width: 100%;
     padding: 10px 0 !important;
+  }
+  .t3-footer .container .sponsors__list ul li p {
+    display: none;
   }
 }
 @media (max-width: 767px) {
