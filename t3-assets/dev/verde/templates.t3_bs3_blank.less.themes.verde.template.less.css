@@ -1,6 +1,6 @@
 .home .t3-sl-1,
 .home .t3-sl-5 {
-  background-color: #91cfa6 !important;
+  background-color: #39be37 !important;
 }
 .home .t3-sl-1 .jumbotron .btn,
 .home .t3-sl-5 .jumbotron .btn {
@@ -10,21 +10,21 @@
   border-bottom: none;
 }
 .news--main a {
-  color: #91cfa6 !important;
+  color: #39be37 !important;
 }
 ul.category-module li span.mod-articles-category-category a {
-  color: #91cfa6 !important;
+  color: #39be37 !important;
 }
 .t3-sidebar .modulesearch {
-  background-color: #91cfa6 !important;
+  background-color: #39be37 !important;
 }
 .nn_tabs.top > ul.nav-tabs > li > a {
-  background-color: #91cfa6 !important;
+  background-color: #39be37 !important;
 }
 .nn_tabs.top > ul.nav-tabs > li.active a,
 .nn_tabs.top > ul.nav-tabs > li.active a:hover {
   background-color: #ffffff !important;
 }
 table.category tr th {
-  background-color: #91cfa6 !important;
+  background-color: #39be37 !important;
 }
