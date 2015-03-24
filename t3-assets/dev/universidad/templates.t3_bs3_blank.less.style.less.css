@@ -314,6 +314,11 @@ ul.category-module li span.mod-articles-category-date {
   color: #999999;
   font-size: 12px;
 }
+#t3-content {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-top: 25px;
+}
 .t3-mainbody {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -600,6 +605,9 @@ ul.category-module li span.mod-articles-category-date {
 .social__links ul li.yt a {
   background-position: -90px 0;
 }
+.nn_tabs.outline_content > .tab-content > .tab-pane {
+  padding: 0;
+}
 .t3-footer {
   border-top: 1px solid #eeeeee;
   background: #595d61;
@@ -736,6 +744,17 @@ ul.category-module li span.mod-articles-category-date {
 .findersearch.smart-search .ss-region,
 .findersearch.smart-search .ss-type {
   display: none;
+}
+ul li.item-873 {
+  padding: 0 15px;
+}
+ul li.item-873:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: '\f095';
+  padding-right: 3px;
+}
+ul li.item-873 span {
+  font-weight: bold;
 }
 @media (min-width: 767px) {
   .select-menu--header {

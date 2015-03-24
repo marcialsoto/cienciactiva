@@ -477,9 +477,14 @@ ul.category-module{
 // ---------------------------------------------------------
 
 #t3-content{
-  background-color: @white;
+  /*background-color: @white;
   padding: 30px;
-  margin-top: 25px;
+  margin-top: 25px;*/
+
+  .item-page{
+    background-color: @white;
+    padding: 30px;
+  }
 }
 .t3-mainbody {
   padding-top: @line-height-computed ;
@@ -988,6 +993,19 @@ ul.category-module{
   .ss-author, .ss-country, .ss-language, .ss-region, .ss-type{display: none;}
 }
 
+ul{
+  li.item-873{
+    padding: 0 15px;
+    &:before{
+      font: normal normal normal 14px/1 FontAwesome;
+      content: '\f095';
+      padding-right: 3px;
+    }
+    span{
+      font-weight: bold;
+    }
+  }
+}
 
 
 @media(max-width: @screen-xs-max){}

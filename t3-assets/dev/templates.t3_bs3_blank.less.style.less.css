@@ -315,9 +315,11 @@ ul.category-module li span.mod-articles-category-date {
   font-size: 12px;
 }
 #t3-content {
+  
+}
+#t3-content .item-page {
   background-color: #ffffff;
   padding: 30px;
-  margin-top: 25px;
 }
 .t3-mainbody {
   padding-top: 20px;
@@ -744,6 +746,17 @@ ul.category-module li span.mod-articles-category-date {
 .findersearch.smart-search .ss-region,
 .findersearch.smart-search .ss-type {
   display: none;
+}
+ul li.item-873 {
+  padding: 0 15px;
+}
+ul li.item-873:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: '\f095';
+  padding-right: 3px;
+}
+ul li.item-873 span {
+  font-weight: bold;
 }
 @media (min-width: 767px) {
   .select-menu--header {

@@ -9,11 +9,10 @@ defined('_JEXEC') or die;
 ?>
 
 <div class="home">
-
-  <?php if ($this->countModules('mast-col')) : ?>
+  <?php if ($this->countModules('slider-main')) : ?>
     <!-- HOME SL 1 -->
-    <div class="wrap t3-sl t3-sl-1 universidad">
-      <jdoc:include type="modules" name="<?php $this->_p('mast-col') ?>" style="raw" />
+    <div class="wrap t3-sl t3-sl-1 <?php $this->_c('slider-main') ?>">
+      <jdoc:include type="modules" name="<?php $this->_p('slider-main') ?>" style="raw" />
     </div>
     <!-- //HOME SL 1 -->
   <?php endif ?>
