@@ -532,8 +532,30 @@ ul.category-module{
             background-color: @white !important;
             z-index: 0;
 
-            h5, h6{
+            h3, h5, h6, p, strong{
               padding: 0 15px;
+            }
+
+            h3, h4, h5{
+              font-family: "open_sansbold", sans-serif;
+            }
+
+            p{
+              font-size: 12px;
+            }
+
+            h6{
+              font-family: "open_sanssemibold", sans-serif;
+              font-size: 13px;
+              border-top: 1px solid @gray-lighter;
+              padding-top: 15px;
+              color: @gray-light;
+            }
+
+            strong{
+              font-family: "open_sanslight", sans-serif;
+              font-size: 12px;
+              font-weight: normal !important;
             }
           }
         }
@@ -554,8 +576,13 @@ ul.category-module{
           &:after{
             content: url(../images/movilizaciones__bg.png);
           }
-          h4{background-color: @esq__green;}
+          h4{background-color: @esq__green; border-top: 3px solid darken(@esq__green, 15%);}
           .Movilizaciones{
+
+            h6{
+              margin-top: 15px;
+              color: @gray-light;
+            }
             &:after {
               content: "\00a0";
             }
@@ -567,7 +594,7 @@ ul.category-module{
           &:after{
             content: url(../images/proyectos__bg.png);
           }
-          h4{background-color: @esq__blue--light;}
+          h4{background-color: @esq__blue--light; border-top: 3px solid darken(@esq__blue--light, 15%);}
           .Proyectos{
             &:after {
               content: "\00a0";
@@ -579,7 +606,7 @@ ul.category-module{
           &:after{
             content: url(../images/eventos__bg.png);
           }
-          h4{background-color: @esq__purple--light;}
+          h4{background-color: @esq__purple--light; border-top: 3px solid darken(@esq__purple--light, 15%);}
           .Eventos{
             &:after {
               content: "\00a0";
@@ -591,7 +618,7 @@ ul.category-module{
           &:after{
             content: url(../images/becas__bg.png);
           }
-          h4{background-color: @esq__red--light;}
+          h4{background-color: @esq__red--light; border-top: 3px solid darken(@esq__red--light, 15%);}
           .Becas{
             &:after {
               content: "\00a0";
@@ -604,7 +631,7 @@ ul.category-module{
           &:after{
             content: url(../images/premios__bg.png);
           }
-          h4{background-color: @esq__orange;}
+          h4{background-color: @esq__orange; border-top: 3px solid darken(@esq__orange, 15%);}
 
           .Premios{
             &:after {

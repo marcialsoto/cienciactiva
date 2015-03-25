@@ -66,7 +66,9 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 				<?php if ($this->countModules('head__logo--concytec')) : ?>
 					<!-- HEAD SEARCH -->
 					<div class="head__logo--concytec <?php $this->_c('head__logo--concytec') ?>">
+						<a href="<?php echo JURI::base(true) ?>" title="<?php echo strip_tags($sitename) ?>">
 						<jdoc:include type="modules" name="<?php $this->_p('head__logo--concytec') ?>" style="raw" />
+					</a>
 					</div>
 					<!-- //HEAD LOGO CONCYTEC -->
 				<?php endif ?>
