@@ -363,7 +363,8 @@ ul.category-module li span.mod-articles-category-date {
 .t3-content .conv--categ .categories-module .col-sm-12 ul div h3,
 .t3-content .conv--categ .categories-module .col-sm-12 ul div h5,
 .t3-content .conv--categ .categories-module .col-sm-12 ul div h6,
-.t3-content .conv--categ .categories-module .col-sm-12 ul div p {
+.t3-content .conv--categ .categories-module .col-sm-12 ul div p,
+.t3-content .conv--categ .categories-module .col-sm-12 ul div strong {
   padding: 0 15px;
 }
 .t3-content .conv--categ .categories-module .col-sm-12 ul div h3,
@@ -371,9 +372,20 @@ ul.category-module li span.mod-articles-category-date {
 .t3-content .conv--categ .categories-module .col-sm-12 ul div h5 {
   font-family: "open_sansbold", sans-serif;
 }
+.t3-content .conv--categ .categories-module .col-sm-12 ul div p {
+  font-size: 12px;
+}
 .t3-content .conv--categ .categories-module .col-sm-12 ul div h6 {
+  font-family: "open_sanssemibold", sans-serif;
+  font-size: 13px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 15px;
+  color: #999999;
+}
+.t3-content .conv--categ .categories-module .col-sm-12 ul div strong {
   font-family: "open_sanslight", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: normal !important;
 }
 .t3-content .conv--categ .categories-module .col-sm-12:hover ul {
   display: block;
@@ -391,9 +403,7 @@ ul.category-module li span.mod-articles-category-date {
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Movilizaciones h4 {
   background-color: #39be37;
-}
-.t3-content .conv--categ .categories-module .col-sm-12.Movilizaciones .Movilizaciones {
-  border-top: 1px solid #eeeeee;
+  border-top: 3px solid #278326;
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Movilizaciones .Movilizaciones h6 {
   margin-top: 15px;
@@ -410,6 +420,7 @@ ul.category-module li span.mod-articles-category-date {
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Proyectos h4 {
   background-color: #00b1cb;
+  border-top: 3px solid #006e7e;
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Proyectos .Proyectos:after {
   content: "\00a0";
@@ -422,6 +433,7 @@ ul.category-module li span.mod-articles-category-date {
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Eventos h4 {
   background-color: #a763ac;
+  border-top: 3px solid #7b447f;
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Eventos .Eventos:after {
   content: "\00a0";
@@ -434,6 +446,7 @@ ul.category-module li span.mod-articles-category-date {
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Becas h4 {
   background-color: #ff8482;
+  border-top: 3px solid #ff3935;
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Becas .Becas:after {
   content: "\00a0";
@@ -446,18 +459,10 @@ ul.category-module li span.mod-articles-category-date {
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Premios h4 {
   background-color: #ff981e;
+  border-top: 3px solid #d17100;
 }
 .t3-content .conv--categ .categories-module .col-sm-12.Premios .Premios:after {
   content: "\00a0";
-}
-.t3-content .conv--categ .categories-module .col-sm-12.Premios .Indizadas,
-.t3-content .conv--categ .categories-module .col-sm-12.Premios .UNESCO {
-  border-top: 1px solid #eeeeee;
-}
-.t3-content .conv--categ .categories-module .col-sm-12.Premios .Indizadas h6,
-.t3-content .conv--categ .categories-module .col-sm-12.Premios .UNESCO h6 {
-  margin-top: 15px;
-  color: #999999;
 }
 #content__title {
   background: transparent url(../../../templates/t3_bs3_blank/images/content__title__bg.jpg);

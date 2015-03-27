@@ -10,29 +10,27 @@ defined('_JEXEC') or die;
 
 <!-- FOOTER -->
 <footer id="t3-footer" class="wrap t3-footer">
-
-	<?php if ($this->checkSpotlight('footnav', 'footer-1, footer-2, footer-3, footer-4, footer-5, footer-6')) : ?>
-		<!-- FOOT NAVIGATION -->
-		<div class="container">
-			<div class="social__links">
-					<?php if ($this->countModules('menu--social')) : ?>
-						<!-- SOCIAL MENU -->
-						<div class="menu--social <?php $this->_c('menu--social') ?>">
-							<jdoc:include type="modules" name="<?php $this->_p('menu--social') ?>" style="raw" />
-						</div>
-						<!-- //SOCIAL MENU -->
-					<?php endif ?>
-			</div>
+	<div class="container">
+		<div class="social__links">
 			<?php if ($this->countModules('menu--social')) : ?>
-				<!-- SPONSORS LINKS -->
-				<div class="row sponsors">
+				<!-- SOCIAL MENU -->
+				<div class="menu--social <?php $this->_c('menu--social') ?>">
+					<jdoc:include type="modules" name="<?php $this->_p('menu--social') ?>" style="raw" />
+				</div>
+				<!-- //SOCIAL MENU -->
+			<?php endif ?>
+		</div>
+		<?php if ($this->countModules('menu--social')) : ?>
+			<!-- SPONSORS LINKS -->
+			<div class="row sponsors">
 				<div class="sponsors--links <?php $this->_c('sponsors--links') ?>">
 					<jdoc:include type="modules" name="<?php $this->_p('sponsors--links') ?>" style="raw" />
 				</div>
 				<!-- //SPONSORS LINKS -->
 			</div>
-			<?php endif ?>
-
+		<?php endif ?>
+	<?php if ($this->checkSpotlight('footnav', 'footer-1, footer-2, footer-3, footer-4, footer-5, footer-6')) : ?>
+		<!-- FOOT NAVIGATION -->
 			<?php $this->spotlight('footnav', 'footer-1, footer-2, footer-3, footer-4, footer-5, footer-6') ?>
 		</div>
 		<!-- //FOOT NAVIGATION -->
