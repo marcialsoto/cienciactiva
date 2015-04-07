@@ -3,7 +3,7 @@
  * Element: K2
  *
  * @package         NoNumber Framework
- * @version         15.3.6
+ * @version         15.4.3
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -31,10 +31,12 @@ class JFormFieldNN_K2 extends nnFormGroupField
 
 	function getCategories()
 	{
+		$state_field = NN_K2_VERSION == 3 ? 'state' : 'published';
+
 		$query = $this->db->getQuery(true)
 			->select('COUNT(*)')
 			->from('#__k2_categories AS c')
-			->where('c.published > -1');
+			->where('c.' . $state_field . ' > -1');
 		$this->db->setQuery($query);
 		$total = $this->db->loadResult();
 
@@ -43,13 +45,17 @@ class JFormFieldNN_K2 extends nnFormGroupField
 			return -1;
 		}
 
+		$parent_field = NN_K2_VERSION == 3 ? 'parent_id' : 'parent';
+		$title_field = NN_K2_VERSION == 3 ? 'title' : 'name';
+		$ordering_field = NN_K2_VERSION == 3 ? 'lft' : 'ordering';
+
 		$query->clear('select')
-			->select('c.id, c.parent AS parent_id, c.name AS title, c.published');
+			->select('c.id, c.' . $parent_field . ' AS parent_id, c.' . $title_field . ' AS title, c.' . $state_field . ' AS published');
 		if (!$this->get('getcategories', 1))
 		{
-			$query->where('c.parent = 0');
+			$query->where('c.' . $parent_field . ' = 0');
 		}
-		$query->order('c.ordering, c.name');
+		$query->order('c.' . $ordering_field . ', c.' . $title_field);
 		$this->db->setQuery($query);
 		$items = $this->db->loadObjectList();
 
@@ -58,10 +64,12 @@ class JFormFieldNN_K2 extends nnFormGroupField
 
 	function getTags()
 	{
+		$state_field = NN_K2_VERSION == 3 ? 'state' : 'published';
+
 		$query = $this->db->getQuery(true)
 			->select('t.name as id, t.name as name')
 			->from('#__k2_tags AS t')
-			->where('t.published = 1')
+			->where('t.' . $state_field . ' = 1')
 			->order('t.name');
 		$this->db->setQuery($query);
 		$list = $this->db->loadObjectList();
@@ -71,10 +79,12 @@ class JFormFieldNN_K2 extends nnFormGroupField
 
 	function getItems()
 	{
+		$state_field = NN_K2_VERSION == 3 ? 'state' : 'published';
+
 		$query = $this->db->getQuery(true)
 			->select('COUNT(*)')
 			->from('#__k2_items AS i')
-			->where('i.published > -1');
+			->where('i.' . $state_field . ' > -1');
 		$this->db->setQuery($query);
 		$total = $this->db->loadResult();
 
@@ -83,8 +93,10 @@ class JFormFieldNN_K2 extends nnFormGroupField
 			return -1;
 		}
 
+		$cat_title_field = NN_K2_VERSION == 3 ? 'title' : 'name';
+
 		$query->clear('select')
-			->select('i.id, i.title as name, c.name as cat, i.published')
+			->select('i.id, i.title as name, c.' . $cat_title_field . ' as cat, i.' . $state_field . ' as published')
 			->join('LEFT', '#__k2_categories AS c ON c.id = i.catid')
 			->order('i.title, i.ordering, i.id');
 		$this->db->setQuery($query);

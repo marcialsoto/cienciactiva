@@ -107,6 +107,30 @@ a:hover {
   font-size: 14px;
   margin-top: 5px;
 }
+.head__logo--concytec {
+  float: right;
+}
+.head__logo--concytec a {
+  width: 131px;
+  height: 40px;
+  display: block;
+  background-image: url(../../../templates/t3_bs3_blank/images/logo--concytec--xs.png);
+}
+.head__logo--concytec a .custom span {
+  position: relative;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.head__logo--concytec:hover a,
+.head__logo--concytec a:hover,
+.head__logo--concytec a:active,
+.head__logo--concytec a:focus {
+  text-decoration: none;
+}
 .header__logo__select li {
   vertical-align: middle;
 }
@@ -910,5 +934,17 @@ ul li.item-873 span {
 @media (max-width: 767px) {
   .nn_tabs ul.nav li.nn_tabs-tab {
     width: 100%;
+  }
+  .logo-text a {
+    width: 131px;
+    height: 40px;
+    background-image: url(../../../templates/t3_bs3_blank/images/logo--xs.png);
+  }
+}
+@media (min-width: 992px) {
+  .head__logo--concytec a {
+    width: 196px;
+    height: 60px;
+    background-image: url(../../../templates/t3_bs3_blank/images/logo--concytec.png);
   }
 }

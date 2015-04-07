@@ -4,7 +4,7 @@
  * Displays an error if given file is not found
  *
  * @package         NoNumber Framework
- * @version         15.3.6
+ * @version         15.4.3
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -16,6 +16,7 @@ defined('_JEXEC') or die;
 
 jimport('joomla.form.formfield');
 
+require_once JPATH_PLUGINS . '/system/nnframework/helpers/functions.php';
 require_once JPATH_PLUGINS . '/system/nnframework/helpers/field.php';
 
 class JFormFieldNN_Dependency extends nnFormField
@@ -32,7 +33,7 @@ class JFormFieldNN_Dependency extends nnFormField
 		$this->params = $this->element->attributes();
 
 		JHtml::_('jquery.framework');
-		JFactory::getDocument()->addScriptVersion(JURI::root(true) . '/media/nnframework/js/script.min.js');
+		nnFrameworkFunctions::addScriptVersion(JURI::root(true) . '/media/nnframework/js/script.min.js');
 
 		$file = $this->get('file');
 		if (!$file)

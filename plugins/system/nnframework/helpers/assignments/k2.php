@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Assignments: K2
  *
  * @package         NoNumber Framework
- * @version         15.3.6
+ * @version         15.4.3
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -19,7 +19,7 @@ class nnFrameworkAssignmentsK2 extends nnFrameworkAssignment
 {
 	public function passPageTypes()
 	{
-		return $this->passByPageTypes('com_k2', $this->selection, $this->assignment);
+		return $this->passByPageTypes('com_k2', $this->selection, $this->assignment, false, true);
 	}
 
 	public function passCategories()
@@ -185,6 +185,8 @@ class nnFrameworkAssignmentsK2 extends nnFrameworkAssignment
 
 	private function getCatParentIds($id = 0)
 	{
-		return $this->getParentIds($id, 'k2_categories', 'parent');
+		$parent_field = NN_K2_VERSION == 3 ? 'parent_id' : 'parent';
+
+		return $this->getParentIds($id, 'k2_categories', $parent_field);
 	}
 }

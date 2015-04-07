@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Assignments
  *
  * @package         NoNumber Framework
- * @version         15.3.6
+ * @version         15.4.3
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -95,21 +95,28 @@ class nnFrameworkAssignment
 		return $pass;
 	}
 
-	public function passByPageTypes($option, $selection = array(), $assignment = 'all', $add_view = false)
+	public function passByPageTypes($option, $selection = array(), $assignment = 'all', $add_view = false, $get_task = false, $get_layout = true)
 	{
 		if ($this->request->option != $option)
 		{
 			return $this->pass(false, $assignment);
 		}
 
-		$pagetype = $this->request->view;
-
-		if ($this->request->layout && $this->request->layout != 'default')
+		if ($get_task && $this->request->task && $this->request->task != $this->request->view && $this->request->task != 'default')
 		{
-			$pagetype = ($add_view ? $pagetype . '_' : '') . $this->request->layout;
+			$pagetype = ($add_view ? $this->request->view . '_' : '') . $this->request->task;
+
+			return $this->passSimple($pagetype, $selection, $assignment);
 		}
 
-		return $this->passSimple($pagetype, $selection, $assignment);
+		if ($get_layout && $this->request->layout && $this->request->layout != $this->request->view && $this->request->layout != 'default')
+		{
+			$pagetype = ($add_view ? $this->request->view . '_' : '') . $this->request->layout;
+
+			return $this->passSimple($pagetype, $selection, $assignment);
+		}
+
+		return $this->passSimple($this->request->view, $selection, $assignment);
 	}
 
 	function getMenuItemParams($id = 0)

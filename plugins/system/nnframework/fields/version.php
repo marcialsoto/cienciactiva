@@ -4,7 +4,7 @@
  * Displays the version check
  *
  * @package         NoNumber Framework
- * @version         15.3.6
+ * @version         15.4.3
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -61,6 +61,6 @@ class JFormFieldNN_Version extends nnFormField
 
 		require_once JPATH_PLUGINS . '/system/nnframework/helpers/versions.php';
 
-		return '</div><div class="hide">' . nnVersions::getInstance()->getMessage($extension, $xml);
+		return '</div><div class="hide">' . NoNumberVersions::render($extension);
 	}
 }

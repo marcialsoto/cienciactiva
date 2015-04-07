@@ -2,7 +2,7 @@
  * Main stylesheet
  *
  * @package         NoNumber Framework
- * @version         15.3.6
+ * @version         15.4.3
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -245,4 +245,53 @@ input.nn_keyfield {
 #key_button,
 #jform_key_button {
 	margin-left: 8px;
+}
+
+.ghosted {
+	.opacity(60);
+}
+
+.nn_licence {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.nn_footer {
+	margin-top: 30px;
+
+	div {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	.nn_footer_review {
+		margin-top: 5px;
+
+		a.stars {
+			.icon-star {
+				color: mix(@yellow, @orange);
+				margin: 0;
+				.transition-duration(500ms);
+			}
+
+			&:hover {
+				text-decoration: none;
+				.icon-star {
+					.rotate(216deg);
+				}
+			}
+		}
+	}
+
+	.nn_footer_logo {
+		img {
+			vertical-align: -40%;
+		}
+	}
+
+	.nn_footer_copyright {
+		margin-top: 3px;
+		font-size: 0.7em;
+		.opacity(60);
+	}
 }

@@ -4,7 +4,7 @@
  * Displays the License state
  *
  * @package         NoNumber Framework
- * @version         15.3.6
+ * @version         15.4.3
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -38,6 +38,6 @@ class JFormFieldNN_License extends nnFormField
 
 		require_once JPATH_PLUGINS . '/system/nnframework/helpers/licenses.php';
 
-		return '</div><div class="hide">' . nnLicenses::getInstance()->getMessage($extension);
+		return '</div><div class="hide">' . NoNumberLicenses::render($extension, true);
 	}
 }

@@ -4,7 +4,7 @@
  * extra JHTML functions
  *
  * @package         NoNumber Framework
- * @version         15.3.6
+ * @version         15.4.3
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -96,10 +96,13 @@ class nnHtml
 			return self::handlePreparedStyles($html);
 		}
 
+		require_once JPATH_PLUGINS . '/system/nnframework/helpers/functions.php';
+
 		JFactory::getLanguage()->load('com_modules', JPATH_ADMINISTRATOR);
 
 		JHtml::stylesheet('nnframework/multiselect.min.css', false, true);
-		JFactory::getDocument()->addScriptVersion(JURI::root(true) . '/media/nnframework/js/multiselect.min.js');
+
+		nnFrameworkFunctions::addScriptVersion(JURI::root(true) . '/media/nnframework/js/multiselect.min.js');
 
 		$html = array();
 

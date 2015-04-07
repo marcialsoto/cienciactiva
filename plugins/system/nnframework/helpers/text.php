@@ -3,7 +3,7 @@
  * NoNumber Framework Helper File: Text
  *
  * @package         NoNumber Framework
- * @version         15.3.6
+ * @version         15.4.3
  *
  * @author          Peter van Westen <peter@nonumber.nl>
  * @link            http://www.nonumber.nl
@@ -203,33 +203,39 @@ class nnText
 
 		$string = str_replace(array('&nbsp;', '&#160;'), ' ', $string);
 		$string = preg_replace('#- #', '  ', $string);
+
 		for ($i = 0; $remove_first > $i; $i++)
 		{
 			$string = preg_replace('#^  #', '', $string);
 		}
-		preg_match('#^( *)(.*)$#', $string, $match);
-		list($string, $pre, $name) = $match;
 
-		$pre = preg_replace('#  #', ' ·  ', $pre);
-		$pre = preg_replace('#(( ·  )*) ·  #', '\1 »  ', $pre);
-		$pre = str_replace('  ', ' &nbsp; ', $pre);
+		if (preg_match('#^( *)(.*)$#', $string, $match))
+		{
+			list($string, $pre, $name) = $match;
+
+			$pre = preg_replace('#  #', ' ·  ', $pre);
+			$pre = preg_replace('#(( ·  )*) ·  #', '\1 »  ', $pre);
+			$pre = str_replace('  ', ' &nbsp; ', $pre);
+
+			$string = $pre . $name;
+		}
 
 		switch (true)
 		{
 			case ($type == 'separator'):
-				$pre = '[[:font-weight:normal;font-style:italic;color:grey;:]]' . $pre;
+				$string = '[[:font-weight:normal;font-style:italic;color:grey;:]]' . $string;
 				break;
+
 			case (!$published):
-				$pre = '[[:font-style:italic;color:grey;:]]' . $pre;
-				$name = $name . ' [' . JText::_('JUNPUBLISHED') . ']';
+				$string = '[[:font-style:italic;color:grey;:]]' . $string . ' [' . JText::_('JUNPUBLISHED') . ']';
 				break;
+
 			case ($published == 2):
-				$pre = '[[:font-style:italic;:]]' . $pre;
-				$name = $name . ' [' . JText::_('JARCHIVED') . ']';
+				$string = '[[:font-style:italic;:]]' . $string . ' [' . JText::_('JARCHIVED') . ']';
 				break;
 		}
 
-		return $pre . $name;
+		return $string;
 	}
 
 	public static function strReplaceOnce($search, $replace, $string)
@@ -623,6 +629,12 @@ class nnText
 
 	static function getContentContainingSearches($string, $start_searches = array(), $end_searches = array(), $start_offset = 200, $end_offset = null)
 	{
+		// String is too short to split and search through
+		if (strlen($string) < 100)
+		{
+			return array('', $string, '');
+		}
+
 		$end_offset = is_null($end_offset) ? $start_offset : $end_offset;
 
 		$found = 0;
@@ -648,7 +660,7 @@ class nnText
 		}
 
 		// String is too short to split
-		if (strlen($string) < ($start_offset + $end_offset + 200))
+		if (strlen($string) < ($start_offset + $end_offset + 1000))
 		{
 			return array('', $string, '');
 		}
