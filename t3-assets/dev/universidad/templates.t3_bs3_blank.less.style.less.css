@@ -184,15 +184,30 @@ a:hover {
   text-align: right;
 }
 .t3-mainnav.navbar-default {
-  background-color: #ffffff;
+  background-color: #02a1c8;
   border-color: transparent;
 }
 .t3-mainnav.navbar-default ul.nav li a {
   font-weight: bold;
+  color: #ffffff;
 }
 .t3-mainnav.navbar-default ul.nav li.current.active a {
-  color: #333333;
+  color: #ffffff;
   background-color: transparent;
+}
+.t3-mainnav.navbar-default ul.nav li span.nav-header {
+  color: #ffffff;
+}
+.t3-mainnav.navbar-default ul.nav li.open a {
+  color: #013b4a;
+  background-color: #cbf4fe;
+}
+.t3-mainnav.navbar-default ul.nav li ul.dropdown-menu li a {
+  color: #333333;
+  background-color: #ffffff;
+}
+.t3-mainnav.navbar-default ul.nav li ul.dropdown-menu li a:hover {
+  background-color: #e9fafe;
 }
 .t3-mainnav ul.menu--contacto li a {
   font-weight: normal;

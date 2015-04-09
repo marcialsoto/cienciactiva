@@ -18,7 +18,6 @@ a:hover {
   font-family: "open_sanssemibold", sans-serif;
 }
 .select-menu--header {
-  border: 1px solid #999999;
   position: relative;
   margin-top: 20px;
 }
@@ -26,6 +25,7 @@ a:hover {
   font-family: "open_sanslight", sans-serif;
   padding: 2px 10px 3px;
   margin-bottom: 0;
+  color: #005169;
 }
 .select-menu--header label:before {
   position: absolute;
@@ -35,10 +35,7 @@ a:hover {
   width: 100%;
   font: normal normal normal 18px/1 FontAwesome;
   content: "\f0d8";
-  color: #999999;
-}
-.select-menu--header:hover select.djsm-select {
-  border-top: 1px solid #404040;
+  color: #005169;
 }
 .select-menu--header select.djsm-select {
   border: 0 none;
@@ -47,7 +44,7 @@ a:hover {
   -o-box-shadow: none;
   box-shadow: none;
   background-color: transparent;
-  color: #555555;
+  color: #02a1c8;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -55,7 +52,7 @@ a:hover {
   text-transform: uppercase;
   font-family: "open_sansbold", sans-serif;
   padding-left: 10px;
-  border-top: 1px solid #999999;
+  border-bottom: 3px solid #005169;
 }
 .t3-header {
   position: relative;
@@ -83,8 +80,8 @@ a:hover {
   display: none;
 }
 .logo-text a {
-  width: 196px;
-  height: 60px;
+  width: 245px;
+  height: 75px;
   background-image: url(../../templates/t3_bs3_blank/images/logo.png);
 }
 .logo-text a span {
@@ -184,15 +181,30 @@ a:hover {
   text-align: right;
 }
 .t3-mainnav.navbar-default {
-  background-color: #ffffff;
+  background-color: #02a1c8;
   border-color: transparent;
 }
 .t3-mainnav.navbar-default ul.nav li a {
   font-weight: bold;
+  color: #ffffff;
 }
 .t3-mainnav.navbar-default ul.nav li.current.active a {
-  color: #333333;
+  color: #ffffff;
   background-color: transparent;
+}
+.t3-mainnav.navbar-default ul.nav li span.nav-header {
+  color: #ffffff;
+}
+.t3-mainnav.navbar-default ul.nav li.open a {
+  color: #013b4a;
+  background-color: #cbf4fe;
+}
+.t3-mainnav.navbar-default ul.nav li ul.dropdown-menu li a {
+  color: #333333;
+  background-color: #ffffff;
+}
+.t3-mainnav.navbar-default ul.nav li ul.dropdown-menu li a:hover {
+  background-color: #e9fafe;
 }
 .t3-mainnav ul.menu--contacto li a {
   font-weight: normal;
@@ -283,11 +295,18 @@ ul.category-module li span.mod-articles-category-category a {
   font-size: 10px;
 }
 ul.category-module li span.mod-articles-category-date {
-  position: absolute;
-  bottom: 10px;
-  right: 0;
   color: #cc0000;
   font-size: 10px;
+  font-weight: bold;
+}
+ul.category-module.category-modulenuevo li a.mod-articles-category-title:after {
+  content: 'Nuevo';
+  background-color: #247c26;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 8px;
+  border-radius: 4px;
+  padding: 3px 7px;
 }
 .tabs--main {
   margin-bottom: 30px;
@@ -609,17 +628,23 @@ ul.category-module li span.mod-articles-category-date {
   display: table-cell;
   vertical-align: top;
 }
-.t3-sidebar .t3-module.moduleeventos .module-inner .module-ct ul.media-list li .media-left,
-.t3-sidebar .t3-module.moduleeventos .module-inner .module-ct ul.media-list li .media > .pull-left {
-  padding-right: 10px;
-}
 .t3-sidebar .t3-module.moduleeventos .module-inner .module-ct ul.media-list li .media-left {
+  background: url('../../templates/t3_bs3_blank/images/icon--cal.png') no-repeat 0 0;
+  width: 40px;
   text-transform: uppercase;
   text-align: center;
 }
 .t3-sidebar .t3-module.moduleeventos .module-inner .module-ct ul.media-list li .media-left span.day {
   font-family: "open_sansbold";
-  font-size: 16px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.t3-sidebar .t3-module.moduleeventos .module-inner .module-ct ul.media-list li .media-left span.month {
+  font-size: 12px;
+  color: #999999;
+}
+.t3-sidebar .t3-module.moduleeventos .module-inner .module-ct ul.media-list li .media-body {
+  padding-left: 10px;
 }
 .t3-sidebar .t3-module.moduleeventos .module-inner .module-ct ul.media-list li .media-body .media-heading {
   font-family: "open_sanssemibold", sans-serif;
@@ -757,6 +782,14 @@ ul.category-module li span.mod-articles-category-date {
 }
 .t3-footer .container {
   position: relative;
+}
+.navbar-default .navbar-toggle {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
 }
 .t3-footnav {
   padding: 20px 0;
@@ -943,8 +976,8 @@ ul li.item-873 span {
 }
 @media (min-width: 992px) {
   .head__logo--concytec a {
-    width: 196px;
-    height: 60px;
+    width: 245px;
+    height: 75px;
     background-image: url(../../templates/t3_bs3_blank/images/logo--concytec.png);
   }
 }
