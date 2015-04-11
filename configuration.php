@@ -14,7 +14,7 @@ class JConfig {
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
 	public $user = 'root';
-	public $password = '';
+	public $password = 'mysql';
 	public $db = 'dbCienciActiva';
 	public $dbprefix = 'cca_';
 	public $live_site = '';
