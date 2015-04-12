@@ -970,6 +970,10 @@ ul.category-module.category-modulenuevo li a.mod-articles-category-title:after {
   margin-top: 12px;
   text-align: justify;
 }
+#contact-form fieldset legend {
+  font-size: 14px;
+  border-bottom: 1px solid transparent;
+}
 .t3-copyright {
   border-top: 1px solid #616569;
   font-size: 12px;
