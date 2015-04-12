@@ -13,7 +13,6 @@ $cparams = JComponentHelper::getParams('com_media');
 
 jimport('joomla.html.html.bootstrap');
 ?>
-Holaaaaa
 <div class="contact<?php echo $this->pageclass_sfx?>" itemscope itemtype="http://schema.org/Person">
 	<?php if ($this->params->get('show_page_heading')) : ?>
 		<h1>
@@ -26,7 +25,7 @@ Holaaaaa
 				<?php if ($this->item->published == 0) : ?>
 					<span class="label label-warning"><?php echo JText::_('JUNPUBLISHED'); ?></span>
 				<?php endif; ?>
-				<span class="contact-name" itemprop="name"><?php echo $this->contact->name; ?></span>
+				<span class="contact-name" itemprop="name">Contáctenos</span>
 			</h2>
 		</div>
 	<?php endif;  ?>
