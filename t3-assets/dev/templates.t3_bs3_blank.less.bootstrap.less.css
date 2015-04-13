@@ -1,3 +1,41 @@
+@-webkit-keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2419,6 +2457,10 @@ select[multiple].input-lg {
 fieldset[disabled] .btn {
   cursor: not-allowed;
   pointer-events: none;
+  -moz-opacity: 0.65;
+  -khtml-opacity: 0.65;
+  -webkit-opacity: 0.65;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=65);
   opacity: 0.65;
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
@@ -3720,6 +3762,10 @@ tbody.collapse.in {
 [data-toggle="buttons"] > .btn > input[type="checkbox"] {
   position: absolute;
   z-index: -1;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -5626,6 +5672,10 @@ a.list-group-item-danger.active:focus {
   line-height: 1;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
+  -moz-opacity: 0.2;
+  -khtml-opacity: 0.2;
+  -webkit-opacity: 0.2;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
@@ -5634,6 +5684,10 @@ a.list-group-item-danger.active:focus {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -5702,10 +5756,18 @@ button.close {
   background-color: #000000;
 }
 .modal-backdrop.fade {
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   opacity: 0;
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
@@ -5772,10 +5834,18 @@ button.close {
   visibility: visible;
   font-size: 12px;
   line-height: 1.4;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   opacity: 0;
   filter: alpha(opacity=0);
 }
 .tooltip.in {
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -webkit-opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
@@ -6037,6 +6107,10 @@ button.close {
   left: 0;
   bottom: 0;
   width: 15%;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   opacity: 0.5;
   filter: alpha(opacity=50);
   font-size: 20px;
@@ -6065,6 +6139,10 @@ button.close {
   outline: 0;
   color: #ffffff;
   text-decoration: none;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -webkit-opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
