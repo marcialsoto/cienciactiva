@@ -219,6 +219,11 @@ a:hover {
 .navbar-fixed-top {
   border-width: 0;
 }
+.ja_socialaftercontent {
+  border-top: 3px solid #eeeeee;
+  margin-top: 20px;
+  padding-top: 5px;
+}
 .t3-sl {
   padding-bottom: 40px;
   padding-top: 40px;
