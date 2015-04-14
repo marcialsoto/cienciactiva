@@ -1,0 +1,90 @@
+/*plugin css*/
+.s2s_supra_contenedor{
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 10px 15px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: transparent url(../images/content__title__bg.jpg) repeat;
+}
+
+.s2s_supra_contenedor:before{
+  content: 'Compartir:  ';
+  font-weight: bold;
+}
+.s2s_supra_contenedor:after{
+
+}
+.s2s_contenedor {
+
+}
+
+.s2s_contenedor,
+.s2s_contenedor a{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.s2s_contenedor a{
+    display: block;
+}
+.s2s_contenedor a:hover{
+    text-decoration: none;
+}
+
+.s2s_contenedor .btn{
+  margin-right: 5px;
+}
+
+.s2s_contenedor .btn > a{
+  padding: 3px 7px;
+
+}
+.s2s_contenedor .btn > a img, .s2s_contenedor .btn > a .fa{
+  vertical-align: middle;
+  font:  normal normal normal 13px/1 "open_sansregular" !important;
+}
+.s2s_contenedor .btn > a img, .s2s_contenedor .btn > a .fa:before{
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.s2s_contenedor > div{
+  position:relative;
+}
+
+.globo{
+  position: absolute;
+  z-index: 1000;
+  width: auto;
+  display:none;
+  text-align: center;
+  height:auto;
+  left:0;
+  min-width: 116px;
+}
+
+.globo:before{
+  content: ' ';
+  position: absolute;
+  left: 12px;
+  top: 0px;
+}
+
+.s2s_cookie_more_info{
+    display:none;
+}
+
+.s2s_options{
+  display:none;
+}
+
+/*is_on_screen*/
+.is_on_screen:before{
+  left:auto;
+  right: 12px;
+}

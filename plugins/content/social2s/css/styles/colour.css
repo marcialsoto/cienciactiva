@@ -1,0 +1,206 @@
+/*plugin css*/
+.s2s_contenedor,
+.s2s_contenedor a{
+
+}
+.s2s_contenedor{
+
+}
+
+.s2s_contenedor a{
+    padding: 4px 8px;
+    text-shadow:none;
+    color:#fff;
+    text-decoration: none;
+}
+.s2s_contenedor a:hover{
+   color:#fff;
+}
+.s2s_contenedor .btn{
+  padding:0px !important;
+  border:none !important;
+  border-radius: 0 !important;
+}
+.s2s_contenedor .btn+.btn{
+margin-left:0 !important;
+}
+.s2s_contenedor .btn > a{
+      font-size: 1.25em;
+}
+.s2s_contenedor .btn-xs > a{
+   font-size: 1.2em;
+}
+.s2s_contenedor .btn-sm > a{
+   font-size: 1.4em;
+}
+
+.s2s_contenedor > div{
+
+}
+
+
+.globo{
+  background: #fff;
+  padding: 11px;
+  border: 0px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 1px 2px 4px #aaa;
+}
+
+.globo:before
+{
+  border: 8px solid;
+  border-color: #ccc transparent transparent transparent;
+}
+
+.s2s_cookie_contenedor span{
+  font-size: 0.7em;
+}
+
+.s2s_cookie_eulogo{
+  float: left;
+  width: 52px !important;
+  height: 52px !important;
+  padding-right: 12px;
+}
+.s2s_cookie_more_info{
+    display:none;
+  }
+.s2s_cookie_more_info{
+  background: #e2e2e2;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: normal;
+  width: 300px;
+  text-align: justify;
+    font-size: 0.7em;
+}
+.s2s_cookie_more_info p.s2s_cookie_read_policy a{
+  display: inline-block;
+  padding: 0;
+}
+
+.s2s_options{
+
+}
+
+.s2s_cookie_copyright{
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+}
+.s2s_cookie_copyright a{
+  font-size:10px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/*Gplus workaround*/
+.s2s_gplus_share{
+
+}
+
+
+/*plus one workaround*/
+.g-plusone{
+  display:none !important;
+}
+.s2s_gplus_one{
+  float:left;
+  clear:both;
+}
+.s2s_gplus_one > div, .s2s_gplus_one iframe{
+  position:static !important;
+  width: 140px !important;
+  height: 26px;
+}
+
+/*is_on_screen*/
+
+.is_on_screen:before{
+
+}
+
+
+/*colour*/
+
+
+
+.s2s_twitter{
+  background: #3894b6 !important;
+}
+.s2s_twitter:hover,.s2s_twitter.active{
+  background: #00aced !important;
+}
+.s2s_twitter .globo:before{
+  border-color: #00aced transparent transparent transparent;
+}
+
+
+.s2s_facebook{
+  background: #526282 !important;
+}
+.s2s_facebook:hover,.s2s_facebook.active{
+  background: #3b5998 !important;
+}
+.s2s_facebook .globo:before{
+  border-color: #3b5998 transparent transparent transparent;
+}
+
+
+.s2s_pinterest{
+    background: #a4484c !important;
+}
+.s2s_pinterest:hover,.s2s_pinterest.active{
+    background: #cb2027 !important;
+}
+.s2s_pinterest .globo:before{
+  border-color: #cb2027 transparent transparent transparent;
+}
+
+
+.s2s_linkedin{
+    background: #2a6d8c !important;
+}
+.s2s_linkedin:hover,.s2s_linkedin.active{
+    background: #007bb6 !important;
+}
+.s2s_linkedin .globo:before{
+  border-color: #007bb6 transparent transparent transparent;
+}
+
+
+.s2s_gplus{
+    background: #b66a60 !important;
+}
+.s2s_gplus:hover,.s2s_gplus.active{
+    background: #dd4b39 !important;
+}
+.s2s_gplus .globo:before{
+  border-color: #dd4b39 transparent transparent transparent;
+}
+
+.s2s_tumblr{
+    background: #41515f !important;
+}
+.s2s_tumblr:hover,.s2s_tumblr.active{
+    background: #32506d !important;
+}
+.s2s_tumblr .globo:before{
+  border-color: #32506d transparent transparent transparent;
+}
+.s2s_tumblr .s2s_tumblr_iframe a{
+  color:  #32506d;
+}
+
+
+.s2s_vk{
+    background: #57687d !important;
+}
+.s2s_vk:hover,.s2s_vk.active{
+    background: #45668e !important;
+}
+.s2s_vk .globo:before{
+  border-color: #45668e transparent transparent transparent;
+}

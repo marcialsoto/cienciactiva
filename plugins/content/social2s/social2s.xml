@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>Content - Social 2s</name>
+	<author>dibuxo.com</author>
+	<creationDate>April 2015</creationDate>
+	<copyright>Copyright (C) 2005 - 2015 dibuxo.com All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@dibuxo.com</authorEmail>
+	<authorUrl>www.dibuxo.com</authorUrl>
+	<version>1.0.46</version>
+	<description><![CDATA[
+		<img class="img-responsive" src="../plugins/content/social2s/assets/social_2s_banner.png"/>
+		]]>
+	</description>
+
+	<files>
+		<filename plugin="social2s">social2s.php</filename>
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<folder>css</folder>
+		<folder>fields</folder>
+		<folder>assets</folder>
+		<filename>index.html</filename>
+		<filename>changes.txt</filename>
+		<filename>license.txt</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_content_social2s.ini</language>
+		<language tag="en-GB">language/en-GB.plg_content_social2s.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/content/social2s/fields">
+			<fieldset name="basic">
+<!--PLUGIN -->
+				<field
+					name="plg_pos"
+					type="radio"
+					class="btn-group"
+					default="2"
+					label="SOCIAL2S_POS"
+					description="SOCIAL2S_POS_DESC">
+					<option
+						value="0">none</option>
+					<option
+						value="1">Before content</option>
+					<option
+						value="2">After content</option>
+					<option
+						value="3">Both</option>
+				</field>
+<!--				<field
+					name="plg_trigger"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="SOCIAL2S_TRIGGER"
+					description="SOCIAL2S_TRIGGER_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+-->
+				<field
+					name="display_view"
+					type="radio"
+					class="btn-group"
+					default="2"
+					label="SOCIAL2S_DISPLAY_VIEW"
+					description="SOCIAL2S_DISPLAY_VIEW_DESC">
+					<option
+						value="0">Both</option>
+					<option
+						value="1">Category</option>
+					<option
+						value="2">Article</option>
+				</field>
+
+				<field type="spacer" name="buttons_pro_spacer" label="SOCIAL2S_BUTTONS_ADV" />
+					
+					<field
+						name="button_style"
+						type="radio"
+						class="btn-group"
+						default="1"
+						label="SOCIAL2S_BUTTON_STYLE"
+						description="SOCIAL2S_BUTTON_STYLE_DESC">
+						<option
+							value="0">JNO</option>
+						<option
+							value="1">FontAwesome</option>
+						<option
+							value="2">Images</option>
+					</field>
+
+
+				<field
+					name="s2sgroup"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="SOCIAL2S_GROUP"
+					description="SOCIAL2S_GROUP_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="s2s_size"
+					type="radio"
+					class="btn-group"
+					default="btn"
+					label="SOCIAL2S_SIZE"
+					description="SOCIAL2S_SIZE_DESC">
+					<option value="btn-xs">mini</option>
+					<option value="btn-sm">small</option>
+					<option value="btn">default</option>
+					<option value="btn-lg">large</option>
+				</field>
+
+
+				<field
+					name="button_align"
+					type="radio"
+					class="btn-group"
+					default="left"
+					label="SOCIAL2S_BUTTON_ALIGN"
+					description="SOCIAL2S_BUTTON_ALIGN_DESC">
+					<option
+						value="left">Left</option>
+					<option
+						value="center">Center</option>
+					<option
+						value="right">Right</option>
+				</field>
+
+
+				<field
+					name="fontawesome_sign"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="SOCIAL2S_AWESOME_SIGN"
+					description="SOCIAL2S_AWESOME_SIGN_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+				<field
+					name="show_text"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="SOCIAL2S_SHOW_TEXT"
+					description="SOCIAL2S_SHOW_TEXT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field type="spacer" name="buttons_spacer" label="SOCIAL2S_TEMPLATE_SPACER" />
+				<field
+					name="social2s_load_base"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="SOCIAL2S_LOAD_TEMPLATE"
+					description="SOCIAL2S_LOAD_TEMPLATE_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+
+				<field
+					name="social2s_load_style"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="SOCIAL2S_LOAD_STYLE"
+					description="SOCIAL2S_LOAD_STYLE_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+
+				<field
+					name="social2s_style"
+					type="filelist"
+					class="inputbox"
+					default="default"
+					stripext="1" filter="\.css$" exclude="^_"
+					hide_default="1" hide_none="1"
+					directory="/plugins/content/social2s/css/styles"
+					label="SOCIAL2S_STYLE"
+					description="SOCIAL2S_STYLE_DESC"
+				/>
+
+				<field type="s2slicensecheck" />
+			</fieldset>
+
+			<fieldset name="SOCIAL2S_SOCIAL">
+
+
+
+				<field name="twitter_on" type="radio" class="btn-group" default="1" label="SOCIAL2S_TWITTER_ON" description="SOCIAL2S_TWITTER_ON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+	            <field name="twitter_via" type="text" default="" label="SOCIAL2S_TWITTER_VIA" description="SOCIAL2S_TWITTER_VIA_DESC" size="10" />
+
+
+				<field name="facebook_on" type="radio" class="btn-group" default="1" label="SOCIAL2S_FACEBOOK_ON" description="SOCIAL2S_FACEBOOK_ON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+
+				<field name="pinterest_on" type="radio" class="btn-group" default="1" label="SOCIAL2S_PINTEREST_ON" description="SOCIAL2S_PINTEREST_ON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+
+				<field name="linkedin_on" type="radio" class="btn-group" default="1" label="SOCIAL2S_LINKEDIN_ON" description="SOCIAL2S_LINKEDIN_ON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+
+				<field name="gplus_on" type="radio" class="btn-group" default="1" label="SOCIAL2S_GPLUS_ON" description="SOCIAL2S_GPLUS_ON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+
+				<field name="tumblr_on" type="radio" class="btn-group" default="1" label="SOCIAL2S_TUMBLR_ON" description="SOCIAL2S_TUMBLR_ON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+
+				<field name="vk_on" type="radio" class="btn-group" default="0" label="SOCIAL2S_VK_ON" description="SOCIAL2S_VK_ON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="opengraph" type="radio" class="btn-group" default="1" label="SOCIAL2S_OPENGRAPH" description="SOCIAL2S_FACEBOOK_OPENGRAPH_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+			</fieldset>
+				<fieldset name="advanced">
+					<field type="spacer" name="language_spacer" label="SOCIAL2S_SPACER_MORE_OPTIONS" />
+
+				<field name="s2s_language" type="groupedlist" default="0" label="SOCIAL2S_GENERAL_LANGUAGE" description="SOCIAL2S_GENERAL_LANGUAGE_DESC">
+				   		<option value="0">Autodetect</option>
+				   		<group label="SOCIAL2S_LANGUAGES_GROUP">
+					    	<option value="nl_NL">Dutch</option>
+					    	<option value="en_GB">English</option>
+					      	<option value="fr_FR">French</option>
+					      	<option value="de_DE">German</option>
+					      	<option value="id_ID">Indonesian</option>
+					      	<option value="it_IT">Italian</option>
+							<option value="ja_JP">Japanese</option>
+							<option value="ko_KR">Korean</option>
+							<option value="pt_PT">Portuguese</option>
+					      	<option value="ru_RU">Russian</option>
+					      	<option value="es_ES">Spanish</option>
+					     	<option value="tr_TR">Turkish</option> 
+					     </group>   
+				</field>
+
+				<field
+					name="load_awesome"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="SOCIAL2S_LOAD_AWESOME"
+					description="SOCIAL2S_LOAD_AWESOME_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+
+				<field
+					name="load_jquery"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="SOCIAL2S_LOAD_JQUERY"
+					description="SOCIAL2S_LOAD_JQUERY_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+				<field
+					name="load_bootstrap"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="SOCIAL2S_LOAD_BOOTSTRAP"
+					description="SOCIAL2S_LOAD_BOOTSTRAP_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+
+
+
+
+				<!--INCLUDE/EXCLUDE -->
+				<field type="spacer" name="in_ex_spacer" label="SOCIAL2S_SPACER_IN_EX" />
+
+				<field name="cat_inc_exc" type="list" default="ex" label="SOCIAL2S_CAT_IN_EX" description="SOCIAL2S_CAT_IN_EX_DESC">
+	        		<option value="ex">SOCIAL2S_EX</option>
+					<option value="in">SOCIAL2S_IN</option>
+	        	</field>
+	        	<field name="categories" type="category" extension="com_content"
+					multiple="true" size="5"
+					label="JCATEGORY"
+					description="SOCIAL2S_CAT_DESC"
+				>
+					<option value="0">JOPTION_ALL_CATEGORIES</option>
+				</field>
+				<field name="article_inc_exc" type="list" default="ex" label="SOCIAL2S_ART_IN_EX" description="SOCIAL2S_ART_IN_EX_DESC">
+	        		<option value="ex">SOCIAL2S_EX</option>
+					<option value="in">SOCIAL2S_IN</option>
+	        	</field>
+	            <field name="article_ids" type="sql" default="" multiple="true" label="SOCIAL2S_ART_IDS" description="SOCIAL2S_ART_ID_DESC" query="SELECT id AS value, title AS article_ids FROM #__content" />
+
+			</fieldset>
+
+
+			<fieldset name="SOCIAL2S_PRO_FEATURES">
+				<field type="s2slicensecheck" />
+				
+				<field type="spacer" name="buttons_spacer_cookie" label="SOCIAL2S_STUPID_COOKIE_LAW" />
+
+
+				<field name="s2s_stupid_cookie_on" type="radio" class="btn-group" default="0" label="SOCIAL2S_COOKIE_ON" description="SOCIAL2S_COOKIE_ON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="s2s_stupid_cookie_ccm_support" type="radio" class="btn-group" default="0" label="SOCIAL2S_COOKIE_CCM_SUPPORT" description="SOCIAL2S_COOKIE_CCM_SUPPORT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="s2s_stupid_cookie_link" type="sql" default="" multiple="false" label="SOCIAL2S_COOKIE_LINK" description="SOCIAL2S_COOKIE_LINK_DESC" query="SELECT id AS value, title AS s2s_stupid_cookie_link FROM #__content" />
+
+				<field type="spacer" name="buttons_spacer" label="SOCIAL2S_PRO_INJECTION" />
+				<field
+					name="s2s_insert"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="SOCIAL2S_INSERT"
+					description="SOCIAL2S_INSERT_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+				<field
+					name="s2s_insert_position"
+					type="list"
+					default="0"
+					label="SOCIAL2S_INSERT_POSITION"
+					description="SOCIAL2S_INSERT_POSITION_DESC">
+					<option value="0">Before</option>
+					<option value="1">After</option>
+					<option value="2">Prepend</option>
+					<option value="2">Append</option>
+				</field>
+
+				<field
+					name="s2s_insert_element"
+					type="text"
+					default=""
+					label="SOCIAL2S_INSERT_ELEMENT"
+					description="SOCIAL2S_INSERT_ELEMENT_DESC">
+				</field>
+
+
+			</fieldset>
+
+			<fieldset name="SOCIAL2S_LICENSE">
+
+				<field type="s2slicensecheck" />
+
+				<field name="s2s_license_email" type="email" class="input-medium" label="SOCIAL2S_LICENSE_EMAIL" description="SOCIAL2S_LICENSE_EMAIL_DESC" />
+
+				<field name="s2s_license_activation" type="hidden" default="0"/>
+
+			</fieldset>
+
+
+		</fields>
+	</config>
+        <updateservers>
+                <server type="extension" priority="1" name="dibuxo social2s">http://soft.dibuxo.com/updates/joomla/social2s/social2s-update.xml</server>
+        </updateservers>
+</extension>

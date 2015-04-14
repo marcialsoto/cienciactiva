@@ -1,0 +1,136 @@
+/*plugin css*/
+.s2s_contenedor, 
+.s2s_contenedor a{
+color:#64AFD5;
+}
+.s2s_contenedor{
+  margin:4px;
+}
+
+.s2s_contenedor a{
+    padding: 0px 8px;
+}
+.s2s_contenedor a:hover{
+   color:#85CFF5;
+    text-decoration: none;
+}
+.s2s_contenedor .btn{
+  padding:0px !important;
+}
+.s2s_contenedor >div.btn{
+  background: #333;
+  border:none;
+  text-shadow:none;
+}
+.s2s_contenedor >div.btn.active{
+  background: #222;
+}
+
+.s2s_contenedor .btn > a{
+      font-size: 2em;
+}
+.s2s_contenedor .btn-xs > a{
+   font-size: 1.2em;
+}
+.s2s_contenedor .btn-sm > a{
+   font-size: 1.4em;
+}
+
+.s2s_contenedor > div{
+
+}
+a.s2s_cookie_button{
+    color:#fff;
+}
+
+.globo{
+   background: #444;
+  padding: 11px;
+  border: 1px solid #333;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 1px 2px 3px #aaa;
+  text-shadow:none;
+}
+
+.globo:before
+{
+  border: 8px solid;
+  border-color: #333 transparent transparent transparent;
+}
+.s2s_contenedor >div.btn.active .globo:before{
+  border-color: #222 transparent transparent transparent;
+}
+
+.s2s_cookie_contenedor{
+  font-size: 0.8em;
+  color:#ccc;
+}
+
+.s2s_cookie_eulogo{
+  float: left;
+  width: 52px !important;
+  height: 52px !important;
+  padding-right: 12px;
+}
+.s2s_cookie_more_info{
+    display:none;
+  }
+.s2s_cookie_more_info{
+  background: #303030;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: normal;
+  width: 300px;
+  text-align: justify;
+  font-size: 0.8em;
+}
+.s2s_cookie_more_info p.s2s_cookie_read_policy a{
+  display: inline-block;
+  padding: 0;
+}
+
+.s2s_options{
+
+}
+
+.s2s_cookie_copyright{
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+}
+.s2s_cookie_copyright a{
+  font-size:10px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/*Gplus workaround*/
+.s2s_gplus_share{
+
+}
+
+/*plus one workaround*/
+.g-plusone{
+  display:none !important;
+}
+.s2s_gplus_one{
+  float:left;
+  clear:both;
+}
+.s2s_gplus_one > div, .s2s_gplus_one iframe{
+  position:static !important;
+  width: 140px !important;
+  height: 26px;
+}
+
+/*vkFIX*/
+#s2s_vk_iframe a span{
+  color:#ccc !important;
+}
+
+/*is_on_screen*/
+
+.is_on_screen:before{
+
+}

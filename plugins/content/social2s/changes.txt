@@ -1,0 +1,120 @@
+1.0.46
+group buttons and button sizes UNLOCKED!
+better arrange of buttons
+
+1.0.45
+New api for tumblr with localise
+Category support for tumblr
+
+1.0.44
+Category support for pinterest & linkedin
+
+1.0.43
+Category support for twitter & facebook
+
+1.0.42
+improved bootstrap buttons
+
+1.0.41
+facebook opengraph metas images
+
+1.0.40
+first implementation facebook opengraph metas
+
+1.0.39
+fix FontAwesome font path
+FontAwesome updated 4.3.0
+
+1.0.38
+improved dark template
+
+1.0.37
+improved dark template
+
+
+1.0.36
+add base css
+add style system for better templating
+adapt sizes to Bootstrap3
+minor fixes
+
+
+1.0.35
+Fb language fixed (thanks to Heikki Jokinen)
+
+1.0.34
+FontAwesome updated to 4.2
+VK added
+Minor bugfix
+
+1.0.33
+Tumblr added
+
+1.0.32
+fixed arrow with offscreen elements
+
+1.0.31b
+beta versions
+offscreen check
+update bootstrap 3.2.0
+
+1.0.30
+Twitter api updated
+Facebook api updated
+Pinterest updated
+Fixed error with pinterest count
+
+1.0.29
+license check updated
+minor bugfix
+
+1.0.29
+minor bugfix
+
+1.0.28
+Suppor for joomla 3.2 beta
+Better organization
+Template system
+Dark template added
+minor bugfix
+
+1.0.27
+Insert module in any position
+check positions
+
+1.0.26
+Insert plugin in any position
+
+1.0.25
+Unify lang strings and joomla versions
+
+1.0.24
+Alignament of buttons
+
+0.23 
+Preliminary support for joomla 2.5
+Buttons alignament feature
+
+0.22 RTM
+first release
+
+0.21 beta
+bugfixing
+
+0.20 beta
+#PRO license fixes and performance session
+
+0.19 beta
+bugfixes
+
+0.18 beta
+#Added fields (beta)
+
+0.17 beta
+#Added G+1 support
+#Cookie confirm initial support
+
+0.16 beta
+#changes to fix w3c validation. Now 100% passed.
+#replace div by ASIDE (more elegant to html5)
+#chage the lang to w3c validation... test test test

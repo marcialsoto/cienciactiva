@@ -1,0 +1,114 @@
+/*plugin css*/
+.s2s_contenedor, 
+.s2s_contenedor a{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.s2s_contenedor{
+  margin:4px;
+}
+
+.s2s_contenedor a{
+    padding: 8px 12px;
+    display: block;
+}
+.s2s_contenedor a:hover{
+    text-decoration: none !important;
+}
+.s2s_contenedor .btn{
+  padding:0px !important;
+}
+
+.s2s_contenedor > div{
+  position:relative;
+}
+
+.globo{
+  position: absolute;
+  background: #fff;
+  padding: 11px;
+  z-index: 1000;
+  /*bottom: 62px;*/
+  width: auto;
+ display:none;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 1px 2px 3px #aaa;
+  height:auto;
+  /*top: -1px;*/
+  left:0;
+  min-width: 116px;
+}
+
+.globo:before
+{
+  content: ' ';
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  border: 8px solid;
+  border-color: #ccc transparent transparent transparent;
+}
+
+.s2s_cookie_eulogo{
+  float: left;
+  width: 52px !important;
+  height: 52px !important;
+  padding-right: 12px;
+}
+.s2s_cookie_more_info{
+    display:none;
+  }
+.s2s_cookie_more_info{
+  background: #e2e2e2;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: normal;
+  width: 300px;
+  text-align: justify;
+}
+.s2s_cookie_more_info p.s2s_cookie_read_policy a{
+  display: inline-block;
+  padding: 0;
+}
+
+.s2s_options{
+display:none;
+}
+
+.s2s_cookie_copyright{
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+}
+.s2s_cookie_copyright a{
+  font-size:10px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/*Gplus workaround*/
+.s2s_gplus_share{
+  float:left;
+}
+
+
+/*plus one workaround*/
+.g-plusone{
+  display:none !important;
+}
+.s2s_gplus_one{
+  float:left;
+  clear:both;
+}
+.s2s_gplus_one > div, .s2s_gplus_one iframe{
+  position:static !important;
+  width: 140px !important;
+  height: 26px;
+}
