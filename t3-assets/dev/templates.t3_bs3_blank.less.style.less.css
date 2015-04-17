@@ -115,6 +115,7 @@ a:hover {
   height: 40px;
   display: block;
   background-image: url(../../templates/t3_bs3_blank/images/logo--concytec--xs.png);
+  background-repeat: no-repeat;
 }
 .head__logo--concytec a .custom span {
   position: relative;
