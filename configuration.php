@@ -5,7 +5,7 @@ class JConfig {
 	public $display_offline_message = '1';
 	public $offline_image = '';
 	public $sitename = 'CIENCIACTIVA';
-	public $editor = 'codemirror';
+	public $editor = 'tinymce';
 	public $captcha = 'recaptcha';
 	public $list_limit = '20';
 	public $access = '1';
