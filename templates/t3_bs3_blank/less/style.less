@@ -83,7 +83,7 @@ a{
 
 }
 .t3-wrapper{
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 //
@@ -93,10 +93,16 @@ a{
 .t3-header {
   position: relative;
   padding-top: @t3-global-padding;
-  padding-bottom: @t3-global-padding;
+  padding-bottom: 0;
   margin-left:auto;
   margin-right:auto;
   z-index: 1000;
+
+  .logo{
+    .list-inline{
+      margin-bottom: 0;
+    }
+  }
 }
 
 

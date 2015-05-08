@@ -101,3 +101,16 @@
     top: -85px;
   }
 }
+@media (min-width: 992px) {
+  .itemid-855 .t3-header,
+  .itemid-865 .t3-header,
+  .itemid-866 .t3-header,
+  .itemid-885 .t3-header,
+  .view-category .t3-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
